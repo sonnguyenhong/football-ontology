@@ -8,28 +8,28 @@
 
 ; --------------------------------- DEFINE CLASS ----------------------------------
 
-fbo:PlayerPosition a owl:Class ;
+fbo:PlayerPosition rdf:type owl:Class ;
   rdfs:label "Player Position" .
 
-fbo:FootballTeam a owl:Class ;
+fbo:FootballTeam rdf:type owl:Class ;
   rdfs:label "Football Team" .
 
-fbo:FootballLeague a owl:Class ;
+fbo:FootballLeague rdf:type owl:Class ;
   rdfs:label "Football League" .
 
-fbo:FootballMatch a owl:Class ;
+fbo:FootballMatch rdf:type owl:Class ;
   rdfs:label "Football Match" .
 
-fbo:Coach a owl:Class ;
+fbo:Coach rdf:type owl:Class ;
   rdfs:label "Coach" .
 
-fbo:Stadium a owl:Class ;
+fbo:Stadium rdf:type owl:Class ;
   rdfs:label "Stadium" .
 
-fbo:Award a owl:Class ;
+fbo:Award rdf:type owl:Class ;
   rdfs:label "Award" .
 
-fbo:Player a foaf:Person ;
+fbo:Player rdf:type foaf:Person ;
   rdfs:label "Player" ;
   rdfs:comment "A football player." .
 
@@ -63,39 +63,47 @@ fbo:CoachAward rdfs:subClassOf fbo:PersonalAward ;
 
 ; ------------------------------------ DEFINE RELATIONS ---------------------------
 
-fbo:playsIn a owl:ObjectProperty ;
+fbo:playsIn rdf:type owl:ObjectProperty ;
   rdfs:domain fbo:Player ;
   rdfs:range fbo:PlayerPosition .
 
-fbo:playsFor a owl:ObjectProperty ;
+fbo:playsFor rdf:type owl:ObjectProperty ;
   rdfs:domain fbo:Player ;
   rdfs:range fbo:FootballTeam .
 
-fbo:playerAchieves a owl:ObjectProperty ; 
+fbo:playerAchieves rdf:type owl:ObjectProperty ; 
   rdfs:domain fbo:Player ;
-  rdfs:range fbo:Award .
+  rdfs:range fbo:PlayerAward .
 
-fbo:coachAchieves a owl:ObjectProperty ;
+fbo:coachAchieves rdf:type owl:ObjectProperty ;
   rdfs:domain fbo:Coach ;
-  rdfs:range fbo:Award .
+  rdfs:range fbo:CoachAward .
 
-fbo:coachedBy a owl:ObjectProperty ;
-  rdfs:domain fbo:FootballTeam ;
+fbo:teamAchieves rdf:type owl:ObjectProperty ;
+  rdfs:domain fbo:Team ;
+  rdfs:range fbo:TeamAward .
+
+fbo:awardOfLeague rdf:type owl:ObjectProperty ;
+  rdfs:domain fbo:Award ;
+  rdfs:range fbo:FootballLeague .
+
+fbo:coachedBy rdf:type owl:ObjectProperty ;
+  rdfs:domain owl:Thing ;
   rdfs:range fbo:Coach .
 
-fbo:hasHomeField a owl:ObjectProperty ;
+fbo:hasHomeField rdf:type owl:ObjectProperty ;
   rdfs:domain fbo:FootballTeam ;
   rdfs:range fbo:Stadium .
 
-fbo:participatesIn a owl:ObjectProperty ;
+fbo:participatesIn rdf:type owl:ObjectProperty ;
   rdfs:domain fbo:FootballTeam ;
   rdfs:range fbo:FootballLeague .
 
-fbo:joins a owl:ObjectProperty ;
+fbo:joins rdf:type owl:ObjectProperty ;
   rdfs:domain fbo:FootballTeam ;
   rdfs:range fbo:FootballMatch .
 
-fbo:includes a owl:ObjectProperty ;
+fbo:includes rdf:type owl:ObjectProperty ;
   rdfs:domain fbo:FootballLeague ;
   rdfs:range fbo:FootballMatch .
 
@@ -185,3 +193,18 @@ fbo:stadiumCapacity rdf:type owl:DatatypeProperty ;
 fbo:stadiumAge rdf:type owl:DatatypeProperty ;
   rdfs:domain fbo:Stadium ;
   rdfs:range xsd:integer .
+
+
+; ------------------------------------ DEFINE PROPERTIES IN RULES ---------------------------
+
+fbo:belongsToLeague rdf:type owl:ObjectProperty ;
+    rdfs:domain owl:Thing ;
+    rdfs:range fbo:FootballLeague .
+
+fbo:heldsIn rdf:type owl:ObjectProperty ;
+    rdfs:domain fbo:FootballMatch ;
+    rdfs:range fbo:Stadium .
+
+fbo:playerHasTeamAward rdf:type owl:ObjectProperty ;
+    rdfs:domain fbo:Player ;
+    rdfs:range fbo:TeamAward .
