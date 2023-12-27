@@ -1,0 +1,96 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XLMSchema#> .
+@prefix fbo: <http://localhost:3000/ontology#> .
+@prefix fbr: <http://localhost:3000/resource/> .
+
+fbr:Asia_Cup_2022 a fbo:LeagueSeason ;
+  fbo:name "Asian Cup 2022" ;
+  fbo:description "The 2022 Asia Cup (also known as DP World Asia Cup for sponsorship reasons) was the 15th edition of the Asia Cup cricket tournament, with the matches played as Twenty20 Internationals (T20Is) during August and September 2022 in the United Arab Emirates." ;
+  fbo:heldInYear 2022 ;
+  fbo:hasChampion fbr:Vietnam_national_football_team ;
+  fbo:aSeasonOf fbr:Asia_Cup .
+
+fbr:Asia_Cup_2023 a fbo:LeagueSeason ;
+  fbo:name "Asian Cup 2023" ;
+  fbo:description "The 2023 Asia Cup (also known as Super 11 Asia Cup for sponsorship reasons) was the 16th edition of the men's Asia Cup. The matches were played as One Day Internationals (ODIs) with Pakistan as the official host.[2][3] It was held in Pakistan and Sri Lanka, between 30 August to 17 September 2023.[4][5] The tournament was contested by 6 teams.[6] Sri Lanka were the defending champions.[7] It was the first Asia Cup to be held in multiple countries, with four matches being played in Pakistan and the remaining nine matches being played in Sri Lanka." ;
+  fbo:heldInYear 2023 ;
+  fbo:hasChampion fbr:South_Korea_national_football_team ;
+  fbo:aSeasonOf fbr:Asia_Cup .
+
+fbr:Africa_Cup_2023 a fbo:LeagueSeason ;
+  fbo:name "Africa Cup 2023" ;
+  fbo:description "The 2023 Africa Cup of Nations, known for short as the 2023 AFCON or CAN 2023 and for sponsorship purposes as the TotalEnergies Africa Cup of Nations, is scheduled to be the 34th edition of the biennial African association football tournament organized by Confederation of African Football. It will be hosted by Ivory Coast for the second time, having first hosted it in 1984." ;
+  fbo:heldInYear 2023 ;
+  fbo:hasChampion fbr:Algeria_national_football_team ;
+  fbo:aSeasonOf fbr:Africa_Cup .
+
+fbr:Africa_Cup_2021 a fbo:LeagueSeason ;
+  fbo:name "Africa Cup 2021" ;
+  fbo:description "The 2021 Africa Cup of Nations (also referred to as AFCON 2021 or CAN 2021), known as the TotalEnergies 2021 Africa Cup of Nations for sponsorship reasons,[4] was the 33rd edition of the Africa Cup of Nations, the biennial international men's football championship of Africa organised by the Confederation of African Football (CAF). The tournament was hosted by Cameroon,[5] and took place from 9 January to 6 February 2022" ;
+  fbo:heldInYear 2021 ;
+  fbo:hasChampion fbr:Algeria_national_football_team ;
+  fbo:aSeasonOf fbr:Africa_Cup .
+
+fbr:Africa_Cup_2019 a fbo:LeagueSeason ;
+  fbo:name "Africa Cup 2019" ;
+  fbo:description "The 2019 Africa Cup of Nations (abbreviated as AFCON 2019 or CAN 2019), known as the Total 2019 Africa Cup of Nations for sponsorship reasons, was the 32nd edition of the Africa Cup of Nations, the biennial international men's football championship of Africa organized by the Confederation of African Football (CAF). The tournament was hosted by Egypt. The competition was held from 21 June to 19 July 2019, as per the decision of the CAF Executive Committee on 20 July 2017 to move the Africa Cup of Nations from January/February to June/July for the first time.[2] It was also the first Africa Cup of Nations expanded from 16 to 24 teams." ;
+  fbo:heldInYear 2019 ;
+  fbo:hasChampion fbr:Egypt_national_football_team ;
+  fbo:aSeasonOf fbr:Africa_Cup .
+
+fbr:Euro_Cup_2020 a fbo:LeagueSeason ;
+  fbo:name "Euro Cup 2020" ;
+  fbo:description "The 2020 UEFA European Football Championship, commonly referred to as UEFA Euro 2020 (stylised as UEFA EURO 2020) or simply Euro 2020, was the 16th UEFA European Championship, the quadrennial international men's football championship of Europe organised by the Union of European Football Associations (UEFA). To celebrate the 60th anniversary of the European Championship competition, UEFA president Michel Platini declared that the tournament would be hosted in several nations as a romantic one-off event, with 11 cities in 11 UEFA countries each providing venues for the tournament, making it the second tournament in the history after the 2007 AFC Asian Cup to have more than two nations co-hosting it.[2] Defending champions Portugal, who won UEFA Euro 2016 in France, were eliminated in the round of 16 by Belgium.[3] Italy won their second European Championship title by beating England on penalties in the final following a 1–1 draw after extra time.[4] The win came exactly on the 39th anniversary of Italy's 1982 FIFA World Cup Final win over West Germany" ;
+  fbo:heldInYear 2020 ;
+  fbo:hasChampion fbr:Germany_national_football_team ;
+  fbo:aSeasonOf fbr:Euro .
+
+fbr:Euro_Cup_2016 a fbo:LeagueSeason ;
+  fbo:name "Euro Cup 2016" ;
+  fbo:description "The 2016 UEFA European Football Championship, commonly referred to as UEFA Euro 2016 (stylised as UEFA EURO 2016) or simply Euro 2016, was the 15th UEFA European Championship, the quadrennial international men's football championship of Europe organised by UEFA. It was held in France from 10 June to 10 July 2016.[4][5] Spain were the two-time defending champions, having won the 2008 and 2012 tournaments, but were eliminated in the round of 16 by Italy. Portugal won the tournament for the first time, following a 1–0 victory after extra time over the host team, France, in the final played at the Stade de France." ;
+  fbo:heldInYear 2016 ;
+  fbo:hasChampion fbr:Germany_national_football_team ;
+  fbo:aSeasonOf fbr:Euro .
+
+fbr:Nation_League_2022 a fbo:LeagueSeason ;
+  fbo:name "Nation League 2022-2023" ;
+  fbo:description "The 2022–23 UEFA Nations League is the third season of the UEFA Nations League, an international association football competition involving the men's national teams of the 55 member associations of UEFA.[1] The competition is being held from June to September 2022 (league phase), June 2023 (Nations League Finals) and March 2024 (relegation play-outs)." ;
+  fbo:heldInYear 2022 ;
+  fbo:hasChampion fbr:Germany_national_football_team ;
+  fbo:aSeasonOf fbr:Nation_League .
+
+fbr:Nation_League_2020 a fbo:LeagueSeason ;
+  fbo:name "Nation League 2020-2021" ;
+  fbo:description "The 2020–21 UEFA Nations League was the second season of the UEFA Nations League, an international association football competition involving the men's national teams of the 55 member associations of UEFA.[1] The competition was held from September to November 2020 (league phase), October 2021 (Nations League Finals) and March 2022 (relegation play-outs)." ;
+  fbo:heldInYear 2020 ;
+  fbo:hasChampion fbr:France_national_football_team ;
+  fbo:aSeasonOf fbr:Nation_League .
+
+fbr:Nation_League_2020 a fbo:LeagueSeason ;
+  fbo:name "Nation League 2020-2021" ;
+  fbo:description "The 2020–21 UEFA Nations League was the second season of the UEFA Nations League, an international association football competition involving the men's national teams of the 55 member associations of UEFA.[1] The competition was held from September to November 2020 (league phase), October 2021 (Nations League Finals) and March 2022 (relegation play-outs)." ;
+  fbo:heldInYear 2020 ;
+  fbo:hasChampion fbr:France_national_football_team ;
+  fbo:aSeasonOf fbr:Nation_League .
+
+fbr:Copa_2021 a fbo:LeagueSeason ;
+  fbo:name "Copa America 2021" ;
+  fbo:description "The 2021 Copa América was the 47th edition of the Copa América, the international men's football championship organised by South America's football ruling body CONMEBOL. The tournament took place in Brazil from 13 June to 10 July 2021.[1] The tournament was originally scheduled to take place from 12 June to 12 July 2020 in Argentina and Colombia as the 2020 Copa América. On 17 March 2020, CONMEBOL announced that due to the COVID-19 pandemic in South America, the tournament had been postponed for a year, in conjunction with UEFA's decision to also postpone UEFA Euro 2020 to 2021.[2] This was the first time since 1991 where no guest nation took part in the tournament." ;
+  fbo:heldInYear 2021 ;
+  fbo:hasChampion fbr:Argentina_national_football_team ;
+  fbo:aSeasonOf fbr:Copa .
+
+fbr:Copa_2019 a fbo:LeagueSeason ;
+  fbo:name "Copa America 2019" ;
+  fbo:description "The 2019 Copa América was the 46th edition of the Copa América, the international men's association football championship organized by South America's football ruling body CONMEBOL. It was held in Brazil and took place between 14 June and 7 July 2019 at 6 venues across the country.[1] This is the first time since 1991 where no CONCACAF nation took part in the tournament." ;
+  fbo:heldInYear 2019 ;
+  fbo:hasChampion fbr:Brazil_national_football_team ;
+  fbo:aSeasonOf fbr:Copa .
+
+fbr:Copa_2016 a fbo:LeagueSeason ;
+  fbo:name "Copa America 2016" ;
+  fbo:description "The Copa América Centenario (Portuguese: Copa América Centenário, French: Coupe Amerique Centennaire, English: Centennial Cup America;[2][3] literally Centennial America Cup) was an international men's association football tournament that was hosted by the United States in 2016. The competition was a celebration of the centenary of CONMEBOL and the Copa América, and was the first Copa América hosted outside South America." ;
+  fbo:heldInYear 2016 ;
+  fbo:hasChampion fbr:Argentina_national_football_team ;
+  fbo:aSeasonOf fbr:Copa .

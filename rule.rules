@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix fbo: <http://localhost:3000/ontology#> .
+
+### Nếu quốc gia C thuộc khu vực A và khu vực A có giải đấu L thì đội tuyển quốc gia NT của quốc gia C thuộc giải đấu L
+[rule1: (?C rdf:type fbo:Country) (?C fbo:belongToArea ?A) (?A fbo:hasLeague ?L) (?C fbo:hasTeam ?NT) -> (?NT fbo:belongToLeague ?L)]
+
+### Nếu đội tuyển quốc gia NT thuộc giải đấu L thì đội tuyển đó tham dự tất cả các mùa của giải đấu đó
+[rule2: (?NT rdf:type fbo:NationalTeam) (?NT fbo:belongToLeague ?L) (?LS rdf:type fbo:LeagueSeason) (?LS fbo:aSeasonOf ?L) -> (?NT fbo:joinedLeagueSeason ?LS)]
+
+### Nếu thời gian tổ chức giải đấu LS ở khu vực A nằm trong khoảng thời gian mà cầu thủ P tham gia đội tuyển quốc gia cũng ở khu vực A thì cầu thủ P tham gia giải đấu LS
+[rule3: (?P rdf:type fbo:Player) (?P fbo:belongToArea ?A) (?A fbo:hasLeague ?L) (?LS fbo:aSeasonOf ?L) (?P fbo:joinedYear ?Y1) (?P fbo:leftYear ?Y2) (?LS fbo:heldInYear ?Y3) ge(?Y3, ?Y1) ge(?Y2, ?Y3) -> (?P fbo:joinedLeagueSeason ?LS)]
+[rule3_1: (?P rdf:type fbo:Player) (?P fbo:belongToArea ?A) (?A fbo:hasLeague ?L) (?LS fbo:aSeasonOf ?L) (?P fbo:joinedYear ?Y1) noValue(?P, fbo:leftYear) (?LS fbo:heldInYear ?Y3) ge(?Y3, ?Y1) -> (?P fbo:joinedLeagueSeason ?LS)]
+
+### Nếu châu lục A có giải đấu L thì giải đấu L thuộc về châu lục A
+[rule4: (?A rdf:type fbo:Area) (?A fbo:hasLeague ?L) -> (?L fbo:belongToArea ?A)]
+
+### Nếu một người P thuộc quốc gia C và quốc gia C thuộc châu lục A thì người P thuộc châu lục A
+[rule5: (?P rdf:type foaf:Person) (?P fbo:belongToCountry ?C) (?C fbo:belongToArea ?A) -> (?P fbo:belongToArea ?A)]
+
+### Nếu quốc gia C có đội tuyển quốc gia NT vô địch giải đấu LS được tổ chức vào năm Y và cầu thủ P có mặt trong đội tuyển quốc gia năm đó thì cầu thủ P có danh hiệu vô địch giải đấu LS
+[rule6: (?C fbo:hasTeam ?NT) (?NT fbo:isChampionOf ?LS) (?LS fbo:heldInYear ?Y) (?P fbo:belongToCountry ?C) (?P fbo:joinedYear ?Y1) (?P fbo:leftYear ?Y2) ge(?Y, ?Y1) ge(?Y2, ?Y) -> (?P fbo:hasTitle ?LS)]
+[rule6_1: (?C fbo:hasTeam ?NT) (?NT fbo:isChampionOf ?LS) (?LS fbo:heldInYear ?Y) (?P fbo:belongToCountry ?C) (?P fbo:joinedYear ?Y1) noValue(?P, fbo:leftYear) ge(?Y, ?Y1) -> (?P fbo:hasTitle ?LS)]

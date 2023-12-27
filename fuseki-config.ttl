@@ -1,0 +1,90 @@
+PREFIX :        <#>
+PREFIX fbo: <http://localhost:3000/ontology#>
+PREFIX fuseki:  <http://jena.apache.org/fuseki#>
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ja:      <http://jena.hpl.hp.com/2005/11/Assembler#>
+PREFIX text:    <http://jena.apache.org/text#>
+PREFIX tdb2:    <http://jena.apache.org/2016/tdb#>
+
+[] rdf:type fuseki:Server ;
+   fuseki:services (
+     :service
+   ) .
+
+# Service description for "/dataset" with all endpoints.
+:service rdf:type fuseki:Service ;
+    fuseki:name "dataset" ;
+    fuseki:endpoint [
+        fuseki:operation fuseki:query ;
+        fuseki:name "query" 
+    ] ;
+    fuseki:endpoint [ 
+        fuseki:operation fuseki:gsp-rw ; 
+        fuseki:name "data"
+    ] ; 
+    fuseki:dataset :text_dataset ;
+    .
+
+# A TextDataset is a regular dataset with a text index.
+:text_dataset rdf:type     text:TextDataset ;
+    text:dataset   :dataset ;
+    text:index     <#indexLucene> ;
+.
+
+# Dataset with only the default graph.
+:dataset rdf:type       ja:RDFDataset ;
+    ja:defaultGraph     :model_inf2 ;
+     .
+
+# The inference model
+:model_inf2 a ja:InfModel ;
+     ja:baseModel :model_inf1 ;
+     ja:reasoner [
+         # ja:reasonerURL <http://jena.hpl.hp.com/2003/OWLFBRuleReasoner> ;
+         # For RDFS: use this instead:
+         ## ja:reasonerURL <http://jena.hpl.hp.com/2003/RDFSExptRuleReasoner>
+         ja:reasonerURL <http://jena.hpl.hp.com/2003/GenericRuleReasoner> ;
+         ja:rulesFrom <file:rule.rules>
+     ] .
+
+:model_inf1 a ja:InfModel ;
+     ja:baseModel :tdbGraph ;
+     ja:reasoner [
+        ja:reasonerURL <http://jena.hpl.hp.com/2003/OWLFBRuleReasoner>
+     ] .
+
+:tdbGraph rdf:type tdb2:GraphTDB2 ;
+    tdb2:dataset :tdbDataset .
+
+## Base data in TDB.
+:tdbDataset rdf:type tdb2:DatasetTDB2 ;
+    tdb2:location "DB" ;
+    # If the unionDefaultGraph is used, then the "update" service should be removed.
+    # tdb:unionDefaultGraph true ;
+    .
+
+# Text index description
+<#indexLucene> a text:TextIndexLucene ;
+    text:directory <file:databases/index> ;
+    text:entityMap <#entMap> ;
+    text:storeValues true ; 
+    text:analyzer [ a text:StandardAnalyzer ] ;
+#    text:queryAnalyzer [ a text:KeywordAnalyzer ] ;
+    text:queryParser text:QueryParser ;
+#    text:propLists ( [ . . . ] . . . ) ;
+#    text:defineAnalyzers ( [ . . . ] . . . ) ;
+    text:multilingualSupport true ; # optional
+.
+
+# Entity map (see documentation for other options)
+<#entMap> a text:EntityMap ;
+    text:defaultField     "label" ;
+    text:entityField      "uri" ;
+    text:uidField         "uid" ;
+    text:langField        "lang" ;
+    text:graphField       "graph" ;
+    text:map (
+        [ text:field "label" ; 
+          text:predicate fbo:name ]
+    ) .

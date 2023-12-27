@@ -1,0 +1,217 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XLMSchema#> .
+@prefix fbo: <http://localhost:3000/ontology#> .
+@prefix fbr: <http://localhost:3000/resource/> .
+
+## Vietnamese players
+fbr:Le_Cong_Vinh a fbo:Player ;
+  fbo:name "Le Cong Vinh" ;
+  fbo:goals 50 ;
+  fbo:joinedYear 2010 ;
+  fbo:leftYear 2018 ;
+  fbo:img: "http://commons.wikimedia.org/wiki/Special:FilePath/Cong_Vinh.png?width=300";
+  fbo:description "Lê Công Vinh (born 10 December 1985, in Nghệ An, Vietnam) is a retired Vietnamese footballer. He was a part of the Vietnamese national team from 2004 to 2016 as an attacker. He received three Golden Ball Awards (2004, 2006, 2007). Le is considered one of the greatest football players in Vietnam football's history, achieving the highest scores of all time in the Vietnam National Football Team. On 8 December 2016, after losing to Indonesia at the AFF Cup 2016, he officially retired after an 18-year career. He is considered a Vietnamese football legend and famous in southeast Asia.";
+  fbo:belongToCountry fbr:Vietnam;
+  fbo:hasPosition fbo:Forward.
+
+fbr:Nguyen_Quang_hai a fbo:Player ;
+  fbo:name "Nguyễn Quang Hải" ;
+  fbo:goals 40 ;
+  fbo:joinedYear 2018;
+  fbo:img: "https://upload.wikimedia.org/wikipedia/commons/7/77/Nguy%E1%BB%85n_Quang_H%E1%BA%A3i.jpg";
+  fbo:description "Nguyễn Quang Hải (born 12 April 1997) is a Vietnamese professional footballer who plays as an attacking midfielder or winger for Ligue 2 club Pau and the Vietnam national team. In 2018 and 2019, Quang Hải was nominated by a panel of sports journalists and football experts for Best Footballer in Asia.";
+  fbo:belongToCountry fbr:Vietnam;
+  fbo:hasPosition fbo:Forward.
+  
+## Chinese players
+fbr:Li_Lei a fbo:Player ;
+  fbo:name "Li Lei" ;
+  fbo:goals 10 ;
+  fbo:joinedYear 2019 ;
+  fbo:description "Li Lei (Chinese: 李磊; pinyin: Lǐ Lěi; Mandarin pronunciation: [lì lèɪ]; born 30 May 1992) is a Chinese footballer who plays as a left-back for Grasshoppers in the Swiss Super League.";
+  fbo:belongToCountry fbr:China;
+  fbo:hasPosition fbo:Defender.
+
+## South korean players
+fbr:Son_Heung_min a fbo:Player ;
+  fbo:name "Son Heung Min" ;
+  fbo:goals 113;
+  fbo:joinedYear 2010 ;
+  fbo:img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Team_Korea_Russia_WorldCup_02_%28cropped%29.png/440px-Team_Korea_Russia_WorldCup_02_%28cropped%29.png";
+  fbo:description "Son Heung-min (Korean: 손흥민; Korean pronunciation: [son.ɣɯŋ.min]; born 8 July 1992) is a South Korean professional footballer who plays as a forward for and captains both Premier League club Tottenham Hotspur and the South Korea national team.[3] Considered one of the best players in the world and widely regarded as the greatest Asian footballer of all time, he is known for his explosive speed, finishing, two-footedness and ability to link play.";
+  fbo:belongToCountry fbr:South_Korea;
+  fbo:hasPosition fbo:Forward.
+
+fbr:Cho_Gue-sung a fbo:Player ;
+  fbo:name "Cho Gue Sung" ;
+  fbo:goals 26;
+  fbo:joinedYear 2021 ;
+  fbo:description "Cho Gue-sung (born 25 January 1998) is a South Korean footballer who plays as striker for Danish Superliga club Midtjylland and the South Korea national team.";
+  fbo:img "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/191130_%EB%B6%80%EC%82%B0%EC%95%84%EC%9D%B4%ED%8C%8C%ED%81%AC_VS_FC%EC%95%88%EC%96%91_%ED%94%8C%EB%A0%88%EC%9D%B4%EC%98%A4%ED%94%84%2C_%EC%A1%B0%EA%B7%9C%EC%84%B1_2.jpg/440px-191130_%EB%B6%80%EC%82%B0%EC%95%84%EC%9D%B4%ED%8C%8C%ED%81%AC_VS_FC%EC%95%88%EC%96%91_%ED%94%8C%EB%A0%88%EC%9D%B4%EC%98%A4%ED%94%84%2C_%EC%A1%B0%EA%B7%9C%EC%84%B1_2.jpg";
+  fbo:belongToCountry fbr:South_Korea;
+  fbo:hasPosition fbo:Forward.
+
+fbr:Lee_Kang-in a fbo:Player ;
+  fbo:name "Lee Kang In" ;
+  fbo:goals 14;
+  fbo:joinedYear 2019 ;
+  fbo:description "Lee Kang-in (Korean: 이강인; born 19 February 2001) is a South Korean professional footballer who plays as an attacking midfielder or a winger for Ligue 1 club Paris Saint-Germain and the South Korea national team. Known for his dribbling ability, he is regarded as one of the best young Korean footballers.";
+  fbo:img "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Lee_Kang-in_-_2022_%2852551771501%29_%28cropped%29.jpg/440px-Lee_Kang-in_-_2022_%2852551771501%29_%28cropped%29.jpg";
+  fbo:belongToCountry fbr:South_Korea;
+  fbo:hasPosition fbo:Midfielder.
+
+## Saudi Arabian players
+fbr:Yasser_Al-Shahrani a fbo:Player ;
+  fbo:name "Yasser Al Shahrani" ;
+  fbo:description "Yasser Gharsan Saeed Al-Mohammadi Al-Shahrani (Arabic: ياسر غرسان سعيد المحمدي الشهراني; born 25 May 1992) is a Saudi Arabian footballer who plays for Al-Hilal and the Saudi Arabia national team as a left-back or a centre-back. He moved from Al-Qadisiyah to Al-Hilal in 2012, after impressive performances at the 2011 FIFA U-20 World Cup, where he scored against Guatemala. He featured on the official Middle Eastern cover of the game FIFA 16, alongside Lionel Messi.";
+  fbo:goals 75;
+  fbo:joinedYear 2012 ;
+  fbo:img "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Yasser_Al-Shahrani_2018.jpg/440px-Yasser_Al-Shahrani_2018.jpg";
+  fbo:belongToCountry fbr:Saudi_Arabia;
+  fbo:hasPosition fbo:Defender.
+
+fbr:Mohammed_Al-Owais a fbo:Player ;
+  fbo:name "Mohammed Al Owais" ;
+  fbo:description "Mohammed Khalil Ibrahim Al-Owais (Arabic: محمد خليل إبراهيم العويس; born 10 October 1991) is a Saudi Arabian professional footballer who plays as a goalkeeper for Al-Hilal and the Saudi Arabia national team.[3] He is known for his fast reflexes and vigilance in goal.";
+  fbo:goals 6;
+  fbo:joinedYear 2022 ;
+  fbo:img "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Mohammed_Al-Owais_2018.jpg/440px-Mohammed_Al-Owais_2018.jpg";
+  fbo:belongToCountry fbr:Saudi_Arabia;
+  fbo:hasPosition fbo:Goalkeeper.
+
+## Japanese players
+fbr:Takefusa_Kubo a fbo:Player ;
+  fbo:name "Takefusa Kubo" ;
+  fbo:goals 27;
+  fbo:joinedYear 2019 ;
+  fbo:description "Takefusa Kubo (久保 建英, Kubo Takefusa, born 4 June 2001), commonly known as Take Kubo, is a Japanese professional footballer[3] who plays as a right winger for La Liga club Real Sociedad and the Japan national team.";
+  fbo:img "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Takefusa_Kubo_2019.png/440px-Takefusa_Kubo_2019.png";
+  fbo:belongToCountry fbr:Japan;
+  fbo:hasPosition fbo:Midfielders.
+
+fbr:Keito_Nakamura a fbo:Player ;
+  fbo:name "Keito Nakamura" ;
+  fbo:goals 3;
+  fbo:joinedYear 2023 ;
+  fbo:description "Keito Nakamura (中村 敬斗, Nakamura Keito, born 28 July 2000) is a Japanese professional footballer who plays for Ligue 1 club Reims and the Japan national team. He plays either as a winger or a forward.[2][3][4]";
+  fbo:img "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/FC_Red_Bull_Salzburg_gegen_Linzer_ASK_%282022-10-01%29a_02.jpg/440px-FC_Red_Bull_Salzburg_gegen_Linzer_ASK_%282022-10-01%29a_02.jpg";
+  fbo:belongToCountry fbr:Japan;
+  fbo:hasPosition fbo:Midfielders;
+  fbo:hasPosition fbo:Forward.
+
+## German players
+fbr:Thomas_Muller a fbo:Player ;
+  fbo:name "Thomas Muller" ;
+  fbo:description "Thomas Müller (German pronunciation: [ˈtoːmas ˈmʏlɐ]; born 13 September 1989) is a German professional footballer who plays for Bundesliga club Bayern Munich and the Germany national team. A versatile player, Müller has been deployed in a variety of attacking roles – as an attacking midfielder, second striker, centre forward, and on either wing. Müller has been praised for his positioning, teamwork, stamina, and work-rate, and has shown consistency in both scoring and creating goals. He is regarded as one of the best off-the-ball players of all time due to his positional awareness. Müller holds the record for the most assists given in the Bundesliga, with 152. A product of Bayern's youth system, Müller has represented the club ever since. He made his first-team breakthrough in the 2009–10 season after Louis van Gaal was appointed as the main coach; he played almost every game as the club won the league and cup double and reached the Champions League final. Müller scored 23 goals in the 2012–13 season as Bayern won a historic treble; the league title, cup and Champions League. He broke the Bundesliga record for assists by providing 21 in a season (a record in the top five leagues jointly held with Lionel Messi in La Liga) and scored 14 goals as Bayern won a second treble in the 2019–20 season. Müller earned a call-up to the German national team in 2010. At the 2010 World Cup, he scored five goals in six appearances as Germany finished in third place. He was named the Best Young Player of the tournament and won the Golden Boot as the tournament's top scorer, with five goals and three assists. At the 2014 World Cup he played a major role in helping the team win the trophy, scoring five goals and receiving the Silver Ball as the tournament's second-top player and the Silver Boot as the second-top goalscorer, and was also named in the World Cup All-Star XI and in the Dream Team. In 2014, Müller was ranked the fifth-best footballer in the world by The Guardian. Müller is the most decorated German footballer in history, with 32 trophies.";
+  fbo:goals 123;
+  fbo:joinedYear 2010 ;
+  fbo:img "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg/440px-2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg";
+  fbo:belongToCountry fbr:Germany;
+  fbo:hasPosition fbo:Forward.
+
+fbr:Mario_Gotze a fbo:Player ;
+  fbo:name "Mario Gotze" ;
+  fbo:description "Thomas Müller (German pronunciation: [ˈtoːmas ˈmʏlɐ]; born 13 September 1989) is a German professional footballer who plays for Bundesliga club Bayern Munich and the Germany national team. A versatile player, Müller has been deployed in a variety of attacking roles – as an attacking midfielder, second striker, centre forward, and on either wing. Müller has been praised for his positioning, teamwork, stamina, and work-rate, and has shown consistency in both scoring and creating goals. He is regarded as one of the best off-the-ball players of all time due to his positional awareness. Müller holds the record for the most assists given in the Bundesliga, with 152. A product of Bayern's youth system, Müller has represented the club ever since. He made his first-team breakthrough in the 2009–10 season after Louis van Gaal was appointed as the main coach; he played almost every game as the club won the league and cup double and reached the Champions League final. Müller scored 23 goals in the 2012–13 season as Bayern won a historic treble; the league title, cup and Champions League. He broke the Bundesliga record for assists by providing 21 in a season (a record in the top five leagues jointly held with Lionel Messi in La Liga) and scored 14 goals as Bayern won a second treble in the 2019–20 season. Müller earned a call-up to the German national team in 2010. At the 2010 World Cup, he scored five goals in six appearances as Germany finished in third place. He was named the Best Young Player of the tournament and won the Golden Boot as the tournament's top scorer, with five goals and three assists. At the 2014 World Cup he played a major role in helping the team win the trophy, scoring five goals and receiving the Silver Ball as the tournament's second-top player and the Silver Boot as the second-top goalscorer, and was also named in the World Cup All-Star XI and in the Dream Team. In 2014, Müller was ranked the fifth-best footballer in the world by The Guardian. Müller is the most decorated German footballer in history, with 32 trophies.";
+  fbo:goals 66;
+  fbo:joinedYear 2010 ;
+  fbo:img "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Mario_G%C3%B6tze%2C_Germany_national_football_team_%2807%29.jpg/440px-Mario_G%C3%B6tze%2C_Germany_national_football_team_%2807%29.jpg";
+  fbo:belongToCountry fbr:Germany ;
+  fbo:hasPosition fbo:Midfielders;
+  fbo:hasPosition fbo:Forward.
+
+## France players
+fbr:Kylian_Mbappe a fbo:Player ;
+  fbo:name "Kylian Mbappe" ;
+  fbo:description "Kylian Mbappé Lottin (born 20 December 1998) is a French professional footballer who plays as a forward for Ligue 1 club Paris Saint-Germain and the France national team. Considered one of the best players in the world, Mbappé is renowned for his dribbling abilities, exceptional speed, and finishing. Born in Paris and raised in nearby Bondy, Mbappé began his senior club career in 2015 playing for Monaco, where he won the Ligue 1 title. In 2017, aged 18, Mbappé signed for Paris Saint-Germain on an eventual permanent transfer worth €180 million, making him the second-most-expensive player and most expensive teenage player. There, he won four Ligue 1 titles and three Coupes de France, is the club's second-highest all-time top goalscorer, and helped the club reach their first UEFA Champions League Final in 2020. At international level, Mbappé made his senior debut for France in 2017, at age 18. At the 2018 FIFA World Cup, Mbappé became the youngest French player to score at a World Cup, and became the second teenager, after Pelé, to score in a World Cup Final. He finished as the joint second-highest goalscorer as France won the tournament, and won FIFA World Cup Best Young Player and French Player of the Year for his performances. Mbappé was named to the FIFA FIFPro World11 in 2018 and 2019, the UEFA Team of the Year in 2018 and the UEFA Champions League Squad of the Season in 2016–17, 2019–20, 2020–21 and 2021–22. He was awarded the Globe Soccer Best Player of the Year in 2021. He has won the Golden Boy in 2017, Ligue 1 Player of the Year three times, and has finished as the Ligue 1 top scorer for four seasons. Mbappé is reportedly the highest-paid footballer in the world.";
+  fbo:goals 71;
+  fbo:joinedYear 2017 ;
+  fbo:img "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg/440px-2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg";
+  fbo:belongToCountry fbr:France ;
+  fbo:hasPosition fbo:Forward.
+
+fbr:Antoine_Griezmann a fbo:Player ;
+  fbo:name "Antoine Griezmann" ;
+  fbo:description "Antoine Griezmann (French pronunciation: ​[ɑ̃twan ɡʁijɛzman]; born 21 March 1991) is a French professional footballer who plays as a forward for La Liga club Atlético Madrid and the France national team. A versatile player, Griezmann is known for his attacking, passing, and supportive defence, and has played as an attacking midfielder, winger, and striker in his career. Griezmann began his senior club career with Real Sociedad, winning the Segunda División in his first season. In 2014, he joined Atlético Madrid for a then-club record €30 million and won the UEFA Europa League, the UEFA Super Cup, the Supercopa de España, and La Liga Best Player. He was nominated for the Ballon d'Or and Best FIFA Men's Player in 2016 and 2018. In 2019, Griezmann was the subject of a record association football transfer when signed for rivals Barcelona in a transfer worth €120 million, becoming the fifth-most expensive player of all time. There, he won a Copa del Rey, before returning to Atlético Madrid on loan in 2021, and became the club's third-highest all-time top goalscorer. At international level, Griezmann won the 2010 UEFA European Under-19 Championship and made his senior debut for France in 2014 at age 22; he has since earned over 110 caps, ranking as France's sixth-most capped player, and with over 40 goals scored, he is also the nation's third-highest all-time top goalscorer. He finished as top goalscorer and was Player of the Tournament as France finished runner-up at UEFA Euro 2016, and won the Silver Boot as the second highest goalscorer as France won the 2018 FIFA World Cup; he won the Bronze Ball as the tournament's third best player, and was also named Man of the Match in the final.";
+  fbo:goals 123;
+  fbo:joinedYear 2014 ;
+  fbo:img "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Antoine_Griezmann_2018.jpg/440px-Antoine_Griezmann_2018.jpg";
+  fbo:belongToCountry fbr:France ;
+  fbo:hasPosition fbo:Midfielders;
+  fbo:hasPosition fbo:Forward.
+
+## Argentina players
+fbr:Lionel_Messi a fbo:Player ;
+  fbo:name "Lionel Messi" ;
+  fbo:description "Lionel Andrés Messi (Spanish pronunciation: [ljoˈnel anˈdɾes ˈmesi]; born 24 June 1987), also known as Leo Messi, is an Argentine professional footballer who plays as a forward for Ligue 1 club Paris Saint-Germain and captains the Argentina national team. Widely regarded as one of the greatest players of all time, Messi has won a record seven Ballon d'Or awards, a record six European Golden Shoes, and in 2020 was named to the Ballon d'Or Dream Team. Until leaving the club in 2021, he had spent his entire professional career with Barcelona, where he won a club-record 35 trophies, including 10 La Liga titles, seven Copa del Rey titles and four UEFA Champions Leagues. A prolific goalscorer and creative playmaker, Messi holds the records for most goals in La Liga (474), most goals in a La Liga and European league season (50), most hat-tricks in La Liga (36) and the UEFA Champions League (8), and most assists in La Liga (192), a La Liga season (21) and the Copa América (17). He also holds the record for most international goals by a South American male (94). Messi has scored over 785 senior career goals for club and country, and has the most goals by a player for a single club (672). Born and raised in central Argentina, Messi relocated to Spain at the age of 13 to join Barcelona, for whom he made his competitive debut aged 17 in October 2004. He established himself as an integral player for the club within the next three years, and in his first uninterrupted season in 2008–09 he helped Barcelona achieve the first treble in Spanish football; that year, aged 22, Messi won his first Ballon d'Or. Three successful seasons followed, with Messi winning four consecutive Ballons d'Or, making him the first player to win the award four times. During the 2011–12 season, he set the La Liga and European records for most goals scored in a single season, while establishing himself as Barcelona's all-time top scorer. The following two seasons, Messi finished second for the Ballon d'Or behind Cristiano Ronaldo (his perceived career rival), before regaining his best form during the 2014–15 campaign, becoming the all-time top scorer in La Liga and leading Barcelona to a historic second treble, after which he was awarded a fifth Ballon d'Or in 2015. Messi assumed captaincy of Barcelona in 2018, and in 2019 he won a record sixth Ballon d'Or. Out of contract, he signed for Paris Saint-Germain in August 2021. An Argentine international, Messi holds the national record for appearances and is also the country's all-time leading goalscorer. At youth level, he won the 2005 FIFA World Youth Championship, finishing the tournament with both the Golden Ball and Golden Shoe, and an Olympic gold medal at the 2008 Summer Olympics. His style of play as a diminutive, left-footed dribbler drew comparisons with his compatriot Diego Maradona, who described Messi as his successor. After his senior debut in August 2005, Messi became the youngest Argentine to play and score in a FIFA World Cup in 2006, and reached the final of the 2007 Copa América, where he was named young player of the tournament. As the squad's captain from August 2011, he led Argentina to three consecutive finals: the 2014 FIFA World Cup, for which he won the Golden Ball, and the 2015 and 2016 Copa América, winning the Golden Ball in the 2015 edition. After announcing his international retirement in 2016, he reversed his decision and led his country to qualification for the 2018 FIFA World Cup, a third-place finish at the 2019 Copa América, and won the 2021 Copa América, while winning the Golden Ball and Golden Boot award for the latter. This achievement would see him receive a record seventh Ballon d'Or in 2021. Messi has endorsed sportswear company Adidas since 2006. According to France Football, he was the world's highest-paid footballer for five years out of six between 2009 and 2014, and was ranked the world's highest-paid athlete by Forbes in 2019 and 2022. Messi was among Time's 100 most influential people in the world in 2011 and 2012. In February 2020, he was awarded the Laureus World Sportsman of the Year, thus becoming the first footballer and the first team sport athlete to win the award. Later that year, Messi became the second footballer (and second team-sport athlete) to surpass $1 billion in career earnings.";
+  fbo:goals 176;
+  fbo:joinedYear 2005 ;
+  fbo:img "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg";
+  fbo:belongToCountry fbr:Argentina ;
+  fbo:hasPosition fbo:Midfielders;
+  fbo:hasPosition fbo:Forward.
+
+fbr:Alejandro_Garnacho a fbo:Player ;
+  fbo:name "Alejandro Garnacho" ;
+  fbo:description "Alejandro Garnacho Ferreyra (born 1 July 2004) is a professional footballer who plays as a winger for Premier League club Manchester United. Born in Spain, he is an Argentina youth international. Garnacho joined Manchester United's youth system from Atlético Madrid in October 2020. He won the FA Youth Cup and the Jimmy Murphy Young Player of the Year award in May 2022. The month before, he had made his first-team debut at the age of 17, in a Premier League game against Chelsea. Garnacho represented Spain at under-18 level, before making his debut for Argentina at under-20 level in 2022. He has been called-up to Argentina's senior squad but hasn't made an appearance.";
+  fbo:goals 3;
+  fbo:joinedYear 2023 ;
+  fbo:img "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Manchester_United_v_Brighton_%26_Hove_Albion%2C_7_August_2022_%2836%29.jpg/440px-Manchester_United_v_Brighton_%26_Hove_Albion%2C_7_August_2022_%2836%29.jpg";
+  fbo:belongToCountry fbr:Argentina ;
+  fbo:hasPosition fbo:Midfielders.
+
+### Brazil players
+fbr:Neymar a fbo:Player ;
+  fbo:name "Neymar" ;
+  fbo:description "Neymar da Silva Santos Júnior (born 5 February 1992), known as Neymar, is a Brazilian professional footballer who plays as a forward for Ligue 1 club Paris Saint-Germain and the Brazil national team. A prolific goalscorer and renowned playmaker, he is regarded as one of the best players in the world. Neymar has scored at least 100 goals for three different clubs, making him one of three players to achieve this. Neymar came into prominence at Santos, where he made his professional debut aged 17. He helped the club win two successive Campeonato Paulista championships, a Copa do Brasil, and the 2011 Copa Libertadores; the latter being Santos' first since 1963. Neymar was twice named the South American Footballer of the Year, in 2011 and 2012, and soon relocated to Europe to join Barcelona. As part of Barcelona's attacking trio with Lionel Messi and Luis Suárez, dubbed MSN, he won the continental treble of La Liga, the Copa del Rey, and the UEFA Champions League. He then attained a domestic double in the 2015–16 season. Motivated to be a talisman at club level, Neymar transferred to PSG in 2017 in a move worth €222 million, making him the most expensive player ever. In France, he won four league titles, among other honours, and was voted Ligue 1 Player of the Year in his debut season. Notably, he helped PSG attain a domestic quadruple in the 2019–20 season, and led the club to its first ever Champions League Final. With 76 goals in 123 matches for Brazil since debuting at age 18, Neymar is the second highest goalscorer for his national team, trailing Pelé. At his youth stage for Brazil, he was a key player in the victory at the 2011 South American Youth Championship, where he finished as leading goalscorer, and also attained a silver medal in men's football at the 2012 Summer Olympics. The following year, he won the 2013 FIFA Confederations Cup, winning the Golden Ball. His participation in the 2014 FIFA World Cup and 2015 Copa América was cut short by injury and a suspension, respectively, before captaining Brazil to their first Olympic gold medal in men's football at the 2016 Summer Olympics. Having renounced the captaincy, he featured at the 2018 World Cup, and after missing the 2019 Copa América through injury, helped Brazil to a runner-up finish at the 2021 tournament. Neymar finished third for the FIFA Ballon d'Or in 2015 and 2017, has been awarded the FIFA Puskás Award, has been named in the FIFA FIFPro World11 twice, the UEFA Team of the Year twice, and the UEFA Champions League Squad of the Season three times. Off the pitch, he ranks among the world's most prominent sportsmen. SportsPro named him the most marketable athlete in the world in 2012 and 2013, and ESPN cited him as the world's fourth-most famous athlete in 2016. In 2017, Time included him in its annual list of the 100 most influential people in the world. In 2018, France Football ranked Neymar the world's third highest-paid footballer. The following year, Forbes ranked him the world's third highest-paid athlete, dropping a spot to fourth in 2020. ";
+  fbo:goals 126;
+  fbo:joinedYear 2010 ;
+  fbo:img "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/20180610_FIFA_Friendly_Match_Austria_vs._Brazil_Neymar_850_1705.jpg/440px-20180610_FIFA_Friendly_Match_Austria_vs._Brazil_Neymar_850_1705.jpg";
+  fbo:belongToCountry fbr:Brazil ;
+  fbo:hasPosition fbo:Forward.
+
+fbr:Vinicius_Junior a fbo:Player ;
+  fbo:name "Vinicius Junior" ;
+  fbo:description "Vinícius José Paixão de Oliveira Júnior (born 12 July 2000), commonly known as Vinícius Júnior or Vini Jr. (Brazilian Portuguese: [viˈnisjuz ˈʒũɲoʁ]),[3] is a Brazilian professional footballer who plays as a winger for La Liga club Real Madrid and the Brazil national team. Considered one of the best players in the world, he is known for his speed, strong dribbling abilities, and playmaking skills. Born in São Gonçalo, Vinícius began his professional career at Flamengo, where he made his senior debut in 2017, at age 16. A few weeks later, Vinícius was the subject of a transfer to La Liga club Real Madrid, for whom he signed for in a £38 million deal, which was a national record for an U-18 player.[9] The transfer was made effective after his 18th birthday, with Vinícius debuting for the club in 2018–19. By his fourth season, Vinícius had established himself as a prominent member in Real Madrid's squad, helping the club win the 2021–22 La Liga title[10] and scoring the winning goal in Real Madrid's 2022 UEFA Champions League final win. At his youth stage for Brazil, he was a key player in the victory at the 2015 South American U-15 Championship and 2017 South American U-17 Championship, finishing as leading goalscorer in the latter competition. He made his senior debut in 2021 and helped his nation to a runner-up finish at the 2021 Copa América and represented them at the 2022 FIFA World Cup in Qatar.";
+  fbo:goals 23;
+  fbo:joinedYear 2019 ;
+  fbo:img "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Vinicius_Jr_2021.jpg/440px-Vinicius_Jr_2021.jpg";
+  fbo:belongToCountry fbr:Brazil ;
+  fbo:hasPosition fbo:Forward.
+
+### Algerian players
+fbr:Riyad_Mahrez a fbo:Player ;
+  fbo:name "Riyad Mahrez" ;
+  fbo:description "Riyad Karim Mahrez (Arabic: رياض كريم محرز, romanized: Riyāḍ Karīm Maḥraz; born 21 February 1991) is a professional footballer who plays as a winger for Premier League club Manchester City and captains the Algeria national team. Mahrez began his career as a youth player for French club AAS Sarcelles. He turned professional in 2009 with Quimper, where he played for only one season before moving to Le Havre, spending a total of three years with them, initially playing for their reserve team and then becoming a first-team regular. In January 2014, Mahrez signed for English side Leicester City, helping them win the Championship and promotion to the Premier League at the end of his first season. In the 2015–16 season he was the Algerian Footballer of the Year, the PFA Players' Player of the Year, and was a member of the Premier League PFA Team of the Year as he helped Leicester City win the Premier League. He signed for Manchester City in 2018, winning the Premier League, FA Cup and EFL Cup in his first season. Born in France, Mahrez made his international debut for Algeria in 2014 and represented them at the 2014 FIFA World Cup and at the Africa Cup of Nations in 2015, 2017, 2019 and 2021, winning the 2019 tournament. In 2016 he was named CAF's African Footballer of the Year.";
+  fbo:goals 85;
+  fbo:joinedYear 2014 ;
+  fbo:img "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Alg%C3%A9rie_-_Arm%C3%A9nie_-_20140531_-_Riyad_Mahrez_%28cropped%29.jpg/440px-Alg%C3%A9rie_-_Arm%C3%A9nie_-_20140531_-_Riyad_Mahrez_%28cropped%29.jpg";
+  fbo:belongToCountry fbr:Algeria ;
+  fbo:hasPosition fbo:Forward.
+
+fbr:Anthony_Mandrea a fbo:Player ;
+  fbo:name "Anthony Mandrea" ;
+  fbo:description "Mandrea made his Ligue 1 debut for Nice on 3 November 2013 in a 1–2 home defeat against Bordeaux, replacing an injured David Ospina after 51 minutes.[1] At 16 years and 10 months he was, at the time, the youngest goalkeeper to play in Ligue 1.[2] He made no further first team appearances for Nice, and in the summer of 2016 he moved to Angers, where he signed professional terms on a three-year deal in September 2017.[3] His Angers debut came in the Coupe de la Ligue on 12 December 2017 against Metz, in which he kept a clean sheet.[4]";
+  fbo:goals 1;
+  fbo:joinedYear 2022 ;
+  fbo:belongToCountry fbr:Algeria ;
+  fbo:hasPosition fbo:Goalkeeper.
+
+### Egypt players
+fbr:Mohamed_Salah a fbo:Player ;
+  fbo:name "Mohamed Salah" ;
+  fbo:description "Mohamed Salah Hamed Mahrous Ghaly (Arabic: محمد صلاح حامد محروس غالي, Egyptian Arabic pronunciation: [mæˈħam.mæd sˤɑˈlɑːħ ˈɣæːli]; born 15 June 1992) is an Egyptian professional footballer who plays as a forward for Premier League club Liverpool and captains the Egypt national team. Considered one of the best players in the world and amongst the greatest African players of all time, he is known for his finishing, dribbling, and speed. Salah started his senior career in 2010 playing for Al Mokawloon, departing in 2012 to join Basel, where he won two Swiss Super League titles. In 2014, Salah joined Chelsea for a reported fee of £11 million, but limited gametime led to successive loans to Fiorentina and Roma, who later signed him permanently for €15 million. In the 2016–17 season, Salah was a key figure in Roma's title race against ultimate league winners Juventus, reaching double figures in both goals and assists. In 2017, Salah signed for Liverpool for a then-club record transfer of £36.9 million. In his first season, he set the record for most Premier League goals scored (32) in a 38-game season and helped Liverpool to the 2018 UEFA Champions League Final. Salah went on to be an integral player in the club's Champions League and Premier League title successes the following two seasons, and has since also won the FA Cup and the League Cup. Salah has achieved numerous individual accolades, including two PFA Players' Player of the Year awards, three Premier League Golden Boots, the Premier League Player of the Season, the Premier League Playmaker of the Season, and finished third for the Best FIFA Men's Player in 2018 and 2021. He received the 2018 FIFA Puskás Award for his winning strike in the first Merseyside derby of the 2017–18 season. At international level, Salah represented Egypt at youth level before making his senior debut in 2011. Following his performances at the 2012 Summer Olympics, he was named CAF Most Promising African Talent of the Year. Since then, he finished as runner-up in the 2017 and 2021 Africa Cup of Nations and was top scorer during CAF qualification as Egypt qualified for the 2018 FIFA World Cup. Salah was named CAF African Footballer of the Year (2017 and 2018), BBC African Footballer of the Year (2017 and 2018), and was selected in the 2017 Africa Cup of Nations Team of the Tournament, 2021 Africa Cup of Nations Team of the Tournament and the CAF Team of the Year on several occasions.";
+  fbo:goals 91;
+  fbo:joinedYear 2011 ;
+  fbo:img "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Mohamed_Salah_2018.jpg/440px-Mohamed_Salah_2018.jpg";
+  fbo:belongToCountry fbr:Egypt ;
+  fbo:hasPosition fbo:Forward.
+
+fbr:Ahmed_Hegazi a fbo:Player ;
+  fbo:name "Ahmed Hegazi" ;
+  fbo:description "Ahmed Elsayed Ali Elsayed Hegazy (Egyptian Arabic: أحمد السيد علي السيد حجازي; born 25 January 1991), simply known as Ahmed Hegazi, is an Egyptian professional footballer who plays as a centre-back for Saudi Professional League club Al-Ittihad, which he captains, and the Egypt national team";
+  fbo:goals 83;
+  fbo:joinedYear 2011 ;
+  fbo:img "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Ahmed_Hegazi_2018.jpg/400px-Ahmed_Hegazi_2018.jpg";
+  fbo:belongToCountry fbr:Egypt ;
+  fbo:hasPosition fbo:Defender.

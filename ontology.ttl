@@ -1,0 +1,187 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XLMSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix fbo: <http://localhost:3000/ontology#> .
+@base <http://localhost:3000/ontology#> .
+
+; --------------------------------- DEFINE CLASS ----------------------------------
+
+fbo:PlayerPosition a owl:Class ;
+  rdfs:label "Player Position" .
+
+fbo:FootballTeam a owl:Class ;
+  rdfs:label "Football Team" .
+
+fbo:FootballLeague a owl:Class ;
+  rdfs:label "Football League" .
+
+fbo:FootballMatch a owl:Class ;
+  rdfs:label "Football Match" .
+
+fbo:Coach a owl:Class ;
+  rdfs:label "Coach" .
+
+fbo:Stadium a owl:Class ;
+  rdfs:label "Stadium" .
+
+fbo:Award a owl:Class ;
+  rdfs:label "Award" .
+
+fbo:Player a foaf:Person ;
+  rdfs:label "Player" ;
+  rdfs:comment "A football player." .
+
+; ---------------------------------- DEFINE SUBCLASS -------------------------------
+
+fbo:Goalkeeper rdfs:subClassOf fbo:PlayerPosition ;
+  rdfs:label "Goalkeeper" .
+
+fbo:Defender rdfs:subClassOf fbo:PlayerPosition ;
+  rdfs:label "Defender" .
+
+fbo:MiddleField rdfs:subClassOf fbo:PlayerPosition ;
+  rdfs:label "Middlefielder" .
+
+fbo:Forward rdfs:subClassOf fbo:PlayerPosition ;
+  rdfs:label "Forward" .
+
+fbo:PersonalAward rdfs:subClassOf fbo:Award ;
+  rdfs:label "Personal Award" .
+
+fbo:TeamAward rdfs:subClassOf fbo:Award ;
+  rdfs:label "Team award" .
+
+fbo:PlayerAward rdfs:subClassOf fbo:PersonalAward ;
+  rdfs:label "Player award" .
+
+fbo:CoachAward rdfs:subClassOf fbo:PersonalAward ;
+  rdfs:label "Coach award" .
+
+
+
+; ------------------------------------ DEFINE RELATIONS ---------------------------
+
+fbo:playsIn a owl:ObjectProperty ;
+  rdfs:domain fbo:Player ;
+  rdfs:range fbo:PlayerPosition .
+
+fbo:playsFor a owl:ObjectProperty ;
+  rdfs:domain fbo:Player ;
+  rdfs:range fbo:FootballTeam .
+
+fbo:playerAchieves a owl:ObjectProperty ; 
+  rdfs:domain fbo:Player ;
+  rdfs:range fbo:Award .
+
+fbo:coachAchieves a owl:ObjectProperty ;
+  rdfs:domain fbo:Coach ;
+  rdfs:range fbo:Award .
+
+fbo:coachedBy a owl:ObjectProperty ;
+  rdfs:domain fbo:FootballTeam ;
+  rdfs:range fbo:Coach .
+
+fbo:hasHomeField a owl:ObjectProperty ;
+  rdfs:domain fbo:FootballTeam ;
+  rdfs:range fbo:Stadium .
+
+fbo:participatesIn a owl:ObjectProperty ;
+  rdfs:domain fbo:FootballTeam ;
+  rdfs:range fbo:FootballLeague .
+
+fbo:joins a owl:ObjectProperty ;
+  rdfs:domain fbo:FootballTeam ;
+  rdfs:range fbo:FootballMatch .
+
+fbo:includes a owl:ObjectProperty ;
+  rdfs:domain fbo:FootballLeague ;
+  rdfs:range fbo:FootballMatch .
+
+
+; ------------------------------------ DEFINE PROPERTIES ---------------------------
+
+fbo:playerName rdf:type owl:DatatypeProperty ; 
+  rdfs:domain fbo:Player ;
+  rdfs:range xsd:string .
+
+fbo:playerNationality rdf:type owl:DatatypeProperty ; 
+  rdfs:domain fbo:Player ;
+  rdfs:range xsd:string .
+
+fbo:playerAge rdf:type owl:DatatypeProperty ; 
+  rdfs:domain fbo:Player ;
+  rdfs:range xsd:integer .
+
+fbo:awardName rdf:type owl:DatatypeProperty ;
+  rdfs:domain fbo:Award ;
+  rdfs:range xsd:string .
+
+fbo:awardDesc rdf:type owl:DatatypeProperty ;
+  rdfs:domain fbo:Award ;
+  rdfs:range xsd:string .
+
+fbo:teamName rdf:type owl:DatatypeProperty ;
+  rdfs:domain fbo:FootballTeam ;
+  rdfs:range xsd:string .
+
+fbo:teamLogo rdf:type owl:DatatypeProperty ;
+  rdfs:domain fbo:FootballTeam ;
+  rdfs:range xsd:string .
+
+fbo:teamDesc rdf:type owl:DatatypeProperty ;
+  rdfs:domain fbo:FootballTeam ;
+  rdfs:range xsd:string .
+
+fbo:leagueName rdf:type owl:DatatypeProperty ;
+  rdfs:domain fbo:FootballLeague ;
+  rdfs:range xsd:string .
+
+fbo:leagueLogo rdf:type owl:DatatypeProperty ;
+  rdfs:domain fbo:FootballLeague ;
+  rdfs:range xsd:string .
+
+fbo:leagueDesc rdf:type owl:DatatypeProperty ;
+  rdfs:domain fbo:FootballLeague ;
+  rdfs:range xsd:string .
+
+fbo:matchDay rdf:type owl:DatatypeProperty ;
+  rdfs:domain fbo:FootballMatch ;
+  rdfs:range xsd:string .
+
+fbo:homeTeam rdf:type owl:ObjectProperty ;
+  rdfs:domain fbo:FootballMatch ;
+  rdfs:range fbo:FootballTeam .
+
+fbo:awayTeam rdf:type owl:ObjectProperty ;
+  rdfs:domain fbo:FootballMatch ;
+  rdfs:range fbo:FootballTeam .
+
+fbo:result rdf:type owl:DatatypeProperty ;
+  rdfs:domain fbo:FootballMatch ;
+  rdfs:range xsd:string .
+
+fbo:coachName rdf:type owl:DatatypeProperty ; 
+  rdfs:domain fbo:Coach ;
+  rdfs:range xsd:string .
+
+fbo:coachNationality rdf:type owl:DatatypeProperty ; 
+  rdfs:domain fbo:Coach ;
+  rdfs:range xsd:string .
+
+fbo:coachAge rdf:type owl:DatatypeProperty ; 
+  rdfs:domain fbo:Coach ;
+  rdfs:range xsd:integer .
+
+fbo:stadiumName rdf:type owl:DatatypeProperty ;
+  rdfs:domain fbo:Stadium ;
+  rdfs:range xsd:string .
+
+fbo:stadiumCapacity rdf:type owl:DatatypeProperty ;
+  rdfs:domain fbo:Stadium ;
+  rdfs:range xsd:integer .
+
+fbo:stadiumAge rdf:type owl:DatatypeProperty ;
+  rdfs:domain fbo:Stadium ;
+  rdfs:range xsd:integer .

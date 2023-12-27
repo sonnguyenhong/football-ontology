@@ -1,0 +1,105 @@
+
+# Tìm kiếm resource theo tên
+SELECT ?resource ?name ?img ?description ?hl
+WHERE {
+  ?resource fbo:name ?name .
+  OPTIONAL  {?resource fbo:img ?img} .
+  OPTIONAL {?resource fbo:description ?description} .
+  (?resource ?score ?hl)  text:query ("nguyen le ngoc" "highlight:s:<b> | e:</b>") ;
+}
+ORDER BY DESC(?score)
+LIMIT 10
+
+# lấy thông tin của một cầu thủ
+SELECT ?name ?img ?des ?position ?goals ?height ?area ?areaName ?country ?countryName ?joinedYear ?leftYear
+WHERE {
+	fbr:Le_Cong_Vinh a fbo:Player . 
+	fbr:Le_Cong_Vinh fbo:name ?name .
+	OPTIONAL  {fbr:Le_Cong_Vinh fbo:img ?img} .
+	OPTIONAL {fbr:Le_Cong_Vinh fbo:description ?des} .
+  OPTIONAL {fbr:Le_Cong_Vinh fbo:goals ?goals} .
+  OPTIONAL {fbr:Le_Cong_Vinh fbo:hasPosition ?pos . ?pos rdfs:label ?position } .
+  OPTIONAL {fbr:Le_Cong_Vinh fbo:height ?height} .
+  OPTIONAL {fbr:Le_Cong_Vinh fbo:belongToArea ?area . ?area fbo:name ?areaName} .
+  OPTIONAL {fbr:Le_Cong_Vinh fbo:belongToCountry ?country . ?country fbo:name ?countryName} .
+  OPTIONAL {fbr:Le_Cong_Vinh fbo:joinedYear ?joinedYear} .
+  OPTIONAL {fbr:Le_Cong_Vinh fbo:leftYear ?leftYear} .
+}
+LIMIT 1
+
+# lấy các danh hiệu của một cầu thủ
+SELECT ?title ?titleName 
+WHERE {
+	fbr:Le_Cong_Vinh a fbo:Player .
+	fbr:Le_Cong_Vinh fbo:hasTitle ?title .
+	?title fbo:name ?titleName
+}
+
+# lấy các giải đấu mà một cầu thủ tham gia
+SELECT ?ls ?lsName 
+WHERE {
+	fbr:Le_Cong_Vinh a fbo:Player .
+	fbr:Le_Cong_Vinh fbo:joinedLeagueSeason ?ls .
+	?ls fbo:name ?lsName
+}
+
+# lấy thông tin về 1 quốc gia
+SELECT ?name ?img ?des ?area ?areaName ?team ?teamName {
+	fbr:Vietnam a fbo:Country .
+  fbr:Vietnam fbo:name ?name .
+	OPTIONAL  {fbr:Vietnam fbo:img ?img} .
+	OPTIONAL {fbr:Vietnam fbo:description ?des} .
+  OPTIONAL {fbr:Vietnam fbo:belongToArea ?area . ?area fbo:name ?areaName} .
+  OPTIONAL {fbr:Vietnam fbo:hasTeam ?team . ?team fbo:name ?teamName }
+}
+LIMIT 1
+
+# lấy thông tin về 1 đội tuyển quốc gia
+SELECT ?name ?img ?des ?fifaCode ?area ?areaName {
+	fbr:Vietnam_national_football_team a fbo:NationalTeam .
+  fbr:Vietnam_national_football_team fbo:name ?name .
+	OPTIONAL  {fbr:Vietnam_national_football_team fbo:img ?img} .
+	OPTIONAL {fbr:Vietnam_national_football_team fbo:description ?des} .
+	OPTIONAL {fbr:Vietnam_national_football_team fbo:rank ?rank} .
+	OPTIONAL {fbr:Vietnam_national_football_team fbo:fifaCode ?fifaCode} .
+  OPTIONAL {fbr:Vietnam_national_football_team fbo:belongToArea ?area . ?area fbo:name ?areaName} .
+}
+LIMIT 1
+
+# lấy các giải đấu mà một đội tuyển quốc gia tham gia
+SELECT ?ls ?lsName 
+WHERE {
+	fbr:Vietnam_national_football_team a fbo:NationalTeam .
+	fbr:Vietnam_national_football_team fbo:joinedLeagueSeason ?ls .
+	?ls fbo:name ?lsName
+}
+
+# lấy các danh hiệu của một đội tuyển quốc gia
+SELECT ?title ?titleName 
+WHERE {
+	fbr:Vietnam_national_football_team a fbo:NationalTeam .
+	fbr:Vietnam_national_football_team fbo:isChampionOf ?title .
+	?title fbo:name ?titleName
+}
+
+# lấy thông tin về một giải đấu
+SELECT ?name ?img ?des ?area ?areaName {
+	fbr:Asia_Cup a fbo:League .
+	fbr:Asia_Cup fbo:name ?name .
+	OPTIONAL  {fbr:Asia_Cup fbo:img ?img} .
+	OPTIONAL {fbr:Asia_Cup fbo:description ?des} .
+	OPTIONAL {fbr:Asia_Cup fbo:belongToArea ?area . ?area fbo:name ?areaName} .
+}
+LIMIT 1
+
+# lấy thông tin về một mùa của một giải đấu
+SELECT ?name ?img ?des ?league ?leagueName ?champion ?championName {
+	fbr:Asia_Cup_2022 a fbo:LeagueSeason .
+	fbr:Asia_Cup_2022 fbo:name ?name .
+	fbr:Asia_Cup_2022 fbo:aSeasonOf ?league . ?league fbo:name ?leagueName .
+	OPTIONAL  {fbr:Asia_Cup_2022 fbo:img ?img} .
+	OPTIONAL {fbr:Asia_Cup_2022 fbo:description ?des} .
+  OPTIONAL {fbr:Asia_Cup_2022 fbo:heldInYear ?year} .
+	OPTIONAL {fbr:Asia_Cup_2022 fbo:hasChampion ?champion . ?champion fbo:name ?championName} .
+}
+LIMIT 1
