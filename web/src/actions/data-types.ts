@@ -2,14 +2,14 @@ export type SearchResultItem = {
   resource: string;
   name: string;
   description: string | null;
-  img: string | null;
+  image: string | null;
   hl: string;
 };
 
 export type Player = {
   id: string;
   name: string;
-  img: string | null;
+  image: string | null;
   des: string | null;
   positionName: string | null;
   goals: string | null;
@@ -17,12 +17,13 @@ export type Player = {
   footballTeamName: string | null;
   titles: Array<{ title: string; titleName: string }>;
   seasons: Array<{ ls: string; lsName: string; year: string | null }>;
+  
 };
 
 export type Country = {
   id: string;
   name: string;
-  img: string | null;
+  image: string | null;
   des: string | null;
   area: string | null;
   areaName: string | null;
@@ -33,7 +34,7 @@ export type Country = {
 export type Continent = {
   id: string;
   name: string;
-  img: string | null;
+  image: string | null;
   des: string | null;
   area: string | null;
   population: string | null;
@@ -44,7 +45,7 @@ export type Continent = {
 export type Team = {
   id: string;
   name: string;
-  img: string | null;
+  image: string | null;
   des: string | null;
   foundedYear: string | null;
   coach: string | null;
@@ -58,7 +59,7 @@ export type Team = {
 export type League = {
   id: string;
   name: string;
-  img: string | null;
+  image: string | null;
   des: string | null;
   numTeams: string | null;
   Teams: Array<{ fbTeam: string; fbTeamName: string }>;
@@ -68,7 +69,7 @@ export type League = {
 export type Match = {
   id: string;
   name: string;
-  img: string | null;
+  image: string | null;
   des: string | null;
   matchDay: string | null;
   homeTeam: string;
@@ -76,4 +77,31 @@ export type Match = {
   awayTeam: string;
   awayTeamName: string;
   result: string | null;
+};
+
+export type Coach = {
+  id: string;
+  name: string;
+  image: string | null;
+  des: string | null;
+  coachNationality: string | null;
+  age: string | null;
+  coachAchieves: string | null;
+  coachAchievesName: string | null;
+};
+export type Stadium = {
+  id: string;
+  name: string;
+  image: string | null;
+  des: string | null;
+  stadiumCapacity: string | null;
+  age: string | null;
+};
+export type Award = {
+  id: string;
+  name: string;
+  image: string | null;
+  des: string | null;
+  awardOfLeague: string | null;
+  awardOfLeagueName: string | null;
 };

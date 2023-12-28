@@ -1,17 +1,20 @@
-import { Continent, Country, League, Match, Player, SearchResultItem, Team } from "./data-types";
+import { Award,  Coach,  League, Match, Player, SearchResultItem, Stadium, Team } from "./data-types";
 import {
+  awardQuery,
+  coachInfoQuery,
   footballTeamInfoQuery,
+  footballTeamLeagueSeasonQuery,
+  footballTeamMatchSeasonQuery,
   leagueInfoQuery,
   leagueMatchInfoQuery,
   leagueTeamInfoQuery,
-  footballTeamLeagueSeasonQuery,
-  footballTeamMatchSeasonQuery,
+  matchInfoQuery,
   playerInfoQuery,
   playerLeagueSeasonQuery,
   playerTitleQuery,
   resourceTypeQuery,
   searchQuery,
-  matchInfoQuery
+  stadiumQuery,
 } from "./query_templates";
 
 export type QuerierResponse = {
@@ -75,7 +78,7 @@ export class Querier {
       name: item.name.value,
       resource: item.resource.value,
       description: item.description?.value ?? null,
-      img: item.img?.value ?? null,
+      image: item.image?.value ?? null,
       hl: item.hl.value,
     }));
   }
@@ -97,11 +100,11 @@ export class Querier {
       id: player,
       des: info.des?.value ?? null,
       goals: info.goals?.value ?? null,
-      img: info.img?.value ?? null,
+      image: info.image?.value ?? null,
       name: info.name.value,
       footballTeam: info.footballTeam?.value ?? null,
       footballTeamName: info.footballTeamName?.value ?? null,
-      positionName: info.position?.value.substring(31, info.position.value.length) ?? null,
+      positionName: info.position?.value ?? null,
       titles: d2.results.bindings.map((item) => ({ title: item.title.value, titleName: item.titleName.value })),
       seasons: d3.results.bindings.map((item) => ({
         ls: item.ls.value,
@@ -121,7 +124,7 @@ export class Querier {
     return {
       id: team,
       des: info.des?.value ?? null,
-      img: info.img?.value ?? null,
+      image: info.image?.value ?? null,
       name: info.name.value,
       foundedYear: info.foundedYear?.value ?? null,
       coach: info.coach?.value ?? null,
@@ -143,7 +146,7 @@ export class Querier {
     return {
       id: league,
       des: info.des?.value ?? null,
-      img: info.img?.value ?? null,
+      image: info.image?.value ?? null,
       name: info.name.value,
       numTeams: info.numTeams?.value ?? null,
       Teams: d2.results.bindings.map((item) => ({ fbTeam: item.fbTeam.value, fbTeamName: item.fbTeamName.value })),
@@ -159,7 +162,7 @@ export class Querier {
     return {
       id: match,
       des: info.des?.value ?? null,
-      img: info.img?.value ?? null,
+      image: info.image?.value ?? null,
       name: info.name.value,
       matchDay: info.day?.value ?? null,
       homeTeam: info.homeTeam.value,
@@ -167,6 +170,50 @@ export class Querier {
       awayTeam: info.awayTeam.value,
       awayTeamName: info.awayTeamName.value,
       result: info.result.value,
+    };
+  }
+  public async coach(coach: string): Promise<Coach | null> {
+    const q1 = coachInfoQuery.replaceAll(/{coach}/g, coach);
+    const d1 = await this.query(q1);
+    if (d1.results.bindings.length === 0) return null;
+    const info = d1.results.bindings[0];
+    return {
+      id: coach,
+      des: info.des?.value ?? null,
+      image: info.image?.value ?? null,
+      name: info.name.value ?? null,
+      age: info.age?.value ?? null,
+      coachNationality: info.coachNationality?.value ?? null,
+      coachAchieves: info.coachAchieves?.value ?? null,
+      coachAchievesName: info.coachAchievesName?.value ?? null,
+    };
+  }
+  public async stadium(stadium: string): Promise<Stadium | null> {
+    const q1 = stadiumQuery.replaceAll(/{stadium}/g, stadium);
+    const d1 = await this.query(q1);
+    if (d1.results.bindings.length === 0) return null;
+    const info = d1.results.bindings[0];
+    return {
+      id: stadium,
+      des: info.des?.value ?? null,
+      image: info.image?.value ?? null,
+      name: info.name.value ?? null,
+      age: info.age?.value ?? null,
+      stadiumCapacity: info.stadiumCapacity?.value ?? null,
+    };
+  }
+  public async award(award: string): Promise<Award | null> {
+    const q1 = awardQuery.replaceAll(/{award}/g, award);
+    const d1 = await this.query(q1);
+    if (d1.results.bindings.length === 0) return null;
+    const info = d1.results.bindings[0];
+    return {
+      id: award,
+      des: info.des?.value ?? null,
+      image: info.image?.value ?? null,
+      name: info.name.value ?? null,
+      awardOfLeague: info.awardOfLeague?.value ?? null,
+      awardOfLeagueName: info.awardOfLeagueName?.value ?? null,
     };
   }
 }

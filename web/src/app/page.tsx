@@ -75,9 +75,9 @@ export default function Home() {
                         </p>
                       )}
                     </div>
-                    {item.img && (
+                    {item.image && (
                       <div className="min-w-[100px] w-[100px]">
-                        <img src={item.img} alt="image" width={"100%"} height={"auto"} />
+                        <img src={item.image} alt="image" width={"100%"} height={"auto"} />
                       </div>
                     )}
                   </li>
