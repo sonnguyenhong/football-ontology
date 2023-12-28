@@ -46,14 +46,13 @@ export type Team = {
   name: string;
   img: string | null;
   des: string | null;
-  rank: string | null;
-  fifaCode: string | null;
-  area: string | null;
-  areaName: string | null;
-  country: string | null;
-  countryName: string | null;
-  titles: Array<{ title: string; titleName: string }>;
-  seasons: Array<{ ls: string; lsName: string; year: string | null }>;
+  foundedYear: string | null;
+  coach: string | null;
+  coachName: string | null;
+  homeField: string | null;
+  homeFieldName: string | null;
+  League: Array<{ ls: string; lsName: string }>;
+  Match: Array<{ ms: string; msName: string }>;
 };
 
 export type League = {
