@@ -17,10 +17,8 @@ export default function Home() {
       setLoading(true);
       setSearchResults(null);
       const res = await querier.search(search);
-      console.log(res);
       setSearchResults(res);
     } catch (error) {
-      console.error(error);
       setSearchResults([]);
     } finally {
       setLoading(false);

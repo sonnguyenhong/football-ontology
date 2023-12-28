@@ -1,10 +1,9 @@
-import { Continent, Country, League, LeagueSeason, Player, SearchResultItem, Team } from "./data-types";
+import { Continent, Country, League, Match, Player, SearchResultItem, Team } from "./data-types";
 import {
-  continentInfoQuery,
-  countryInfoQuery,
   footballTeamInfoQuery,
   leagueInfoQuery,
   leagueMatchInfoQuery,
+  leagueTeamInfoQuery,
   footballTeamLeagueSeasonQuery,
   footballTeamMatchSeasonQuery,
   playerInfoQuery,
@@ -12,6 +11,7 @@ import {
   playerTitleQuery,
   resourceTypeQuery,
   searchQuery,
+  matchInfoQuery
 } from "./query_templates";
 
 export type QuerierResponse = {
@@ -93,7 +93,6 @@ export class Querier {
     const [d1, d2, d3] = await Promise.all([this.query(q1), this.query(q2), this.query(q3)]);
     if (d1.results.bindings.length === 0) return null;
     const info = d1.results.bindings[0];
-    console.log(d2);
     return {
       id: player,
       des: info.des?.value ?? null,
@@ -102,47 +101,13 @@ export class Querier {
       name: info.name.value,
       footballTeam: info.footballTeam?.value ?? null,
       footballTeamName: info.footballTeamName?.value ?? null,
-      position: info.position?.value ?? null,
+      positionName: info.position?.value.substring(31, info.position.value.length) ?? null,
       titles: d2.results.bindings.map((item) => ({ title: item.title.value, titleName: item.titleName.value })),
       seasons: d3.results.bindings.map((item) => ({
         ls: item.ls.value,
         lsName: item.lsName.value,
         year: item.year?.value ?? null,
       })),
-    };
-  }
-
-  public async country(country: string): Promise<Country | null> {
-    const q = countryInfoQuery.replaceAll(/{country}/g, country);
-    const data = await this.query(q);
-    if (data.results.bindings.length === 0) return null;
-    const info = data.results.bindings[0];
-    return {
-      id: country,
-      area: info.area?.value ?? null,
-      areaName: info.areaName?.value ?? null,
-      des: info.des?.value ?? null,
-      img: info.img?.value ?? null,
-      name: info.name.value,
-      team: info.team?.value ?? null,
-      teamName: info.teamName?.value ?? null,
-    };
-  }
-
-  public async continent(continent: string): Promise<Continent | null> {
-    const q = continentInfoQuery.replaceAll(/{continent}/g, continent);
-    const data = await this.query(q);
-    if (data.results.bindings.length === 0) return null;
-    const info = data.results.bindings[0];
-    return {
-      id: continent,
-      des: info.des?.value ?? null,
-      img: info.img?.value ?? null,
-      name: info.name.value,
-      area: info.area?.value ?? null,
-      population: info.population?.value ?? null,
-      league: info.league?.value ?? null,
-      leagueName: info.leagueName?.value ?? null,
     };
   }
 
@@ -153,7 +118,6 @@ export class Querier {
     const [d1, d2, d3] = await Promise.all([this.query(q1), this.query(q2), this.query(q3)]);
     if (d1.results.bindings.length === 0) return null;
     const info = d1.results.bindings[0];
-    console.log(d2);
     return {
       id: team,
       des: info.des?.value ?? null,
@@ -171,8 +135,9 @@ export class Querier {
 
   public async league(league: string): Promise<League | null> {
     const q1 = leagueInfoQuery.replaceAll(/{league}/g, league);
-    const q2 = leagueMatchInfoQuery.replaceAll(/{league}/g, league);
-    const [d1, d2] = await Promise.all([this.query(q1), this.query(q2)]);
+    const q2 = leagueTeamInfoQuery.replaceAll(/{league}/g, league);
+    const q3 = leagueMatchInfoQuery.replaceAll(/{league}/g, league);
+    const [d1, d2, d3] = await Promise.all([this.query(q1), this.query(q2), this.query(q3)]);
     if (d1.results.bindings.length === 0) return null;
     const info = d1.results.bindings[0];
     return {
@@ -181,24 +146,27 @@ export class Querier {
       img: info.img?.value ?? null,
       name: info.name.value,
       numTeams: info.numTeams?.value ?? null,
-      Match: d2.results.bindings.map((item) => ({ match: item.match.value, matchName: item.matchName.value })),
+      Teams: d2.results.bindings.map((item) => ({ fbTeam: item.fbTeam.value, fbTeamName: item.fbTeamName.value })),
+      Match: d3.results.bindings.map((item) => ({ match: item.match.value, matchName: item.matchName.value })),
     };
   }
 
-  public async leagueSeason(ls: string): Promise<LeagueSeason | null> {
-    const q = leagueInfoQuery.replaceAll(/{leagueSeason}/g, ls);
+  public async match(match: string): Promise<Match | null> {
+    const q = matchInfoQuery.replaceAll(/{match}/g, match);
     const data = await this.query(q);
     if (data.results.bindings.length === 0) return null;
     const info = data.results.bindings[0];
     return {
-      id: ls,
+      id: match,
       des: info.des?.value ?? null,
       img: info.img?.value ?? null,
       name: info.name.value,
-      league: info.league?.value ?? null,
-      leagueName: info.leagueName?.value ?? null,
-      champion: info.champion?.value ?? null,
-      championName: info.championName?.value ?? null,
+      matchDay: info.day?.value ?? null,
+      homeTeam: info.homeTeam.value,
+      homeTeamName: info.homeTeamName.value,
+      awayTeam: info.awayTeam.value,
+      awayTeamName: info.awayTeamName.value,
+      result: info.result.value,
     };
   }
 }

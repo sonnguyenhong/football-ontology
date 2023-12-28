@@ -11,7 +11,7 @@ export type Player = {
   name: string;
   img: string | null;
   des: string | null;
-  position: string | null;
+  positionName: string | null;
   goals: string | null;
   footballTeam: string | null;
   footballTeamName: string | null;
@@ -61,16 +61,19 @@ export type League = {
   img: string | null;
   des: string | null;
   numTeams: string | null;
+  Teams: Array<{ fbTeam: string; fbTeamName: string }>;
   Match: Array<{ match: string; matchName: string }>;
 };
 
-export type LeagueSeason = {
+export type Match = {
   id: string;
   name: string;
   img: string | null;
   des: string | null;
-  league: string | null;
-  leagueName: string | null;
-  champion: string | null;
-  championName: string | null;
+  matchDay: string | null;
+  homeTeam: string;
+  homeTeamName: string;
+  awayTeam: string;
+  awayTeamName: string;
+  result: string | null;
 };
