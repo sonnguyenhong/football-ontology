@@ -48,7 +48,7 @@ fbr:Bruno_Fernandes a fbo:Player ;
 
 fbr:Rasmus_Højlund a fbo:Player ;
     fbo:name "Rasmus Højlund" ;
-    fbo:goals 50;
+    fbo:goals 50 ;
     fbo:image "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcShohSynqH1LAXt5jfO-vSYj-vc5qgNdUdJp6syd2YFo9Lwq1YC6cduFcM-4DLw_8yKNl-USCCCRS53-TY" ;
     fbo:description "Rasmus Winther Højlund (Danish pronunciation: [ˈʁɑsmus ˈhʌjˌlɔnˀ];[4] born 4 February 2003) is a Danish professional footballer who plays as a forward for Premier League club Manchester United and the Denmark national team. Højlund graduated from Copenhagen youth academy, making his first-team debut for the club aged 17 in October 2020. After scoring five goals in 32 appearances for Copenhagen, he joined Austrian club Sturm Graz in January 2022. Later that year, he was signed by Atalanta for €17 million. Højlund played youth international football for Denmark from under-16 to under-21 level. He made his senior international debut in September 2022. " ;
     fbo:hasPosition fbo:Forward ;
@@ -64,7 +64,7 @@ fbr:Alisson_Becker a fbo:Player ;
     fbo:playsFor fbr:Liverpool .
 
 fbr:Virgil_van_Dijk a fbo:Player ;
-    fbo:name "Alisson Becker" ;
+    fbo:name "Virgil van Dijk" ;
     fbo:goals 10 ;
     fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/20160604_AUT_NED_8876_%28cropped%29.jpg/220px-20160604_AUT_NED_8876_%28cropped%29.jpg" ;    
     fbo:description "Virgil van Dijk (Dutch pronunciation: [ˈvɪr.d͡ʒɪl vɑn.ˈdɛik];[2] born 8 July 1991) is a Dutch professional footballer who plays as a centre back for Premier League club Liverpool and the Netherlands national team. Widely regarded as one of the best defenders of his generation, he is known for his strength, leadership, speed and aerial ability.[3][4][5][6][7] After beginning his professional career with Groningen, Van Dijk moved to Celtic in 2013. With Celtic he won the Scottish Premiership and was named in the PFA Scotland Team of the Year in both of his seasons with the club, and won the Scottish League Cup in the second. In 2015, he joined Southampton before signing for Liverpool in January 2018 for £75 million, a then-world-record transfer fee for a defender.[8] With Liverpool, Van Dijk reached back-to-back UEFA Champions League finals in 2018 and 2019, winning the latter. He was also named PFA Players Player of the Year and the Premier League Player of the Season in his first full season. Van Dijk later won the FIFA Club World Cup and UEFA Super Cup, and helped end the club 30-year league title drought by winning the 2019–20 Premier League. He is the only defender to win the UEFA Mens Player of the Year Award, and has finished runner-up for both the Ballon dOr and Best FIFA Mens Player, all in 2019.[9][10] Van Dijk has also been selected in the FIFPRO Men World 11 in three different years. Van Dijk represented the Netherlands at under-19 and under-21 levels. He made his senior international debut for the Netherlands in 2015 and assumed full captaincy of the national team in March 2018. The following year, Van Dijk captained the Netherlands to the final of the inaugural UEFA Nations League, where they finished runners-up. He also represented the side at the 2022 FIFA World Cup. " ;
