@@ -48,6 +48,26 @@ export default async function Page({ params }: { params: { id: string } }) {
                   <td>{data.numTeams}</td>
                 </tr>
               )}
+              {data.Teams.length > 0 && (
+                <tr>
+                  <td>
+                    <b>Teams</b>
+                  </td>
+                  <td>
+                    <ul className="list-disc mx-4">
+                      {data.Teams.map((item) => {
+                        return (
+                          <li key={item.fbTeam}>
+                            <Link href={item.fbTeam} className="inline text-sky-500 hover:underline">
+                              {item.fbTeamName}
+                            </Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </td>
+                </tr>
+              )}
               {data.Match.length > 0 && (
                 <tr>
                   <td>

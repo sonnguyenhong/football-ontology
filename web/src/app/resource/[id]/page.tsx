@@ -8,18 +8,14 @@ export default async function Resource({ params }: { params: { id: string } }) {
   if (types.includes(fboClasses.Player)) {
     return redirect(`/player/${params.id}`);
   }
-  if (types.includes(fboClasses.Area)) {
-    console.log("here");
-    return redirect(`/continent/${params.id}`);
-  }
-  if (types.includes(fboClasses.Country)) {
-    return redirect(`/country/${params.id}`);
-  }
   if (types.includes(fboClasses.FootballLeague)) {
     return redirect(`/football-league/${params.id}`);
   }
   if (types.includes(fboClasses.FootballTeam)) {
     return redirect(`/football-team/${params.id}`);
+  }
+  if (types.includes(fboClasses.FootballMatch)) {
+    return redirect(`/football-match/${params.id}`);
   }
   return notFound();
 }

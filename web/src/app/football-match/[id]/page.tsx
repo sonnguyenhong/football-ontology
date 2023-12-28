@@ -1,9 +1,10 @@
 import { querier } from "@/actions/querier";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import "@/style/app.css"
 
 export default async function Page({ params }: { params: { id: string } }) {
-  const data = await querier.leagueSeason(params.id);
+  const data = await querier.match(params.id);
   if (!data) {
     return notFound();
   }
@@ -39,28 +40,44 @@ export default async function Page({ params }: { params: { id: string } }) {
                   <td>{data.des}</td>
                 </tr>
               )}
-              {data.league && data.leagueName && (
+              {data.matchDay && (
                 <tr>
                   <td>
-                    <b>League</b>
+                    <b>Match Day</b>
+                  </td>
+                  <td>{data.matchDay}</td>
+                </tr>
+              )}
+              {data.homeTeam && data.homeTeamName && (
+                <tr>
+                  <td>
+                    <b>Home Team</b>
                   </td>
                   <td>
-                    <Link href={data.league} className="text-sky-500 hover:underline">
-                      {data.leagueName}
+                    <Link href={data.homeTeam} className="text-sky-500 hover:underline">
+                      {data.homeTeamName}
                     </Link>
                   </td>
                 </tr>
               )}
-              {data.champion && data.championName && (
+              {data.awayTeam && data.awayTeamName && (
                 <tr>
                   <td>
-                    <b>Champion</b>
+                    <b>Home Team</b>
                   </td>
                   <td>
-                    <Link href={data.champion} className="text-sky-500 hover:underline">
-                      {data.championName}
+                    <Link href={data.awayTeam} className="text-sky-500 hover:underline">
+                      {data.awayTeamName}
                     </Link>
                   </td>
+                </tr>
+              )}
+              {data.result && (
+                <tr>
+                  <td>
+                    <b>Result</b>
+                  </td>
+                  <td>{data.homeTeamName} {data.result} {data.awayTeamName}</td>
                 </tr>
               )}
             </tbody>
