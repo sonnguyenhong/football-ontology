@@ -5,5 +5,5 @@ export const fboClasses = {
   LeagueSeason: `${fbo}LeagueSeason`,
   Country: `${fbo}Country`,
   Area: `${fbo}Area`,
-  NationalTeam: `${fbo}NationalTeam`,
+  FootballTeam: `${fbo}FootballTeam`,
 };
