@@ -67,7 +67,7 @@ export default async function Page({ params }: { params: { id: string } }) {
                   </td>
                 </tr>
               )}
-             
+
             </tbody>
           </table>
         </div>

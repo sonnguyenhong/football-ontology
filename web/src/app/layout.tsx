@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Image from "next/image";
-import LogoImg from "@/public/logo.png";
+import LogoImg from "@/public/images/ball.webp";
 import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -25,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </header>
         <main>
-          <div className="max-w-screen-lg mx-auto py-5">{children}</div>
+          <div className="max-w-screen-2xl mx-auto py-5">{children}</div>
         </main>
       </body>
     </html>

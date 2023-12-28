@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export default async function Page({ params }: { params: { id: string } }) {
-  const data = await querier.award(params.id);
+  const data = await querier.award(decodeURIComponent(params.id));
   if (!data) {
     return notFound();
   }
@@ -52,7 +52,7 @@ export default async function Page({ params }: { params: { id: string } }) {
                 </tr>
               )}
 
-             
+
             </tbody>
           </table>
         </div>
