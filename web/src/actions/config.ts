@@ -1,6 +1,6 @@
 export const fbo = "http://localhost:3000/ontology#";
 export const fboClasses = {
-  League: `${fbo}League`,
+  FootballLeague: `${fbo}FootballLeague`,
   Player: `${fbo}Player`,
   LeagueSeason: `${fbo}LeagueSeason`,
   Country: `${fbo}Country`,

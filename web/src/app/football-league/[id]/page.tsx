@@ -1,6 +1,7 @@
 import { querier } from "@/actions/querier";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import "@/style/app.css"
 
 export default async function Page({ params }: { params: { id: string } }) {
   const data = await querier.league(params.id);
@@ -39,15 +40,31 @@ export default async function Page({ params }: { params: { id: string } }) {
                   <td>{data.des}</td>
                 </tr>
               )}
-              {data.area && data.areaName && (
+              {data.numTeams && (
                 <tr>
                   <td>
-                    <b>Continent</b>
+                    <b>Number Teams</b>
+                  </td>
+                  <td>{data.numTeams}</td>
+                </tr>
+              )}
+              {data.Match.length > 0 && (
+                <tr>
+                  <td>
+                    <b>Match seasons</b>
                   </td>
                   <td>
-                    <Link href={data.area} className="text-sky-500 hover:underline">
-                      {data.areaName}
-                    </Link>
+                    <ul className="list-disc mx-4">
+                      {data.Match.map((item) => {
+                        return (
+                          <li key={item.match}>
+                            <Link href={item.match} className="inline text-sky-500 hover:underline">
+                              {item.matchName}
+                            </Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
                   </td>
                 </tr>
               )}

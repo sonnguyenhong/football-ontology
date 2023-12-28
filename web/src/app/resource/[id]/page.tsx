@@ -15,14 +15,11 @@ export default async function Resource({ params }: { params: { id: string } }) {
   if (types.includes(fboClasses.Country)) {
     return redirect(`/country/${params.id}`);
   }
-  if (types.includes(fboClasses.League)) {
-    return redirect(`/league/${params.id}`);
-  }
-  if (types.includes(fboClasses.LeagueSeason)) {
-    return redirect(`/league-season/${params.id}`);
+  if (types.includes(fboClasses.FootballLeague)) {
+    return redirect(`/football-league/${params.id}`);
   }
   if (types.includes(fboClasses.FootballTeam)) {
     return redirect(`/football-team/${params.id}`);
   }
-  // return notFound();
+  return notFound();
 }
