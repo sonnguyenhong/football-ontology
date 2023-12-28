@@ -6,8 +6,6 @@
 @prefix fbo: <http://localhost:3000/ontology#> .
 @base <http://localhost:3000/ontology#> .
 
-; --------------------------------- DEFINE CLASS ----------------------------------
-
 fbo:PlayerPosition rdf:type owl:Class ;
   rdfs:label "Player Position" .
 
@@ -33,8 +31,6 @@ fbo:Player rdf:type foaf:Person ;
   rdfs:label "Player" ;
   rdfs:comment "A football player." .
 
-; ---------------------------------- DEFINE SUBCLASS -------------------------------
-
 fbo:Goalkeeper rdfs:subClassOf fbo:PlayerPosition ;
   rdfs:label "Goalkeeper" .
 
@@ -58,10 +54,6 @@ fbo:PlayerAward rdfs:subClassOf fbo:PersonalAward ;
 
 fbo:CoachAward rdfs:subClassOf fbo:PersonalAward ;
   rdfs:label "Coach award" .
-
-
-
-; ------------------------------------ DEFINE RELATIONS ---------------------------
 
 fbo:hasPosition rdf:type owl:ObjectProperty ;
   rdfs:domain fbo:Player ;
@@ -107,10 +99,6 @@ fbo:includes rdf:type owl:ObjectProperty ;
   rdfs:domain fbo:FootballLeague ;
   rdfs:range fbo:FootballMatch .
 
-
-; ------------------------------------ DEFINE PROPERTIES ---------------------------
-
-; ------------ COMMON PROPERTIES --------------
 fbo:image rdf:type owl:DatatypeProperty ; 
   rdfs:domain owl:Thing ;
   rdfs:range xsd:string .
@@ -123,7 +111,6 @@ fbo:description rdf:type owl:DatatypeProperty ;
   rdfs:domain owl:Thing ;
   rdfs:range xsd:string .
 
-; ------------ PLAYER PROPERTIES --------------
 fbo:playerNationality rdf:type owl:DatatypeProperty ; 
   rdfs:domain fbo:Player ;
   rdfs:range xsd:string .
@@ -136,9 +123,6 @@ fbo:playerGoals rdf:type owl:DatatypeProperty ;
   rdfs:domain fbo:Player ;
   rdfs:range xsd:nonNegativeInteger .
 
-; ------------ AWARD PROPERTIES -------------
-
-; ------------ FOOTBALL TEAM PROPERTIES -----
 fbo:teamLogo rdf:type owl:DatatypeProperty ;
   rdfs:domain fbo:FootballTeam ;
   rdfs:range xsd:string .
@@ -152,12 +136,10 @@ fbo:numTitles rdf:type owl:DatatypeProperty ;
   rdfs:range xsd:nonNegativeInteger .
 
 
-; ------------ FOOTBALL LEAGUE PROPERTIES -----
 fbo:numTeams rdf:type owl:DatatypeProperty ;
   rdfs:domain fbo:FootballTeam ;
   rdfs:range xsd:nonNegativeInteger .
 
-; ------------ FOOTBALL MATCH PROPERTIES -----
 fbo:matchDay rdf:type owl:DatatypeProperty ;
   rdfs:domain fbo:FootballMatch ;
   rdfs:range xsd:string .
@@ -174,7 +156,6 @@ fbo:result rdf:type owl:DatatypeProperty ;
   rdfs:domain fbo:FootballMatch ;
   rdfs:range xsd:string .
 
-; ------------ COACH PROPERTIES -----
 fbo:coachNationality rdf:type owl:DatatypeProperty ; 
   rdfs:domain fbo:Coach ;
   rdfs:range xsd:string .
@@ -183,7 +164,6 @@ fbo:coachAge rdf:type owl:DatatypeProperty ;
   rdfs:domain fbo:Coach ;
   rdfs:range xsd:integer .
 
-; ------------ STADIUM PROPERTIES -----
 fbo:stadiumCapacity rdf:type owl:DatatypeProperty ;
   rdfs:domain fbo:Stadium ;
   rdfs:range xsd:integer .
@@ -193,7 +173,6 @@ fbo:stadiumAge rdf:type owl:DatatypeProperty ;
   rdfs:range xsd:integer .
 
 
-; ------------------------------------ DEFINE PROPERTIES IN RULES ---------------------------
 
 fbo:belongsToLeague rdf:type owl:ObjectProperty ;
     rdfs:domain owl:Thing ;

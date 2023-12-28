@@ -4,7 +4,6 @@
 @prefix fbo: <http://localhost:3000/ontology#> .
 @prefix fbr: <http://localhost:3000/resource/> .
 
-; MU Players 
 fbr:André_Onana a fbo:Player ;
     fbo:name "André Onana" ;
     fbo:goals 0 ;
@@ -54,7 +53,6 @@ fbr:Rasmus_Højlund a fbo:Player ;
     fbo:hasPosition fbo:Forward ;
     fbo:playsFor fbr:Manchester_United .
 
-; Liverpool Player
 fbr:Alisson_Becker a fbo:Player ;
     fbo:name "Alisson Becker" ;
     fbo:goals 1 ;
