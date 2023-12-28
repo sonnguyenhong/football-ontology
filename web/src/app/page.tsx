@@ -27,7 +27,8 @@ export default function Home() {
 
   return (
     <>
-      <h1 className="text-2xl font-medium text-center mb-5">Football search</h1>
+    <div className="max-w-screen-xl mx-auto py-5">
+    <h1 className="text-2xl font-medium text-center mb-5">Football search</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <input
@@ -63,11 +64,11 @@ export default function Home() {
               <p className="mb-5 mt-4">{searchResults.length} result(s) found</p>
               <ul>
                 {searchResults.map((item) => (
-                  <div key={item.resource} className="max-w rounded overflow-hidden shadow-lg border border-gray-150 pb-2 px-1 pt-0 mb-3">
+                  <div key={item.resource} className="max-w-screen-xl rounded overflow-hidden shadow-lg border border-gray-150 pb-2 px-1 pt-0 mb-3">
                     <li className="py-3 flex flex-row justify-between gap-4">
                     <div>
                       <Link href={item.resource} className="text-xl hover:underline text-sky-600">
-                        <p dangerouslySetInnerHTML={{ __html: item.hl }} />
+                        <p dangerouslySetInnerHTML={{ __html: item.hl }} className="mb-1"/>
                       </Link>
                       {item.description && (
                         <p className="text-sm text-gray-500">
@@ -89,6 +90,7 @@ export default function Home() {
           )}
         </div>
       )}
+    </div>
     </>
   );
 }

@@ -20,7 +20,7 @@ export default async function Page({ params }: { params: { id: string } }) {
         </h1>
       </div>
       <div className="flex flex-col md:flex-row gap-10">
-        <div className="max-w-[200px] min-w-[200px]">
+        <div className="max-w-[400px] min-w-[400px]">
           <img className="w-full" src={data.image?? "/images/unknown_country.png"} alt="image" />
         </div>
         <div className="flex-grow">
