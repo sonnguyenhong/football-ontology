@@ -3,12 +3,13 @@ import { querier } from "@/actions/querier";
 import { notFound, redirect } from "next/navigation";
 
 export default async function Resource({ params }: { params: { id: string } }) {
-  const types = await querier.resourceType(params.id);
+  const types = await querier.resourceType(decodeURIComponent(params.id));
 
   if (types.includes(fboClasses.Player)) {
     return redirect(`/player/${params.id}`);
   }
   if (types.includes(fboClasses.Area)) {
+    console.log("here");
     return redirect(`/continent/${params.id}`);
   }
   if (types.includes(fboClasses.Country)) {
@@ -20,9 +21,8 @@ export default async function Resource({ params }: { params: { id: string } }) {
   if (types.includes(fboClasses.LeagueSeason)) {
     return redirect(`/league-season/${params.id}`);
   }
-  if (types.includes(fboClasses.NationalTeam)) {
-    return redirect(`/national-team/${params.id}`);
+  if (types.includes(fboClasses.FootballTeam)) {
+    return redirect(`/football-team/${params.id}`);
   }
-
-  return notFound();
+  // return notFound();
 }

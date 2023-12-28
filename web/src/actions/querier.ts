@@ -93,23 +93,15 @@ export class Querier {
     const [d1, d2, d3] = await Promise.all([this.query(q1), this.query(q2), this.query(q3)]);
     if (d1.results.bindings.length === 0) return null;
     const info = d1.results.bindings[0];
+    console.log(d2);
     return {
       id: player,
-      area: info.area?.value ?? null,
-      areaName: info.areaName?.value ?? null,
-      birthDate: info.birthDate?.value ?? null,
-      birthPlace: info.birthPlace?.value ?? null,
-      country: info.country?.value ?? null,
-      countryName: info.countryName?.value ?? null,
       des: info.des?.value ?? null,
       goals: info.goals?.value ?? null,
-      height: info.height?.value ?? null,
       img: info.img?.value ?? null,
-      joinedYear: info.joinedYear?.value ?? null,
-      leftYear: info.leftYear?.value ?? null,
       name: info.name.value,
-      nationalTeam: info.nationalTeam?.value ?? null,
-      nationalTeamName: info.nationalTeamName?.value ?? null,
+      footballTeam: info.footballTeam?.value ?? null,
+      footballTeamName: info.footballTeamName?.value ?? null,
       position: info.position?.value ?? null,
       titles: d2.results.bindings.map((item) => ({ title: item.title.value, titleName: item.titleName.value })),
       seasons: d3.results.bindings.map((item) => ({

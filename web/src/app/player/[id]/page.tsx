@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export default async function Page({ params }: { params: { id: string } }) {
-  const data = await querier.player(params.id);
+  const data = await querier.player(decodeURIComponent(params.id));
   if (!data) {
     return notFound();
   }
@@ -39,30 +39,6 @@ export default async function Page({ params }: { params: { id: string } }) {
                   <td>{data.des}</td>
                 </tr>
               )}
-              {data.birthDate && (
-                <tr>
-                  <td>
-                    <b>Birth date</b>
-                  </td>
-                  <td>{data.birthDate}</td>
-                </tr>
-              )}
-              {data.birthPlace && (
-                <tr>
-                  <td>
-                    <b>Birth place</b>
-                  </td>
-                  <td>{data.birthPlace}</td>
-                </tr>
-              )}
-              {data.height && (
-                <tr>
-                  <td>
-                    <b>Height</b>
-                  </td>
-                  <td>{data.height} cm</td>
-                </tr>
-              )}
               {data.position && (
                 <tr>
                   <td>
@@ -79,43 +55,14 @@ export default async function Page({ params }: { params: { id: string } }) {
                   <td>{data.goals}</td>
                 </tr>
               )}
-              {data.nationalTeam && data.nationalTeamName && (
+              {data.footballTeam && data.footballTeamName && (
                 <tr>
                   <td>
                     <b>Team</b>
                   </td>
                   <td>
-                    <Link href={data.nationalTeam} className="text-sky-500 hover:underline">
-                      {data.nationalTeamName}
-                    </Link>{" "}
-                    {data.joinedYear && (
-                      <span>
-                        ({data.joinedYear} - {data.leftYear ?? "?"})
-                      </span>
-                    )}
-                  </td>
-                </tr>
-              )}
-              {data.country && data.countryName && (
-                <tr>
-                  <td>
-                    <b>Country</b>
-                  </td>
-                  <td>
-                    <Link href={data.country} className="text-sky-500 hover:underline">
-                      {data.countryName}
-                    </Link>
-                  </td>
-                </tr>
-              )}
-              {data.area && data.areaName && (
-                <tr>
-                  <td>
-                    <b>Continent</b>
-                  </td>
-                  <td>
-                    <Link href={data.area} className="text-sky-500 hover:underline">
-                      {data.areaName}
+                    <Link href={data.footballTeam} className="text-sky-500 hover:underline">
+                      {data.footballTeamName}
                     </Link>
                   </td>
                 </tr>
