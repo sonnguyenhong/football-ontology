@@ -63,7 +63,8 @@ export default function Home() {
               <p className="mb-5 mt-4">{searchResults.length} result(s) found</p>
               <ul>
                 {searchResults.map((item) => (
-                  <li key={item.resource} className="py-3 flex flex-row justify-between gap-4">
+                  <div key={item.resource} className="max-w rounded overflow-hidden shadow-lg border border-gray-150 pb-2 px-1 pt-0 mb-3">
+                    <li className="py-3 flex flex-row justify-between gap-4">
                     <div>
                       <Link href={item.resource} className="text-xl hover:underline text-sky-600">
                         <p dangerouslySetInnerHTML={{ __html: item.hl }} />
@@ -81,6 +82,7 @@ export default function Home() {
                       </div>
                     )}
                   </li>
+                  </div>
                 ))}
               </ul>
             </>
