@@ -3,8 +3,9 @@ import { querier } from "@/actions/querier";
 import { notFound, redirect } from "next/navigation";
 
 export default async function Resource({ params }: { params: { id: string } }) {
-  const types = await querier.resourceType(decodeURIComponent(params.id));
 
+  
+  const types = await querier.resourceType(decodeURIComponent(params.id));
   if (types.includes(fboClasses.Player)) {
     return redirect(`/player/${params.id}`);
   }

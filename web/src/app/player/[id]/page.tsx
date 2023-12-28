@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import "@/style/app.css"
 
 export default async function Page({ params }: { params: { id: string } }) {
-  const data = await querier.player(params.id);
+  const data = await querier.player(decodeURIComponent(params.id));
   if (!data) {
     return notFound();
   }
