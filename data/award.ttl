@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XLMSchema#> .
+@prefix fbo: <http://localhost:3000/ontology#> .
+@prefix fbr: <http://localhost:3000/resource/> .
+
+fbr:Bangkok_Century_Cup_2022_Champion a fbo:TeamAward ;
+    fbo:name "Bangkok Century Cup 2022 Champion" ;
+    fbo:image "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC9VY54-W7yZvyKKu1vkxhDC4iAkS6IM3DmA&usqp=CAU" ;
+    fbo:description "The champion of Bangkok Century Cup 2022 Champion is Manchester United after defeat Liverpool 4-0." ;
+    fbo:awardOfLeague fbr:Bangkok_Century_Cup_2022 .
+    
+fbr:Premier_League_POTM a fbo:PlayerAward ;
+    fbo:name "Premier League Player of The month" ;
+    fbo:image "https://assets.manutd.com/AssetPicker/images/0/0/18/41/1190205/AW4I4804_25b8c7a4_1d13_4fd2_8e33_8a6b795e435a1675420639783_medium.jpg" ;
+    fbo:description "Premier League Player of The month" ;
+    fbo:awardOfLeague fbr:Premier_League .
+
+fbr:Premier_League_MOTM a fbo:CoachAward ;
+    fbo:name "Premier League Manager of The month" ;
+    fbo:image "https://i.dailymail.co.uk/1s/2022/09/30/13/62967933-11266541-image-m-29_1664542054127.jpg" ;
+    fbo:description "Premier League Manager of The month" ;
+    fbo:awardOfLeague fbr:Premier_League  .
+    

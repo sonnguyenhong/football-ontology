@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XLMSchema#> .
+@prefix fbo: <http://localhost:3000/ontology#> .
+@prefix fbr: <http://localhost:3000/resource/> .
+
+fbr:MU_LIV_12072022 a fbo:FootballMatch ;
+    fbo:name "MU vs Liverpool Bangkok Century Cup 2022" ;
+    fbo:image "https://thepattayanews.com/wp-content/uploads/2022/07/maxresdefault.jpg" ;
+    fbo:description "MU win 4-0 over Liverpool" ;
+    fbo:matchDay "12/07/2022" ;
+    fbo:homeTeam fbr:Manchester_United ;
+    fbo:awayTeam fbr:Liverpool ;
+    fbo:result "4-0" .
+
+fbr:MU_LIV_17122023 a fbo:FootballMatch ;
+    fbo:name "MU vs Liverpool Round 18 Premier League" ;
+    fbo:image "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbMDvNNhDgkUnMm3D5lxRTbf7QS2vyntkh7Q&usqp=CAU" ;
+    fbo:description "In a game of little tactical quality, Andre Onana against the Liverpool press stood out as where the match might be won or lost. The Cameroon international started building up short, but quickly went to longer passes, particularly into wide areas, against an intense 4-4-2 Liverpool press. While Liverpool have peaked later in games this season, they have shown their ability to suffocate their opponents from the off, such as in the 3-0 Anfield win over Aston Villa. Onana was not particularly consistent with his long passes, overhitting some out of play, but had moments of picking out United forwards which ought to have led to better attacks. A total of 71.4 per cent of his first-half passes went long (35+ yards); it was well above his all-competition average this season (42.3 per cent).Another tactical point was Liverpool’s switch to a 4-2-4, moving Alexander-Arnold into midfield permanently. It gave United more space to drop passes over the midfield and play through, which Klopp rectified with his second set of substitutes. United’s best chance of the game, with Rasmus Hojlund shooting straight at Alisson one-v-one, came from a driven Onana pass into Antony, who could set Scott McTominay to release the No 9." ;
+    fbo:matchDay "17/12/2023" ;
+    fbo:homeTeam fbr:Liverpool ;
+    fbo:awayTeam fbr:Manchester_United ;
+    fbo:result "0-0" .

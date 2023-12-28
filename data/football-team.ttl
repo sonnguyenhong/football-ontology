@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XLMSchema#> .
+@prefix fbo: <http://localhost:3000/ontology#> .
+@prefix fbr: <http://localhost:3000/resource/> .
+
+fbr:Manchester_United a fbo:FootballTeam ;
+    fbo:name "Manchester United" ;
+    fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/190px-Manchester_United_FC_crest.svg.png" ;
+    fbo:image "https://cdn.sforum.vn/sforum/wp-content/uploads/2023/05/doi-hinh-mu-thumb.jpg" ;
+    fbo:description "Manchester United Football Club, commonly referred to as Man United (often stylised as Man Utd), or simply United, is a professional football club based in Old Trafford, Greater Manchester, England. The club competes in the Premier League, the top division in the English football league system. Nicknamed the Red Devils, they were founded as Newton Heath LYR Football Club in 1878, but changed their name to Manchester United in 1902. After a spell playing in Clayton, Manchester, the club moved to their current stadium, Old Trafford, in 1910. Domestically, Manchester United have won a record 20 top-flight league titles, 12 FA Cups, six League Cups and a record 21 FA Community Shields. In international football, they have won the European Cup/UEFA Champions League three times, and the UEFA Europa League, the UEFA Cup Winners Cup, the UEFA Super Cup, the Intercontinental Cup and the FIFA Club World Cup once each.[5][6] In 1968, under the management of Matt Busby, 10 years after eight of the club players were killed in the Munich air disaster, they became the first English club to win the European Cup. Sir Alex Ferguson is the club longest-serving and most successful manager, winning 38 trophies, including 13 league titles, five FA Cups, and two Champions League titles between 1986 and 2013.[7][8] In the 1998–99 season, under Ferguson, the club became the first in the history of English football to achieve the continental treble of the Premier League, FA Cup and UEFA Champions League.[9] In winning the UEFA Europa League under José Mourinho in 2016–17, they became one of five clubs to have won the original three main UEFA club competitions (the Champions League, Europa League and Cup Winners Cup). Manchester United is one of the most widely supported football clubs in the world[10][11] and has rivalries with Liverpool, Manchester City, Arsenal and Leeds United. Manchester United was the highest-earning football club in the world for 2016–17, with an annual revenue of €676.3 million,[12] and the world third-most-valuable football club in 2019, valued at £3.15 billion ($3.81 billion).[13] After being floated on the London Stock Exchange in 1991, the club was taken private in 2005 after a purchase by American businessman Malcolm Glazer valued at almost £800 million, of which over £500 million of borrowed money became the club debt.[14] From 2012, some shares of the club were listed on the New York Stock Exchange, although the Glazer family retains overall ownership and control of the club. " ;
+    fbo:numTitles 65 ;
+    fbo:foundedYear 1878 ;
+    fbo:teamAchieves fbr:Bangkok_Century_Cup_2022_Champion ;
+    fbo:coachedBy fbr:Erik_ten_Hag ;
+    fbo:hasHomeField fbr:Old_Trafford ;
+    fbo:participatesIn fbr:Bangkok_Century_Cup_2022 ;
+    fbo:participatesIn fbr:Premier_League ;
+    fbo:participatesIn fbr:UEFA_Champions_League ;
+    fbo:joins fbr:MU_LIV_12072022 ;
+    fbo:joins fbr:MU_LIV_17122023 .
+
+fbr:Liverpool a fbo:FootballTeam ;
+    fbo:name "Liverpool" ;
+    fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/180px-Liverpool_FC.svg.png" ;
+    fbo:image "https://c8.alamy.com/comp/2JK4FJF/a-liverpool-team-group-photo-before-the-fa-community-shield-match-at-the-king-power-stadium-leicester-picture-date-saturday-july-30-2022-2JK4FJF.jpg" ;
+    fbo:description "Liverpool Football Club is a professional football club based in Liverpool, England. The club competes in the Premier League, the top tier of English football. Founded in 1892, the club joined the Football League the following year and has played its home games at Anfield since its formation. Domestically, the club has won 19 league titles, eight FA Cups, a record nine League Cups and 16 FA Community Shields. In international competitions, the club has won six European Cups, three UEFA Cups, four UEFA Super Cups—all English records—and one FIFA Club World Cup. The club established itself as a major force in domestic and European football in the 1970s and 1980s, when Bill Shankly, Bob Paisley, Joe Fagan and Kenny Dalglish, led the club to a combined 11 League titles and four European Cups. Liverpool won two further European Cups in 2005 and 2019 under the management of Rafael Benítez and Jürgen Klopp, respectively; the latter led Liverpool to a 19th league title in 2020, the club first during the Premier League era. Liverpool is one of the most valuable and widely supported clubs in the world. The club has long-standing rivalries with Manchester United and Everton. Under management by Shankly, in 1964 the team changed from red shirts and white shorts to an all-red home strip which has been used ever since. The club anthem is You will Never Walk Again. The club supporters have been involved in two major tragedies. The Heysel Stadium disaster, where escaping fans were pressed against a collapsing wall at the 1985 European Cup Final in Brussels, resulted in 39 deaths. Most of these were Italians and Juventus fans. Liverpool were given a six-year ban from European competition, and all other English clubs received a five-year ban. The Hillsborough disaster in 1989, where 97 Liverpool supporters died in a crush against perimeter fencing, led to the elimination of fenced standing terraces in favour of all-seater stadiums in the top two tiers of English football. Prolonged campaigning for justice saw further coroners inquests, commissions and independent panels that ultimately exonerated the fans. " ;
+    fbo:numTitles 50 ;
+    fbo:foundedYear 1892 ;
+    fbo:coachedBy fbr:Jürgen_Klopp ;
+    fbo:hasHomeField fbr:Anfield ;
+    fbo:participatesIn fbr:Bangkok_Century_Cup_2022 ;
+    fbo:participatesIn fbr:Premier_League ;
+    fbo:participatesIn fbr:UEFA_Champions_League ;
+    fbo:joins fbr:MU_LIV_12072022 ;
+    fbo:joins fbr:MU_LIV_17122023 .
