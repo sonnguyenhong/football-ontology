@@ -36,13 +36,13 @@ PREFIX fbr: <http://localhost:3000/resource/>
 
 SELECT ?name ?img ?des ?position ?goals ?footballTeam ?footballTeamName
 WHERE {
-  fbr:Harry_Maguire a fbo:Player .
-	fbr:Harry_Maguire fbo:name ?name .
-	OPTIONAL {fbr:Harry_Maguire fbo:image ?img} .
-	OPTIONAL {fbr:Harry_Maguire fbo:description ?des} .
-  OPTIONAL {fbr:Harry_Maguire fbo:goals ?goals} .
-  OPTIONAL {fbr:Harry_Maguire fbo:hasPosition ?position } .
-  OPTIONAL {fbr:Harry_Maguire fbo:playsFor ?footballTeam . ?footballTeam fbo:name ?footballTeamName } .
+  fbr:{player} a fbo:Player .
+	fbr:{player} fbo:name ?name .
+	OPTIONAL {fbr:{player} fbo:image ?img} .
+	OPTIONAL {fbr:{player} fbo:description ?des} .
+  OPTIONAL {fbr:{player} fbo:goals ?goals} .
+  OPTIONAL {fbr:{player} fbo:hasPosition ?position } .
+  OPTIONAL {fbr:{player} fbo:playsFor ?footballTeam . ?footballTeam fbo:name ?footballTeamName } .
 }
 LIMIT 1
 `;
@@ -137,20 +137,18 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX fbo: <http://localhost:3000/ontology#>
 PREFIX fbr: <http://localhost:3000/resource/>
 
-SELECT ?name ?img ?logo ?des  ?areaName ?country ?countryName {
-	fbr:{nationalTeam} a fbo:NationalTeam .
-  fbr:{nationalTeam} fbo:name ?name .
-	OPTIONAL  {fbr:{nationalTeam} fbo:img ?img} .
-	OPTIONAL {fbr:{nationalTeam} fbo:description ?des} .
-	OPTIONAL {fbr:{nationalTeam} fbo:rank ?rank} .
-	OPTIONAL {fbr:{nationalTeam} fbo:fifaCode ?fifaCode} .
-  OPTIONAL {fbr:{nationalTeam} fbo:belongToArea ?area . ?area fbo:name ?areaName} .
-  OPTIONAL {?country fbo:hasTeam fbr:{nationalTeam} . ?country fbo:name ?countryName} .
+SELECT ?name ?img ?des ?foundedYear ?coach ?coachName ?homeField ?homeFieldName{
+  fbr:{footballTeam} a fbo:FootballTeam ;
+    fbo:name ?name .
+  OPTIONAL { fbr:{footballTeam} fbo:image ?img } .
+  OPTIONAL { fbr:{footballTeam} fbo:description ?des } .
+  OPTIONAL { fbr:{footballTeam} fbo:foundedYear ?foundedYear } .
+  OPTIONAL { fbr:{footballTeam} fbo:coachedBy ?coach . ?coach fbo:name ?coachName } .
+  OPTIONAL { fbr:{footballTeam} fbo:hasHomeField ?homeField . ?homeField fbo:name ?homeFieldName } .
 }
-LIMIT 1
 `;
 
-export const nationalTeamLeagueSeasonQuery = `
+export const footballTeamLeagueSeasonQuery = `
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX fbo: <http://localhost:3000/ontology#>
@@ -158,9 +156,23 @@ PREFIX fbr: <http://localhost:3000/resource/>
 
 SELECT ?ls ?lsName
 WHERE {
-	fbr:{nationalTeam} a fbo:NationalTeam .
-	fbr:{nationalTeam} fbo:joinedLeagueSeason ?ls .
+	fbr:{footballTeam} a fbo:FootballTeam .
+	fbr:{footballTeam} fbo:participatesIn ?ls .
 	?ls fbo:name ?lsName
+}
+`;
+
+export const footballTeamMatchSeasonQuery = `
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fbo: <http://localhost:3000/ontology#>
+PREFIX fbr: <http://localhost:3000/resource/>
+
+SELECT ?ms ?msName
+WHERE {
+	fbr:{footballTeam} a fbo:FootballTeam .
+	fbr:{footballTeam} fbo:joins ?ms .
+	?ms fbo:name ?msName
 }
 `;
 

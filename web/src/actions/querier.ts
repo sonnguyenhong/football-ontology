@@ -2,11 +2,11 @@ import { Continent, Country, League, LeagueSeason, Player, SearchResultItem, Tea
 import {
   continentInfoQuery,
   countryInfoQuery,
+  footballTeamInfoQuery,
   leagueInfoQuery,
   leagueSeasonInfoQuery,
-  nationalTeamInfoQuery,
-  nationalTeamLeagueSeasonQuery,
-  nationalTeamTitleQuery,
+  footballTeamLeagueSeasonQuery,
+  footballTeamMatchSeasonQuery,
   playerInfoQuery,
   playerLeagueSeasonQuery,
   playerTitleQuery,
@@ -147,29 +147,25 @@ export class Querier {
   }
 
   public async team(team: string): Promise<Team | null> {
-    const q1 = nationalTeamInfoQuery.replaceAll(/{nationalTeam}/g, team);
-    const q2 = nationalTeamTitleQuery.replaceAll(/{nationalTeam}/g, team);
-    const q3 = nationalTeamLeagueSeasonQuery.replaceAll(/{nationalTeam}/g, team);
+    const q1 = footballTeamInfoQuery.replaceAll(/{footballTeam}/g, team);
+    const q2 = footballTeamLeagueSeasonQuery.replaceAll(/{footballTeam}/g, team);
+    const q3 = footballTeamMatchSeasonQuery.replaceAll(/{footballTeam}/g, team);
     const [d1, d2, d3] = await Promise.all([this.query(q1), this.query(q2), this.query(q3)]);
     if (d1.results.bindings.length === 0) return null;
     const info = d1.results.bindings[0];
+    console.log(d2);
     return {
       id: team,
       des: info.des?.value ?? null,
       img: info.img?.value ?? null,
       name: info.name.value,
-      area: info.area?.value ?? null,
-      areaName: info.areaName?.value ?? null,
-      country: info.country?.value ?? null,
-      countryName: info.countryName?.value ?? null,
-      titles: d2.results.bindings.map((item) => ({ title: item.title.value, titleName: item.titleName.value })),
-      seasons: d3.results.bindings.map((item) => ({
-        ls: item.ls.value,
-        lsName: item.lsName.value,
-        year: item.year?.value ?? null,
-      })),
-      fifaCode: info.fifaCode?.value ?? null,
-      rank: info.rank?.value ?? null,
+      foundedYear: info.foundedYear?.value ?? null,
+      coach: info.coach?.value ?? null,
+      coachName: info.coachName?.value ?? null,
+      homeField: info.homeField?.value ?? null,
+      homeFieldName: info.homeFieldName?.value ?? null,
+      League: d2.results.bindings.map((item) => ({ ls: item.ls.value, lsName: item.lsName.value })),
+      Match: d3.results.bindings.map((item) => ({ ms: item.ms.value, msName: item.msName.value })),
     };
   }
 

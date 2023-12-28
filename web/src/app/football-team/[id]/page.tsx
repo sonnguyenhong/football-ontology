@@ -39,50 +39,50 @@ export default async function Page({ params }: { params: { id: string } }) {
                   <td>{data.des}</td>
                 </tr>
               )}
-              {data.rank && (
+              {data.foundedYear && (
                 <tr>
                   <td>
-                    <b>Rank</b>
+                    <b>Founded Year</b>
                   </td>
-                  <td>{data.rank}</td>
+                  <td>{data.foundedYear}</td>
                 </tr>
               )}
-              {data.country && data.countryName && (
+              {data.coach && data.coachName && (
                 <tr>
                   <td>
-                    <b>Country</b>
+                    <b>Coach By</b>
                   </td>
                   <td>
-                    <Link href={data.country} className="text-sky-500 hover:underline">
-                      {data.countryName}
+                    <Link href={data.coach} className="text-sky-500 hover:underline">
+                      {data.coachName}
                     </Link>
                   </td>
                 </tr>
               )}
-              {data.area && data.areaName && (
+              {data.homeField && data.homeFieldName && (
                 <tr>
                   <td>
-                    <b>Continent</b>
+                    <b>Home Field</b>
                   </td>
                   <td>
-                    <Link href={data.area} className="text-sky-500 hover:underline">
-                      {data.areaName}
+                    <Link href={data.homeField} className="text-sky-500 hover:underline">
+                      {data.homeFieldName}
                     </Link>
                   </td>
                 </tr>
               )}
-              {data.seasons.length > 0 && (
+              {data.League.length > 0 && (
                 <tr>
                   <td>
                     <b>League seasons</b>
                   </td>
                   <td>
                     <ul className="list-disc mx-4">
-                      {data.seasons.map((item) => {
+                      {data.League.map((item) => {
                         return (
                           <li key={item.ls}>
                             <Link href={item.ls} className="inline text-sky-500 hover:underline">
-                              {item.lsName} {item.year && `(${item.year})`}
+                              {item.lsName}
                             </Link>
                           </li>
                         );
@@ -91,18 +91,18 @@ export default async function Page({ params }: { params: { id: string } }) {
                   </td>
                 </tr>
               )}
-              {data.titles.length > 0 && (
+              {data.Match.length > 0 && (
                 <tr>
                   <td>
-                    <b>Titles</b>
+                    <b>Match seasons</b>
                   </td>
                   <td>
                     <ul className="list-disc mx-4">
-                      {data.titles.map((item, index) => {
+                      {data.Match.map((item) => {
                         return (
-                          <li key={index}>
-                            <Link href={item.title} className="inline text-sky-500 hover:underline">
-                              {item.titleName}
+                          <li key={item.ms}>
+                            <Link href={item.ms} className="inline text-sky-500 hover:underline">
+                              {item.msName}
                             </Link>
                           </li>
                         );
