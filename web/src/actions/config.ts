@@ -6,4 +6,7 @@ export const fboClasses = {
   Country: `${fbo}Country`,
   Area: `${fbo}Area`,
   FootballTeam: `${fbo}FootballTeam`,
+  Coach: `${fbo}Coach`,
+  Stadium: `${fbo}Stadium`,
+  Award: `${fbo}Award`,
 };

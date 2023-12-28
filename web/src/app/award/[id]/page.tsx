@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export default async function Page({ params }: { params: { id: string } }) {
-  const data = await querier.league(params.id);
+  const data = await querier.award(params.id);
   if (!data) {
     return notFound();
   }
@@ -12,15 +12,15 @@ export default async function Page({ params }: { params: { id: string } }) {
     <>
       <div className="mb-6">
         <h1 className="text-2xl font-bold">
-          League:{" "}
-          <Link className="text-indigo-500 hover:underline" href={`/league/${data.id}`}>
+          Award:{" "}
+          <Link className="text-indigo-500 hover:underline" href={`/player/${data.id}`}>
             {data.name}
           </Link>
         </h1>
       </div>
       <div className="flex flex-col md:flex-row gap-10">
         <div className="max-w-[200px] min-w-[200px]">
-          <img className="w-full" src={data.image ?? "/images/unknown_country.png"} alt="league's thumbnail" />
+          <img className="w-full" src={data.image ?? "/images/unknown_user.png"} alt="coach's avatar" />
         </div>
         <div className="flex-grow">
           <table className="w-full">
@@ -39,18 +39,15 @@ export default async function Page({ params }: { params: { id: string } }) {
                   <td>{data.des}</td>
                 </tr>
               )}
-              {data.area && data.areaName && (
+              {data.awardOfLeague && (
                 <tr>
                   <td>
-                    <b>Continent</b>
+                    <b>League</b>
                   </td>
-                  <td>
-                    <Link href={data.area} className="text-sky-500 hover:underline">
-                      {data.areaName}
-                    </Link>
-                  </td>
+                  <td>{data.awardOfLeague}</td>
                 </tr>
               )}
+             
             </tbody>
           </table>
         </div>
