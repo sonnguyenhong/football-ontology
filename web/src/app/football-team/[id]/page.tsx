@@ -1,6 +1,7 @@
 import { querier } from "@/actions/querier";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import "@/style/app.css"
 
 export default async function Page({ params }: { params: { id: string } }) {
   const data = await querier.team(params.id);

@@ -60,8 +60,8 @@ export type League = {
   name: string;
   img: string | null;
   des: string | null;
-  area: string | null;
-  areaName: string | null;
+  numTeams: string | null;
+  Match: Array<{ match: string; matchName: string }>;
 };
 
 export type LeagueSeason = {

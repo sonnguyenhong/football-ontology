@@ -196,30 +196,24 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX fbo: <http://localhost:3000/ontology#>
 PREFIX fbr: <http://localhost:3000/resource/>
 
-SELECT ?name ?img ?des ?area ?areaName {
-	fbr:{league} a fbo:League .
+SELECT ?name ?img ?des ?numTeams {
+	fbr:{league} rdf:type fbo:FootballLeague .
 	fbr:{league} fbo:name ?name .
-	OPTIONAL  {fbr:{league} fbo:img ?img} .
+	OPTIONAL  {fbr:{league} fbo:image ?img} .
 	OPTIONAL {fbr:{league} fbo:description ?des} .
-	OPTIONAL {fbr:{league} fbo:belongToArea ?area . ?area fbo:name ?areaName} .
+	OPTIONAL {fbr:{league} fbo:numTeams ?numTeams} .
 }
 LIMIT 1
 `;
 
-export const leagueSeasonInfoQuery = `
+export const leagueMatchInfoQuery = `
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX fbo: <http://localhost:3000/ontology#>
 PREFIX fbr: <http://localhost:3000/resource/>
 
-SELECT ?name ?img ?des ?league ?leagueName ?champion ?championName {
-	fbr:{leagueSeason} a fbo:LeagueSeason .
-	fbr:{leagueSeason} fbo:name ?name .
-	fbr:{leagueSeason} fbo:aSeasonOf ?league . ?league fbo:name ?leagueName .
-	OPTIONAL  {fbr:{leagueSeason} fbo:img ?img} .
-	OPTIONAL {fbr:{leagueSeason} fbo:description ?des} .
-  OPTIONAL {fbr:{leagueSeason} fbo:heldInYear ?year} .
-	OPTIONAL {fbr:{leagueSeason} fbo:hasChampion ?champion . ?champion fbo:name ?championName} .
+SELECT ?match ?matchName {
+	fbr:Premier_League fbo:includes ?match .
+	?match fbo:name ?matchName .
 }
-LIMIT 1
 `;
