@@ -11,8 +11,7 @@ export type Player = {
   name: string;
   image: string | null;
   des: string | null;
-  position: string | null;
-  positionLabel : string | null;
+  positionName: string | null;
   goals: string | null;
   footballTeam: string | null;
   footballTeamName: string | null;
@@ -48,14 +47,13 @@ export type Team = {
   name: string;
   image: string | null;
   des: string | null;
-  rank: string | null;
-  fifaCode: string | null;
-  area: string | null;
-  areaName: string | null;
-  country: string | null;
-  countryName: string | null;
-  titles: Array<{ title: string; titleName: string }>;
-  seasons: Array<{ ls: string; lsName: string; year: string | null }>;
+  foundedYear: string | null;
+  coach: string | null;
+  coachName: string | null;
+  homeField: string | null;
+  homeFieldName: string | null;
+  League: Array<{ ls: string; lsName: string }>;
+  Match: Array<{ ms: string; msName: string }>;
 };
 
 export type League = {
@@ -63,19 +61,22 @@ export type League = {
   name: string;
   image: string | null;
   des: string | null;
-  area: string | null;
-  areaName: string | null;
+  numTeams: string | null;
+  Teams: Array<{ fbTeam: string; fbTeamName: string }>;
+  Match: Array<{ match: string; matchName: string }>;
 };
 
-export type LeagueSeason = {
+export type Match = {
   id: string;
   name: string;
   image: string | null;
   des: string | null;
-  league: string | null;
-  leagueName: string | null;
-  champion: string | null;
-  championName: string | null;
+  matchDay: string | null;
+  homeTeam: string;
+  homeTeamName: string;
+  awayTeam: string;
+  awayTeamName: string;
+  result: string | null;
 };
 
 export type Coach = {
@@ -85,6 +86,7 @@ export type Coach = {
   des: string | null;
   coachNationality: string | null;
   age: string | null;
+  coachAchieves: string | null;
   coachAchievesName: string | null;
 };
 export type Stadium = {
@@ -101,4 +103,5 @@ export type Award = {
   image: string | null;
   des: string | null;
   awardOfLeague: string | null;
+  awardOfLeagueName: string | null;
 };

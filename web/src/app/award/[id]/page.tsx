@@ -39,14 +39,19 @@ export default async function Page({ params }: { params: { id: string } }) {
                   <td>{data.des}</td>
                 </tr>
               )}
-              {data.awardOfLeague && (
+              {data.awardOfLeague && data.awardOfLeagueName && (
                 <tr>
                   <td>
                     <b>League</b>
                   </td>
-                  <td>{data.awardOfLeague}</td>
+                  <td>
+                    <Link href={data.awardOfLeague} className="text-sky-500 hover:underline">
+                      {data.awardOfLeagueName}
+                    </Link>
+                  </td>
                 </tr>
               )}
+
              
             </tbody>
           </table>

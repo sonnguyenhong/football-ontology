@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import "@/style/app.css"
 
 export default async function Page({ params }: { params: { id: string } }) {
-  const data = await querier.team(params.id);
+  const data = await querier.league(params.id);
   if (!data) {
     return notFound();
   }
@@ -13,15 +13,15 @@ export default async function Page({ params }: { params: { id: string } }) {
     <>
       <div className="mb-6">
         <h1 className="text-2xl font-bold">
-          Team:{" "}
-          <Link className="text-indigo-500 hover:underline" href={`/national-team/${data.id}`}>
+          League:{" "}
+          <Link className="text-indigo-500 hover:underline" href={`/league/${data.id}`}>
             {data.name}
           </Link>
         </h1>
       </div>
       <div className="flex flex-col md:flex-row gap-10">
         <div className="max-w-[200px] min-w-[200px]">
-          <img className="w-full" src={data.image?? "/images/unknown_country.png"} alt="image" />
+          <img className="w-full" src={data.image ?? "/images/unknown_country.png"} alt="league's thumbnail" />
         </div>
         <div className="flex-grow">
           <table className="w-full">
@@ -40,50 +40,26 @@ export default async function Page({ params }: { params: { id: string } }) {
                   <td>{data.des}</td>
                 </tr>
               )}
-              {data.foundedYear && (
+              {data.numTeams && (
                 <tr>
                   <td>
-                    <b>Founded Year</b>
+                    <b>Number Teams</b>
                   </td>
-                  <td>{data.foundedYear}</td>
+                  <td>{data.numTeams}</td>
                 </tr>
               )}
-              {data.coach && data.coachName && (
+              {data.Teams.length > 0 && (
                 <tr>
                   <td>
-                    <b>Coach By</b>
-                  </td>
-                  <td>
-                    <Link href={data.coach} className="text-sky-500 hover:underline">
-                      {data.coachName}
-                    </Link>
-                  </td>
-                </tr>
-              )}
-              {data.homeField && data.homeFieldName && (
-                <tr>
-                  <td>
-                    <b>Home Field</b>
-                  </td>
-                  <td>
-                    <Link href={data.homeField} className="text-sky-500 hover:underline">
-                      {data.homeFieldName}
-                    </Link>
-                  </td>
-                </tr>
-              )}
-              {data.League.length > 0 && (
-                <tr>
-                  <td>
-                    <b>League seasons</b>
+                    <b>Teams</b>
                   </td>
                   <td>
                     <ul className="list-disc mx-4">
-                      {data.League.map((item) => {
+                      {data.Teams.map((item) => {
                         return (
-                          <li key={item.ls}>
-                            <Link href={item.ls} className="inline text-sky-500 hover:underline">
-                              {item.lsName}
+                          <li key={item.fbTeam}>
+                            <Link href={item.fbTeam} className="inline text-sky-500 hover:underline">
+                              {item.fbTeamName}
                             </Link>
                           </li>
                         );
@@ -101,9 +77,9 @@ export default async function Page({ params }: { params: { id: string } }) {
                     <ul className="list-disc mx-4">
                       {data.Match.map((item) => {
                         return (
-                          <li key={item.ms}>
-                            <Link href={item.ms} className="inline text-sky-500 hover:underline">
-                              {item.msName}
+                          <li key={item.match}>
+                            <Link href={item.match} className="inline text-sky-500 hover:underline">
+                              {item.matchName}
                             </Link>
                           </li>
                         );

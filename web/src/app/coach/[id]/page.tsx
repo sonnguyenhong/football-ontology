@@ -55,12 +55,16 @@ export default async function Page({ params }: { params: { id: string } }) {
                   <td>{data.coachNationality}</td>
                 </tr>
               )}
-              {data.coachAchievesName&& (
+              {data.coachAchievesName && data.coachAchieves &&  (
                 <tr>
                   <td>
                     <b>Achieves</b>
                   </td>
-                  <td>{data.coachAchievesName}</td>
+                  <td>
+                    <Link href={data.coachAchieves} className="text-sky-500 hover:underline">
+                    {data.coachAchievesName}
+                    </Link>
+                  </td>
                 </tr>
               )}
              

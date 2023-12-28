@@ -1,6 +1,7 @@
 import { querier } from "@/actions/querier";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import "@/style/app.css"
 
 export default async function Page({ params }: { params: { id: string } }) {
   const data = await querier.player(params.id);
@@ -39,12 +40,12 @@ export default async function Page({ params }: { params: { id: string } }) {
                   <td>{data.des}</td>
                 </tr>
               )}
-              {data.position && (
+              {data.positionName && (
                 <tr>
                   <td>
                     <b>Position</b>
                   </td>
-                  <td>{data.position}</td>
+                  <td>{data.positionName}</td>
                 </tr>
               )}
               {data.goals && (

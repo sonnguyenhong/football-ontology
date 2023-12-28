@@ -36,14 +36,13 @@ PREFIX fbr: <http://localhost:3000/resource/>
 
 SELECT ?name ?image ?des ?position ?goals ?country ?countryName ?footballTeam ?footballTeamName 
 WHERE {
-  fbr:{player} a fbo:Player . 
+  fbr:{player} a fbo:Player .
 	fbr:{player} fbo:name ?name .
-	OPTIONAL  {fbr:{player} fbo:image ?image} .
+	OPTIONAL {fbr:{player} fbo:image ?image} .
 	OPTIONAL {fbr:{player} fbo:description ?des} .
   OPTIONAL {fbr:{player} fbo:goals ?goals} .
-  OPTIONAL {fbr:{player} fbo:hasPosition ?pos . ?pos rdfs:label ?position } .
-  OPTIONAL {fbr:{player} fbo:height ?height} .
-  OPTIONAL {fbr:{player} fbo:playsFor ?footballTeam . ?footballTeam fbo:name ?footballTeamName}
+  OPTIONAL {fbr:{player} fbo:hasPosition ?position} .
+  OPTIONAL {fbr:{player} fbo:playsFor ?footballTeam . ?footballTeam fbo:name ?footballTeamName } .
 }
 LIMIT 1
 `;
@@ -78,61 +77,24 @@ WHERE {
 ORDER BY ASC(?year)
 `;
 
-export const countryInfoQuery = `
+export const footballTeamInfoQuery = `
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX fbo: <http://localhost:3000/ontology#> 
-PREFIX fbr: <http://localhost:3000/resource/> 
+PREFIX fbo: <http://localhost:3000/ontology#>
+PREFIX fbr: <http://localhost:3000/resource/>
 
-SELECT ?name ?image ?des ?area ?areaName ?team ?teamName {
-	fbr:{country} a fbo:Country .
-  fbr:{country} fbo:name ?name .
-	OPTIONAL {fbr:{country} fbo:image ?image} .
-	OPTIONAL {fbr:{country} fbo:description ?des} .
-  OPTIONAL {fbr:{country} fbo:belongToArea ?area . ?area fbo:name ?areaName} .
-  OPTIONAL {fbr:{country} fbo:hasTeam ?team . ?team fbo:name ?teamName }
+SELECT ?name ?image ?des ?foundedYear ?coach ?coachName ?homeField ?homeFieldName{
+  fbr:{footballTeam} a fbo:FootballTeam ;
+    fbo:name ?name .
+  OPTIONAL { fbr:{footballTeam} fbo:image ?image } .
+  OPTIONAL { fbr:{footballTeam} fbo:description ?des } .
+  OPTIONAL { fbr:{footballTeam} fbo:foundedYear ?foundedYear } .
+  OPTIONAL { fbr:{footballTeam} fbo:coachedBy ?coach . ?coach fbo:name ?coachName } .
+  OPTIONAL { fbr:{footballTeam} fbo:hasHomeField ?homeField . ?homeField fbo:name ?homeFieldName } .
 }
-LIMIT 1
 `;
 
-export const continentInfoQuery = `
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX fbo: <http://localhost:3000/ontology#> 
-PREFIX fbr: <http://localhost:3000/resource/> 
-
-SELECT ?name ?image ?des ?area ?population ?league ?leagueName {
-	fbr:{continent} a fbo:Area .
-  fbr:{continent} fbo:name ?name .
-	OPTIONAL {fbr:{continent} fbo:image ?image} .
-	OPTIONAL {fbr:{continent} fbo:description ?des} .
-  OPTIONAL {fbr:{continent} fbo:area ?area} .
-  OPTIONAL {fbr:{continent} fbo:population ?population} .
-  OPTIONAL {fbr:{continent} fbo:hasLeague ?league . ?league fbo:name ?leagueName }
-}
-LIMIT 1
-`;
-
-export const nationalTeamInfoQuery = `
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX fbo: <http://localhost:3000/ontology#> 
-PREFIX fbr: <http://localhost:3000/resource/> 
-
-SELECT ?name ?image ?des ?rank ?fifaCode ?area ?areaName ?country ?countryName {
-	fbr:{nationalTeam} a fbo:NationalTeam .
-  fbr:{nationalTeam} fbo:name ?name .
-	OPTIONAL  {fbr:{nationalTeam} fbo:image ?image} .
-	OPTIONAL {fbr:{nationalTeam} fbo:description ?des} .
-	OPTIONAL {fbr:{nationalTeam} fbo:rank ?rank} .
-	OPTIONAL {fbr:{nationalTeam} fbo:fifaCode ?fifaCode} .
-  OPTIONAL {fbr:{nationalTeam} fbo:belongToArea ?area . ?area fbo:name ?areaName} .
-  OPTIONAL {?country fbo:hasTeam fbr:{nationalTeam} . ?country fbo:name ?countryName} .
-}
-LIMIT 1
-`;
-
-export const nationalTeamLeagueSeasonQuery = `
+export const footballTeamLeagueSeasonQuery = `
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX fbo: <http://localhost:3000/ontology#> 
@@ -140,23 +102,23 @@ PREFIX fbr: <http://localhost:3000/resource/>
 
 SELECT ?ls ?lsName 
 WHERE {
-	fbr:{nationalTeam} a fbo:NationalTeam .
-	fbr:{nationalTeam} fbo:joinedLeagueSeason ?ls .
+	fbr:{footballTeam} a fbo:FootballTeam .
+	fbr:{footballTeam} fbo:participatesIn ?ls .
 	?ls fbo:name ?lsName
 }
 `;
 
-export const nationalTeamTitleQuery = `
+export const footballTeamMatchSeasonQuery = `
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX fbo: <http://localhost:3000/ontology#> 
 PREFIX fbr: <http://localhost:3000/resource/> 
 
-SELECT ?title ?titleName 
+SELECT ?ms ?msName
 WHERE {
-	fbr:{nationalTeam} a fbo:NationalTeam .
-	fbr:{nationalTeam} fbo:isChampionOf ?title .
-	?title fbo:name ?titleName
+	fbr:{footballTeam} a fbo:FootballTeam .
+	fbr:{footballTeam} fbo:joins ?ms .
+	?ms fbo:name ?msName
 }
 `;
 
@@ -166,30 +128,56 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX fbo: <http://localhost:3000/ontology#> 
 PREFIX fbr: <http://localhost:3000/resource/> 
 
-SELECT ?name ?image ?des ?area ?areaName {
-	fbr:{league} a fbo:League .
+SELECT ?name ?image ?des ?numTeams {
+	fbr:{league} rdf:type fbo:FootballLeague .
 	fbr:{league} fbo:name ?name .
 	OPTIONAL  {fbr:{league} fbo:image ?image} .
 	OPTIONAL {fbr:{league} fbo:description ?des} .
-	OPTIONAL {fbr:{league} fbo:belongToArea ?area . ?area fbo:name ?areaName} .
+	OPTIONAL {fbr:{league} fbo:numTeams ?numTeams} .
 }
 LIMIT 1
 `;
 
-export const leagueSeasonInfoQuery = `
+export const leagueMatchInfoQuery = `
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX fbo: <http://localhost:3000/ontology#> 
 PREFIX fbr: <http://localhost:3000/resource/> 
 
-SELECT ?name ?image ?des ?league ?leagueName ?champion ?championName {
-	fbr:{leagueSeason} a fbo:LeagueSeason .
-	fbr:{leagueSeason} fbo:name ?name .
-	fbr:{leagueSeason} fbo:aSeasonOf ?league . ?league fbo:name ?leagueName .
-	OPTIONAL  {fbr:{leagueSeason} fbo:image ?image} .
-	OPTIONAL {fbr:{leagueSeason} fbo:description ?des} .
-  OPTIONAL {fbr:{leagueSeason} fbo:heldInYear ?year} .
-	OPTIONAL {fbr:{leagueSeason} fbo:hasChampion ?champion . ?champion fbo:name ?championName} .
+SELECT ?match ?matchName {
+	fbr:{league} fbo:includes ?match .
+	?match fbo:name ?matchName .
+}
+`;
+
+export const leagueTeamInfoQuery = `
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fbo: <http://localhost:3000/ontology#>
+PREFIX fbr: <http://localhost:3000/resource/>
+
+SELECT ?fbTeam ?fbTeamName {
+	?fbTeam rdf:type fbo:FootballTeam ;
+    fbo:participatesIn fbr:{league} .
+		?fbTeam fbo:name ?fbTeamName .
+}
+`;
+
+export const matchInfoQuery = `
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fbo: <http://localhost:3000/ontology#>
+PREFIX fbr: <http://localhost:3000/resource/>
+
+SELECT ?name ?image ?des ?day ?homeTeam ?homeTeamName ?awayTeam ?awayTeamName  ?result{
+	fbr:{match} rdf:type fbo:FootballMatch .
+	fbr:{match} fbo:name ?name .
+  fbr:{match} fbo:homeTeam ?homeTeam . ?homeTeam fbo:name ?homeTeamName .
+  fbr:{match} fbo:awayTeam ?awayTeam . ?awayTeam fbo:name ?awayTeamName .
+  fbr:{match} fbo:result ?result .
+  OPTIONAL  {fbr:{match} fbo:matchDay ?day} .
+	OPTIONAL  {fbr:{match} fbo:image ?image} .
+	OPTIONAL {fbr:{match} fbo:description ?des} .
 }
 LIMIT 1
 `;
