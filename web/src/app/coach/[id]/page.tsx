@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export default async function Page({ params }: { params: { id: string } }) {
-  const data = await querier.coach(params.id).catch((e) => console.log(e));
+  const data = await querier.coach(decodeURIComponent(params.id))
   if (!data) {
     return notFound();
   }
