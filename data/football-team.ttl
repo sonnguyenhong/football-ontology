@@ -18,7 +18,9 @@ fbr:Manchester_United a fbo:FootballTeam ;
     fbo:participatesIn fbr:Premier_League ;
     fbo:participatesIn fbr:UEFA_Champions_League ;
     fbo:joins fbr:MU_LIV_12072022 ;
-    fbo:joins fbr:MU_LIV_17122023 .
+    fbo:joins fbr:MU_LIV_17122023 ;
+    fbo:joins fbr:WHU_MUN_17122029 ;
+    fbo:joins fbr:MUN_BOU_17122031 .
 
 fbr:Liverpool a fbo:FootballTeam ;
     fbo:name "Liverpool" ;
@@ -33,7 +35,9 @@ fbr:Liverpool a fbo:FootballTeam ;
     fbo:participatesIn fbr:Premier_League ;
     fbo:participatesIn fbr:UEFA_Champions_League ;
     fbo:joins fbr:MU_LIV_12072022 ;
-    fbo:joins fbr:MU_LIV_17122023 .
+    fbo:joins fbr:MU_LIV_17122023 ;
+    fbo:joins fbr:LIV_NEW_17122024 ;
+    fbo:joins fbr:BUR_LIV_17122027 .
 
 fbr:Aston_Villa a fbo:FootballTeam ;
     fbo:name "Aston Villa" ;
@@ -56,7 +60,8 @@ fbr:Manchester_City a fbo:FootballTeam ;
     fbo:participatesIn fbr:Premier_League ;
     fbo:foundedYear 1880 ;
     fbo:coachedBy fbr:Pep_Guardiola ;
-    fbo:hasHomeField fbr:Etihad .
+    fbo:hasHomeField fbr:Etihad ;
+    fbo:joins fbr:MCI_SHU_17122026 .
 
 
 fbr:Arsenal a fbo:FootballTeam ;
@@ -68,7 +73,8 @@ fbr:Arsenal a fbo:FootballTeam ;
     fbo:participatesIn fbr:Premier_League ;
     fbo:foundedYear 1886  ;
     fbo:coachedBy fbr:Mikel_Arteta_Amatriain ;
-    fbo:hasHomeField fbr:Arsenal_Stadium .
+    fbo:hasHomeField fbr:Arsenal_Stadium ;
+    fbo:joins fbr:ARS_BHA_17122030 .
 
 
 fbr:Tottenham a fbo:FootballTeam ;
@@ -80,7 +86,8 @@ fbr:Tottenham a fbo:FootballTeam ;
     fbo:foundedYear 1882 ;
     fbo:coachedBy fbr:Ange_Postecoglou ;
     fbo:participatesIn fbr:Premier_League  ;
-    fbo:hasHomeField fbr:Tottenham_Hotspur_Stadium .
+    fbo:hasHomeField fbr:Tottenham_Hotspur_Stadium ;
+    fbo:joins fbr:TOT_EVE_17122028 .
 
 
 fbr:West_Ham a fbo:FootballTeam ;
@@ -92,7 +99,9 @@ fbr:West_Ham a fbo:FootballTeam ;
     fbo:foundedYear 1895 ;
     fbo:coachedBy fbr:David_Moyes ;
     fbo:participatesIn fbr:Premier_League  ;
-    fbo:hasHomeField fbr:London_Stadium .
+    fbo:hasHomeField fbr:London_Stadium ;
+    fbo:joins fbr:WHU_MUN_17122029 ;
+    fbo:joins fbr:FUL_WHU_17122032 .
 
 
 fbr:Brighton a fbo:FootballTeam ;
@@ -104,7 +113,8 @@ fbr:Brighton a fbo:FootballTeam ;
     fbo:foundedYear 1901 ;
     fbo:coachedBy fbr:Roberto_De_Zerbi ;
     fbo:participatesIn fbr:Premier_League  ;
-    fbo:hasHomeField fbr:Falmer_Stadium .
+    fbo:hasHomeField fbr:Falmer_Stadium ;
+    fbo:joins fbr:ARS_BHA_17122030 .
 
 fbr:Newcastle a fbo:FootballTeam ;
     fbo:name "Newcastle" ;
@@ -115,7 +125,8 @@ fbr:Newcastle a fbo:FootballTeam ;
     fbo:foundedYear 1892 ;
     fbo:coachedBy fbr:Eddie_Howe ;
     fbo:participatesIn fbr:Premier_League  ;
-    fbo:hasHomeField fbr:St_James_Park .
+    fbo:hasHomeField fbr:St_James_Park ;
+    fbo:joins fbr:ARS_BHA_17122030 .
 
 fbr:Chelsea a fbo:FootballTeam ;
     fbo:name "Chelsea" ;
@@ -126,7 +137,8 @@ fbr:Chelsea a fbo:FootballTeam ;
     fbo:foundedYear 1905 ;
     fbo:coachedBy fbr:Mauricio_Pochettino ;
     fbo:participatesIn fbr:Premier_League  ;
-    fbo:hasHomeField fbr:Stamford_Bridge .
+    fbo:hasHomeField fbr:Stamford_Bridge ;
+    fbo:joins fbr:LUT_CHE_17122025 .
 
 fbr:Wolverhampton a fbo:FootballTeam ;
     fbo:name "Wolverhampton" ;
@@ -148,7 +160,8 @@ fbr:Bournemouth a fbo:FootballTeam ;
     fbo:foundedYear 1875 ;
     fbo:coachedBy fbr:Andoni_Iraola ;
     fbo:participatesIn fbr:Premier_League  ;
-    fbo:hasHomeField fbr:Dean_Court .
+    fbo:hasHomeField fbr:Dean_Court ;
+    fbo:joins fbr:MUN_BOU_17122031 .
 
 fbr:Fulham a fbo:FootballTeam ;
     fbo:name "Fulham" ;
@@ -159,7 +172,8 @@ fbr:Fulham a fbo:FootballTeam ;
     fbo:foundedYear 1879 ;
     fbo:coachedBy fbr:Marco_Silva ;
     fbo:participatesIn fbr:Premier_League  ;
-    fbo:hasHomeField fbr:Craven_Cottage .
+    fbo:hasHomeField fbr:Craven_Cottage ;
+    fbo:joins fbr:FUL_WHU_17122032 .
 
 fbr:Crystal_Palace a fbo:FootballTeam ;
     fbo:name "Crystal Palace" ;
@@ -203,7 +217,8 @@ fbr:Everton a fbo:FootballTeam ;
     fbo:foundedYear 1878 ;
     fbo:coachedBy fbr:Sean_Dyche ;
     fbo:participatesIn fbr:Premier_League ;
-    fbo:hasHomeField fbr:Goodison_Park .
+    fbo:hasHomeField fbr:Goodison_Park ;
+    fbo:joins fbr:TOT_EVE_17122028 .
 
 fbr:Luton_Town a fbo:FootballTeam ;
     fbo:name "Luton Town" ;
@@ -214,7 +229,8 @@ fbr:Luton_Town a fbo:FootballTeam ;
     fbo:foundedYear 1885 ;
     fbo:coachedBy fbr:Rob_Edwards ;
     fbo:participatesIn fbr:Premier_League  ;
-    fbo:hasHomeField fbr:Kenilworth_Road .
+    fbo:hasHomeField fbr:Kenilworth_Road ;
+    fbo:joins fbr:LUT_CHE_17122025 .
 
 fbr:Burnley a fbo:FootballTeam ;
     fbo:name "Burnley" ;
@@ -225,7 +241,8 @@ fbr:Burnley a fbo:FootballTeam ;
     fbo:foundedYear 1882 ;
     fbo:coachedBy fbr:Vincent_Kompany ;
     fbo:participatesIn fbr:Premier_League  ;
-    fbo:hasHomeField fbr:Turf_Moor .
+    fbo:hasHomeField fbr:Turf_Moor ;
+    fbo:joins fbr:BUR_LIV_17122027 .
 
 fbr:Sheffield_United a fbo:FootballTeam ;
     fbo:name "Sheffield United" ;
@@ -236,4 +253,5 @@ fbr:Sheffield_United a fbo:FootballTeam ;
     fbo:foundedYear 1889 ;
     fbo:coachedBy fbr:Chris_Wilder ;
     fbo:participatesIn fbr:Premier_League  ;
-    fbo:hasHomeField fbr:Bramall_Lane .
+    fbo:hasHomeField fbr:Bramall_Lane ;
+    fbo:joins fbr:MCI_SHU_17122026 .
