@@ -34,7 +34,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX fbo: <http://localhost:3000/ontology#> 
 PREFIX fbr: <http://localhost:3000/resource/> 
 
-SELECT ?name ?image ?des ?position ?goals ?country ?countryName ?footballTeam ?footballTeamName 
+SELECT ?name ?image ?des ?position ?goals ?nationality ?assists ?height ?weight ?transactionFee ?age ?footballTeam ?footballTeamName 
 WHERE {
   fbr:{player} a fbo:Player .
 	fbr:{player} fbo:name ?name .
@@ -42,6 +42,12 @@ WHERE {
 	OPTIONAL {fbr:{player} fbo:description ?des} .
   OPTIONAL {fbr:{player} fbo:goals ?goals} .
   OPTIONAL {fbr:{player} fbo:hasPosition ?position} .
+  OPTIONAL {fbr:{player} fbo:playerNationality ?nationality} .
+  OPTIONAL {fbr:{player} fbo:playerAssists ?assists} .
+  OPTIONAL {fbr:{player} fbo:playerHeight ?height} .
+  OPTIONAL {fbr:{player} fbo:playerWeight ?weight} .
+  OPTIONAL {fbr:{player} fbo:playerTransactionFee ?transactionFee} .
+  OPTIONAL {fbr:{player} fbo:playerAge ?age} .
   OPTIONAL {fbr:{player} fbo:playsFor ?footballTeam . ?footballTeam fbo:name ?footballTeamName } .
 }
 LIMIT 1

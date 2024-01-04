@@ -11,7 +11,7 @@ fbr:MU_LIV_12072022 a fbo:FootballMatch ;
     fbo:matchDay "12/07/2022" ;
     fbo:homeTeam fbr:Manchester_United ;
     fbo:awayTeam fbr:Liverpool ;
-    fbo:result "4-0" .
+    fbo:result "4-0" ;
     fbo:heldsIn  fbr:Old_Trafford .
 
 fbr:MU_LIV_17122023 a fbo:FootballMatch ;
@@ -21,8 +21,8 @@ fbr:MU_LIV_17122023 a fbo:FootballMatch ;
     fbo:matchDay "17/12/2023" ;
     fbo:homeTeam fbr:Liverpool ;
     fbo:awayTeam fbr:Manchester_United ;
-    fbo:result "0-0" .
-    fbo:heldsIn  fbr:Anfield .
+    fbo:result "0-0" ;
+    fbo:heldsIn  fbr:Old_Trafford .
 
 fbr:LIV_NEW_17122024 a fbo:FootballMatch ;
     fbo:name "Liverpool vs Newcastle Matchweek 20 Premier League" ;

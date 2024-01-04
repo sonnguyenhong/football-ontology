@@ -16,7 +16,16 @@ fbr:Premier_League a fbo:FootballLeague ;
     fbo:image "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Premier_League_Logo.svg/280px-Premier_League_Logo.svg.png" ;
     fbo:description "The Premier League is the highest level of the English football league system. Contested by 20 clubs, it operates on a system of promotion and relegation with the English Football League (EFL). Seasons typically run from August to May, with each team playing 38 matches against all other teams, both home and away.[1] Most games are played on Saturday and Sunday afternoons, with occasional weekday evening fixtures. The competition was founded as the FA Premier League on 20 February 1992 following the decision of First Division (top-tier league from 1888 until 1992) clubs to break away from the English Football League. However, teams may still be relegated to and promoted from the EFL Championship. The Premier League takes advantage of a £5 billion television rights deal, with Sky and BT Group securing the domestic rights to broadcast 128 and 32 games, respectively.[3][4] From 2025 to 2026, this deal will rise to £6.7 billion.[5] The league is projected to earn $7.2bn in overseas TV rights from 2022 to 2025.[6] The Premier League is a corporation managed by a chief executive, with member clubs acting as shareholders.[7] Clubs were apportioned central payment revenues of £2.4 billion in 2016–17, with a further £343 million in solidarity payments to EFL clubs. The Premier League is the most-watched sports league in the world, broadcast in 212 territories to 643 million homes, with a potential TV audience of 4.7 billion people.[9][10] For the 2018–19 season, the average Premier League match attendance was at 38,181,[11] second to the German Bundesliga while aggregated attendance across all matches was the highest of any association football league at 14,508,981,[13] and most stadium occupancies are near capacity.[14] As of 2023, the Premier League is ranked first in the UEFA coefficient rankings based on performances in European competitions over the past five seasons, ahead of Spain La Liga.[15] The English top-flight has produced the second-highest number of European Cup / UEFA Champions League titles, with a record six English clubs having won fifteen European championships in total. Fifty-one clubs have competed since the inception of the Premier League in 1992: 49 English and two Welsh clubs. Seven of them have won the title: Manchester United (13), Manchester City (7), Chelsea (5), Arsenal (3), Blackburn Rovers (1), Leicester City (1), and Liverpool (1).[17] Only two of them have won three titles in a row (Manchester United and Manchester City), while only six clubs have been ever-present and avoided relegation: Arsenal, Chelsea, Everton, Liverpool, Manchester United, and Tottenham Hotspur.[18] " ;
     fbo:numTeams 20 ;
-    fbo:includes fbr:MU_LIV_17122023 .
+    fbo:includes fbr:MU_LIV_17122023 ;
+    fbo:includes fbr:LIV_NEW_17122024 ;
+    fbo:includes fbr:LUT_CHE_17122025 ;
+    fbo:includes fbr:MCI_SHU_17122026 ;
+    fbo:includes fbr:BUR_LIV_17122027 ;
+    fbo:includes fbr:TOT_EVE_17122028 ;
+    fbo:includes fbr:WHU_MUN_17122029 ;
+    fbo:includes fbr:ARS_BHA_17122030 ; 
+    fbo:includes fbr:MUN_BOU_17122031 ;
+    fbo:includes fbr:FUL_WHU_17122032 .
 
 fbr:UEFA_Champions_League a fbo:FootballLeague ;
     fbo:name "UEFA Champions League" ;
