@@ -97,6 +97,21 @@ export default async function Page({ params }: Readonly<Props>) {
 									</td>
 								</tr>
 							)}
+							{data.stadium && data.stadiumName && (
+								<tr>
+									<td>
+										<b>Stadium</b>
+									</td>
+									<td>
+										<Link
+											href={data.stadium}
+											className="text-sky-500 hover:underline"
+										>
+											{data.stadiumName}
+										</Link>
+									</td>
+								</tr>
+							)}
 							{data.result && (
 								<tr>
 									<td>

@@ -80,6 +80,8 @@ export type Match = {
   homeTeamName: string;
   awayTeam: string;
   awayTeamName: string;
+  stadium: string;
+  stadiumName: string | null;
   result: string | null;
 };
 

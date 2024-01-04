@@ -169,11 +169,12 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX fbo: <http://localhost:3000/ontology#>
 PREFIX fbr: <http://localhost:3000/resource/>
 
-SELECT ?name ?image ?des ?day ?homeTeam ?homeTeamName ?awayTeam ?awayTeamName  ?result{
+SELECT ?name ?image ?des ?day ?homeTeam ?homeTeamName ?awayTeam ?awayTeamName ?stadium ?stadiumName ?result{
 	fbr:{match} rdf:type fbo:FootballMatch .
 	fbr:{match} fbo:name ?name .
   fbr:{match} fbo:homeTeam ?homeTeam . ?homeTeam fbo:name ?homeTeamName .
   fbr:{match} fbo:awayTeam ?awayTeam . ?awayTeam fbo:name ?awayTeamName .
+  fbr:{match} fbo:heldsIn ?stadium . ?stadium  fbo:name ?stadiumName .
   fbr:{match} fbo:result ?result .
   OPTIONAL  {fbr:{match} fbo:matchDay ?day} .
 	OPTIONAL  {fbr:{match} fbo:image ?image} .
