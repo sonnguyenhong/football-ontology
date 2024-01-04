@@ -11,6 +11,8 @@ fbr:Andre_Onana a fbo:Player ;
     fbo:description "André Onana Onana (French pronunciation: [ɑ̃dʁe ɔnana];[4] born 2 April 1996) is a Cameroonian professional footballer who plays as a goalkeeper for Premier League club Manchester United and the Cameroon national team.Onana joined Barcelona youth system in 2010. He signed for Ajax in 2015, where he made 214 appearances and won three Eredivisie titles. Onana joined Inter Milan on a free transfer in July 2022, where he won a Coppa Italia and Supercoppa Italiana title in his sole season at the club, also reaching the Champions League final. Manchester United then signed Onana for an initial £43.8 million in 2023. At international level, Onana has made more than 30 appearances for the Cameroon national team since making his debut in September 2016. " ;
     fbo:hasPosition fbo:Goalkeeper ;
     fbo:playsFor fbr:Manchester_United ;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerAssists 4 ;
     fbo:playerHeight 190;
     fbo:playerWeight 80;
@@ -26,6 +28,8 @@ fbr:Harry_Maguire a fbo:Player ;
     fbo:playerAssists 20 ;
     fbo:playerHeight 195;
     fbo:playerWeight 95;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 80000000 .
 
 fbr:Lisandro_Martinez a fbo:Player ;
@@ -38,6 +42,8 @@ fbr:Lisandro_Martinez a fbo:Player ;
     fbo:playerAssists 10 ;
     fbo:playerHeight 175;
     fbo:playerWeight 75;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 75000000 .
 
 fbr:Raphael_Varane a fbo:Player ;
@@ -50,6 +56,8 @@ fbr:Raphael_Varane a fbo:Player ;
     fbo:playerAssists 14 ;
     fbo:playerHeight 192;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 40000000 .
 
 fbr:Luke_Shaw a fbo:Player ;
@@ -62,6 +70,8 @@ fbr:Luke_Shaw a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Diogo_Dalot a fbo:Player ;
@@ -74,6 +84,8 @@ fbr:Diogo_Dalot a fbo:Player ;
     fbo:playerAssists 15 ;
     fbo:playerHeight 183;
     fbo:playerWeight 75;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Christian_Eriksen a fbo:Player ;
@@ -86,6 +98,8 @@ fbr:Christian_Eriksen a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 175;
     fbo:playerWeight 65;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Bruno_Fernandes a fbo:Player ;
@@ -99,6 +113,8 @@ fbr:Bruno_Fernandes a fbo:Player ;
     fbo:playerAssists 80 ;
     fbo:playerHeight 180;
     fbo:playerWeight 75;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 75000000 .
 
 fbr:Kobbie_Mainoo a fbo:Player ;
@@ -111,6 +127,8 @@ fbr:Kobbie_Mainoo a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 178;
     fbo:playerWeight 70;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Marcus_Rashford a fbo:Player ;
@@ -123,6 +141,8 @@ fbr:Marcus_Rashford a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Rasmus_Hojlund a fbo:Player ;
@@ -135,6 +155,8 @@ fbr:Rasmus_Hojlund a fbo:Player ;
     fbo:playerAssists 4 ;
     fbo:playerHeight 193;
     fbo:playerWeight 85;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 45000000 .
 
 
@@ -148,6 +170,8 @@ fbr:Alejandro_Garnacho a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 180;
     fbo:playerWeight 75;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Alisson_Becker a fbo:Player ;
@@ -160,6 +184,8 @@ fbr:Alisson_Becker a fbo:Player ;
     fbo:playerAssists 2 ;
     fbo:playerHeight 190;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 25000000 .
 
 fbr:Virgil_van_Dijk a fbo:Player ;
@@ -172,6 +198,8 @@ fbr:Virgil_van_Dijk a fbo:Player ;
     fbo:playerAssists 20 ;
     fbo:playerHeight 195;
     fbo:playerWeight 86;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 45000000 .
 
 fbr:Thiago_Alcantara a fbo:Player ;
@@ -184,6 +212,8 @@ fbr:Thiago_Alcantara a fbo:Player ;
     fbo:playerAssists 40 ;
     fbo:playerHeight 175;
     fbo:playerWeight 67;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 35000000 .
 
 fbr:Mohamed_Salah a fbo:Player ;
@@ -197,6 +227,8 @@ fbr:Mohamed_Salah a fbo:Player ;
     fbo:playerAssists 58 ;
     fbo:playerHeight 172;
     fbo:playerWeight 70;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 75000000 .
 
 fbr:Emiliano_Martinez a fbo:Player ;
@@ -209,6 +241,8 @@ fbr:Emiliano_Martinez a fbo:Player ;
     fbo:playerAssists 0 ;
     fbo:playerHeight 190;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Tyrone_Mings a fbo:Player ;
@@ -221,6 +255,8 @@ fbr:Tyrone_Mings a fbo:Player ;
     fbo:playerAssists 2 ;
     fbo:playerHeight 195;
     fbo:playerWeight 85;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Kevin_De_Bruyne a fbo:Player ;
@@ -233,6 +269,8 @@ fbr:Kevin_De_Bruyne a fbo:Player ;
     fbo:playerAssists 124 ;
     fbo:playerHeight 185 ;
     fbo:playerWeight 80 ;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Rodri a fbo:Player ;
@@ -245,6 +283,8 @@ fbr:Rodri a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 195 ;
     fbo:playerWeight 85 ;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Oleksandr_Zinchenko a fbo:Player ;
@@ -257,6 +297,8 @@ fbr:Oleksandr_Zinchenko a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 180;
     fbo:playerWeight 70;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Martin_Odegaard a fbo:Player ;
@@ -269,6 +311,8 @@ fbr:Martin_Odegaard a fbo:Player ;
     fbo:playerAssists 46 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Son_Heung-min a fbo:Player ;
@@ -281,6 +325,8 @@ fbr:Son_Heung-min a fbo:Player ;
     fbo:playerAssists 5 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Richarlison a fbo:Player ;
@@ -293,6 +339,8 @@ fbr:Richarlison a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Jarrod_Bowen a fbo:Player ;
@@ -305,6 +353,8 @@ fbr:Jarrod_Bowen a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 180;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Ben_Johnson a fbo:Player ;
@@ -317,6 +367,8 @@ fbr:Ben_Johnson a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Kaoru_Mitoma a fbo:Player ;
@@ -329,6 +381,8 @@ fbr:Kaoru_Mitoma a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Adam_Lallana a fbo:Player ;
@@ -341,6 +395,8 @@ fbr:Adam_Lallana a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Kieran_Trippier a fbo:Player ;
@@ -353,6 +409,8 @@ fbr:Kieran_Trippier a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Anthony_Gordon a fbo:Player ;
@@ -365,6 +423,8 @@ fbr:Anthony_Gordon a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Marc_Cucurella a fbo:Player ;
@@ -377,6 +437,8 @@ fbr:Marc_Cucurella a fbo:Player ;
     fbo:playerAssists 12 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Thiago_Silva a fbo:Player ;
@@ -389,6 +451,8 @@ fbr:Thiago_Silva a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Hwang_Hee-chan a fbo:Player ;
@@ -401,6 +465,8 @@ fbr:Hwang_Hee-chan a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Max_Kilman a fbo:Player ;
@@ -413,6 +479,8 @@ fbr:Max_Kilman a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Jack_Wilshere a fbo:Player ;
@@ -425,6 +493,8 @@ fbr:Jack_Wilshere a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Adama_Traore a fbo:Player ;
@@ -437,6 +507,8 @@ fbr:Adama_Traore a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Andreas_Pereira a fbo:Player ;
@@ -449,6 +521,8 @@ fbr:Andreas_Pereira a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Dean_Henderson a fbo:Player ;
@@ -461,6 +535,8 @@ fbr:Dean_Henderson a fbo:Player ;
     fbo:playerAssists 0 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Wes_Morgan a fbo:Player ;
@@ -473,6 +549,8 @@ fbr:Wes_Morgan a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Chris_Wood a fbo:Player ;
@@ -485,6 +563,8 @@ fbr:Chris_Wood a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Ben_Mee a fbo:Player ;
@@ -497,6 +577,8 @@ fbr:Ben_Mee a fbo:Player ;
     fbo:playerAssists 24 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Jordan_Pickford a fbo:Player ;
@@ -509,6 +591,8 @@ fbr:Jordan_Pickford a fbo:Player ;
     fbo:playerAssists 0 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Tim_Krul a fbo:Player ;
@@ -521,6 +605,8 @@ fbr:Tim_Krul a fbo:Player ;
     fbo:playerAssists 0 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Charlie_Taylor a fbo:Player ;
@@ -533,6 +619,8 @@ fbr:Charlie_Taylor a fbo:Player ;
     fbo:playerAssists 2 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
 
 fbr:Alan_Wright a fbo:Player ;
@@ -545,4 +633,6 @@ fbr:Alan_Wright a fbo:Player ;
     fbo:playerAssists 2 ;
     fbo:playerHeight 185;
     fbo:playerWeight 80;
+    fbo:playerAge 26 ;
+    fbo:playerNationality "England" ;
     fbo:playerTransactionFee 30000000 .
