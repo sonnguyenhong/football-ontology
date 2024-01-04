@@ -68,6 +68,46 @@ export default async function Page({ params }: Readonly<Props>) {
 									<td>{data.positionName}</td>
 								</tr>
 							)}
+							{data.nationality && (
+								<tr>
+									<td>
+										<b>Nationality</b>
+									</td>
+									<td>{data.nationality}</td>
+								</tr>
+							)}
+							{data.assists && (
+								<tr>
+									<td>
+										<b>Assists</b>
+									</td>
+									<td>{data.assists}</td>
+								</tr>
+							)}
+							{data.height && (
+								<tr>
+									<td>
+										<b>Height</b>
+									</td>
+									<td>{data.height}</td>
+								</tr>
+							)}
+							{data.weight && (
+								<tr>
+									<td>
+										<b>Weight</b>
+									</td>
+									<td>{data.weight}</td>
+								</tr>
+							)}
+							{data.transactionFee && (
+								<tr>
+									<td>
+										<b>Transaction Fee</b>
+									</td>
+									<td>{data.transactionFee}</td>
+								</tr>
+							)}
 							{data.goals && (
 								<tr>
 									<td>
