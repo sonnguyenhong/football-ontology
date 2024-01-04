@@ -12,6 +12,7 @@ fbr:MU_LIV_12072022 a fbo:FootballMatch ;
     fbo:homeTeam fbr:Manchester_United ;
     fbo:awayTeam fbr:Liverpool ;
     fbo:result "4-0" .
+    fbo:heldsIn  fbr:Old_Trafford .
 
 fbr:MU_LIV_17122023 a fbo:FootballMatch ;
     fbo:name "MU vs Liverpool Round 18 Premier League" ;
@@ -21,11 +22,12 @@ fbr:MU_LIV_17122023 a fbo:FootballMatch ;
     fbo:homeTeam fbr:Liverpool ;
     fbo:awayTeam fbr:Manchester_United ;
     fbo:result "0-0" .
+    fbo:heldsIn  fbr:Anfield .
 
 fbr:LIV_NEW_17122024 a fbo:FootballMatch ;
     fbo:name "Liverpool vs Newcastle Matchweek 20 Premier League" ;
     fbo:image "https://resources.premierleague.com/photos/premierleague/photo/2024/01/01/57ed33e2-c4a4-4d67-bec3-5623c3b2134e/1900482258.jpg?width=1200&height=" ;
-    fbo:description "Liverpool moved three points clear at the top of the Premier League with a thrilling 4-2 win over Newcastle United. All six goals at Anfield came in a breathless second half. Mohamed Salah made amends for a missed penalty with his 150th Liverpool Premier League goal, before Alexander Isak equalised against the run of play with Newcastle’s first shot on target. Liverpool scored twice in quick succession to make it 3-1, and although Sven Botman’s header set up a nervy finish, Salah converted a second spot-kick of the match to go joint-top of the Premier League scoring charts this season. Newcastle's Martin Dubravka was in incredible form, ending the match with 10 saves, the joint-most by any goalkeeper in a fixture this season, as Liverpool racked up 7.27 Expected Goals, the highest total on record by a team in a single Premier League match." ;
+    fbo:description "Liverpool moved three points clear at the top of the Premier League with a thrilling 4-2 win over Newcastle United. All six goals at Anfield came in a breathless second half. Mohamed Salah made amends for a missed penalty with his 150th Liverpool Premier League goal, before Alexander Isak equalised against the run of play with Newcastle’s first shot on target. Liverpool scored twice in quick succession to make it 3-1, and although Sven Botman’s header set up a nervy finish, Salah converted a second spot-kick of the match to go joint-top of the Premier League scoring charts this season. Newcastle s Martin Dubravka was in incredible form, ending the match with 10 saves, the joint-most by any goalkeeper in a fixture this season, as Liverpool racked up 7.27 Expected Goals, the highest total on record by a team in a single Premier League match." ;
     fbo:matchDay "01/01/2024" ;
     fbo:homeTeam fbr:Liverpool ;
     fbo:awayTeam fbr:Newcastle ;
@@ -94,7 +96,7 @@ fbr:ARS_BHA_17122030 a fbo:FootballMatch ;
 fbr:MUN_BOU_17122031 a fbo:FootballMatch ;
     fbo:name "Man Utd vs Bournemouth Matchweek 16 Premier League" ;
     fbo:image "https://resources.premierleague.com/photos/premierleague/photo/2023/12/09/bb236fc1-eff6-4a3c-ba19-e1f0a44e767c/1842759427.jpg?width=1200&height=" ;
-    fbo:description "Manchester United’s rollercoaster season continued as they followed their encouraging midweek win over Chelsea with a 3-0 home defeat to in-form AFC Bournemouth, increasing the pressure on manager Erik ten Hag. The Red Devils had the chance to move level with Manchester City with a win, but instead they suffered a damaging loss, which could have been even worse given Bournemouth had two further goals ruled out in their first win at Old Trafford. And to compound Man Utd's woes, this was the first time they lost by at least three goals at home to a team who started the match in the bottom half at table.";
+    fbo:description "Manchester United s rollercoaster season continued as they followed their encouraging midweek win over Chelsea with a 3-0 home defeat to in-form AFC Bournemouth, increasing the pressure on manager Erik ten Hag. The Red Devils had the chance to move level with Manchester City with a win, but instead they suffered a damaging loss, which could have been even worse given Bournemouth had two further goals ruled out in their first win at Old Trafford. And to compound Man Utd s woes, this was the first time they lost by at least three goals at home to a team who started the match in the bottom half at table.";
     fbo:matchDay "09/12/2023" ;
     fbo:homeTeam fbr:Manchester_United ;
     fbo:awayTeam fbr:Bournemouth;

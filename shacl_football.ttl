@@ -46,11 +46,6 @@ fbo:FootballTeamShape
     sh:datatype xsd:integer ;
     sh:minCount 1 ;
     sh:message "Năm thành lập đội bóng là bắt buộc và phải là một số nguyên." ;
-  ] ;
-  sh:property [
-    sh:path fbo:numTitles ;
-    sh:datatype xsd:nonNegativeInteger ;
-    sh:message "Số lượng danh hiệu phải là một số nguyên không âm." ;
   ] .
 
 fbo:CoachShape
@@ -103,12 +98,6 @@ fbo:FootballMatchShape
     sh:path fbo:awayTeam ;
     sh:node fbo:FootballTeamShape ;
     sh:message "Trận đấu phải có một đội khách." ;
-  ] ;
-  sh:property [
-    sh:path fbo:result ;
-    sh:datatype xsd:string ;
-    sh:minCount 1 ;
-    sh:message "Kết quả trận đấu là bắt buộc." ;
   ] .
 
 fbo:FootballLeagueShape
@@ -126,7 +115,6 @@ fbo:FootballLeagueShape
     sh:message "Số lượng đội tham gia phải là một số nguyên không âm." ;
   ] .
 
-# Định nghĩa ràng buộc cho các mối quan hệ giữa các tài nguyên.
 fbo:PlayerShape
   sh:property [
     sh:path fbo:playsFor ;
@@ -147,4 +135,3 @@ fbo:FootballTeamShape
     sh:node fbo:StadiumShape ;
     sh:message "Đội bóng phải có ít nhất một sân vận động làm sân nhà." ;
   ] .
-
