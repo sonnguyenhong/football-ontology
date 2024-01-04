@@ -43,6 +43,7 @@ fbr:Aston_Villa a fbo:FootballTeam ;
     fbo:numTitles 5 ;
     fbo:participatesIn fbr:Premier_League ;
     fbo:foundedYear 1874 ;
+    fbo:coachedBy fbr:Unai_Emery_Etxegoien ;
     fbo:hasHomeField fbr:Villa_Park .
 
 
@@ -54,6 +55,7 @@ fbr:Manchester_City a fbo:FootballTeam ;
     fbo:numTitles 10 ;
     fbo:participatesIn fbr:Premier_League ;
     fbo:foundedYear 1880 ;
+    fbo:coachedBy fbr:Pep_Guardiola ;
     fbo:hasHomeField fbr:Etihad .
 
 
@@ -65,6 +67,7 @@ fbr:Arsenal a fbo:FootballTeam ;
     fbo:numTitles 25 ;
     fbo:participatesIn fbr:Premier_League ;
     fbo:foundedYear 1886  ;
+    fbo:coachedBy fbr:Mikel_Arteta_Amatriain ;
     fbo:hasHomeField fbr:Arsenal_Stadium .
 
 
@@ -75,6 +78,7 @@ fbr:Tottenham a fbo:FootballTeam ;
     fbo:description "Tottenham Hotspur Football Club, commonly referred to as simply Tottenham (/ˈtɒtənəm/)[2][3] or Spurs, is a professional football club based in Tottenham, London, England. It competes in the Premier League, the top flight of English football. The team has played its home matches in the 62,850-capacity Tottenham Hotspur Stadium since April 2019, replacing their former home of White Hart Lane, which had been demolished to make way for the new stadium on the same site. " ;
     fbo:numTitles 0 ;
     fbo:foundedYear 1882 ;
+    fbo:coachedBy fbr:Ange_Postecoglou ;
     fbo:participatesIn fbr:Premier_League  ;
     fbo:hasHomeField fbr:Tottenham_Hotspur_Stadium .
 
@@ -86,6 +90,7 @@ fbr:West_Ham a fbo:FootballTeam ;
     fbo:description "West Ham United Football Club is an English professional football club that plays its home matches in Stratford, East London. The club competes in the Premier League, the top tier of English football. The club plays at the London Stadium, having moved from their former home, the Boleyn Ground, in 2016. " ;
     fbo:numTitles 15 ;
     fbo:foundedYear 1895 ;
+    fbo:coachedBy fbr:David_Moyes ;
     fbo:participatesIn fbr:Premier_League  ;
     fbo:hasHomeField fbr:London_Stadium .
 
@@ -97,9 +102,10 @@ fbr:Brighton a fbo:FootballTeam ;
     fbo:description "Brighton & Hove Albion Football Club (/ˈbraɪtən ... ˈhoʊv/ BRY-tən … HOHV), commonly referred to simply as Brighton, is an English professional football club based in the city of Brighton and Hove. They compete in the Premier League, the top tier of the English football league system. The clubs home ground is the 31,876-capacity Falmer Stadium in Falmer, in the north east of Brighton. " ;
     fbo:numTitles 10 ;
     fbo:foundedYear 1901 ;
+    fbo:coachedBy fbr:Roberto_De_Zerbi ;
     fbo:participatesIn fbr:Premier_League  ;
     fbo:hasHomeField fbr:Falmer_Stadium .
-    
+
 fbr:Newcastle a fbo:FootballTeam ;
     fbo:name "Newcastle" ;
     fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Newcastle_United_Logo.svg/200px-Newcastle_United_Logo.svg.png" ;
@@ -107,9 +113,10 @@ fbr:Newcastle a fbo:FootballTeam ;
     fbo:description "Newcastle United Football Club is a professional association football club based in Newcastle upon Tyne, Tyne and Wear, England. The team compete in the Premier League, the first level of the English football league system, as of the 2023–24 season. Since the formation of the club in 1892, when Newcastle East End absorbed the assets of Newcastle West End to become Newcastle United, the club has played its home matches at St James Park. Located in the centre of Newcastle, it currently has a capacity of 52,305. " ;
     fbo:numTitles 25 ;
     fbo:foundedYear 1892 ;
+    fbo:coachedBy fbr:Eddie_Howe ;
     fbo:participatesIn fbr:Premier_League  ;
     fbo:hasHomeField fbr:St_James_Park .
-    
+
 fbr:Chelsea a fbo:FootballTeam ;
     fbo:name "Chelsea" ;
     fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/190px-Chelsea_FC.svg.png" ;
@@ -117,9 +124,10 @@ fbr:Chelsea a fbo:FootballTeam ;
     fbo:description "Chelsea Football Club is an English professional football club based in Fulham, West London. Founded in 1905, the team play their home games at Stamford Bridge.[5] The club competes in the Premier League, the top division of English football. It won its first major honour, the League championship, in 1955. The club won the FA Cup for the first time in 1970, their first European honour, the Cup Winners Cup, in 1971, and became the third English club to win the Club World Cup in 2022. " ;
     fbo:numTitles 35 ;
     fbo:foundedYear 1905 ;
+    fbo:coachedBy fbr:Mauricio_Pochettino ;
     fbo:participatesIn fbr:Premier_League  ;
     fbo:hasHomeField fbr:Stamford_Bridge .
-    
+
 fbr:Wolverhampton a fbo:FootballTeam ;
     fbo:name "Wolverhampton" ;
     fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Wolverhampton_Wanderers.svg/200px-Wolverhampton_Wanderers.svg.png" ;
@@ -127,9 +135,10 @@ fbr:Wolverhampton a fbo:FootballTeam ;
     fbo:description "Wolverhampton Wanderers Football Club (/ˌwʊlvərˈhæmptən/ ⓘ), commonly referred to as Wolves,[1] is a professional football club based in Wolverhampton, England, which competes in the Premier League. The club has played at Molineux Stadium since moving from Dudley Road in 1889. The clubs traditional kit consists of old gold shirts and socks with black shorts. Since 1979, the kit has also featured the clubs wolfs head logo. Long-standing rivalries exist with other clubs from the West Midlands, including Aston Villa F.C. but the main one being the Black Country derby contested with West Bromwich Albion. Since 2016, the club has been owned by the Chinese conglomerate Fosun International. " ;
     fbo:numTitles 11 ;
     fbo:foundedYear 1877 ;
+    fbo:coachedBy fbr:Gary_O_Neil ;
     fbo:participatesIn fbr:Premier_League  ;
     fbo:hasHomeField fbr:Molineux_Stadium .
-    
+
 fbr:Bournemouth a fbo:FootballTeam ;
     fbo:name "Bournemouth" ;
     fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/Bournemouth_FC_logo.png/250px-Bournemouth_FC_logo.png" ;
@@ -137,9 +146,10 @@ fbr:Bournemouth a fbo:FootballTeam ;
     fbo:description "Bournemouth Football Club (/ˈbɔːrnməθ/ ⓘ BORN-məth) is an English football team currently playing in the Wessex League Premier Division, in the ninth tier of the English football league system. Their nickname is The Poppies, and they are often known as Bournemouth Poppies to avoid confusion with the Premier League club AFC Bournemouth. The club plays at Victoria Park, Namu Road, in Bournemouth and are founding members of the Hampshire FA and Bournemouth FA.[1] " ;
     fbo:numTitles 5 ;
     fbo:foundedYear 1875 ;
+    fbo:coachedBy fbr:Andoni_Iraola ;
     fbo:participatesIn fbr:Premier_League  ;
     fbo:hasHomeField fbr:Dean_Court .
-    
+
 fbr:Fulham a fbo:FootballTeam ;
     fbo:name "Fulham" ;
     fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Fulham_FC_%28shield%29.svg/150px-Fulham_FC_%28shield%29.svg.png" ;
@@ -147,9 +157,10 @@ fbr:Fulham a fbo:FootballTeam ;
     fbo:description "Fulham Football Club is a professional football club based in Fulham, Greater London, England. The team competes in the Premier League, the top level of the English football league system. They have played home games at Craven Cottage since 1896, other than a two-year period spent at Loftus Road whilst Craven Cottage underwent redevelopments that were completed in 2004. They contest West London derby rivalries with Chelsea, Queens Park Rangers and Brentford. The club adopted a white shirt and black shorts as its kit in 1903, which has been used ever since.[4] " ;
     fbo:numTitles 6 ;
     fbo:foundedYear 1879 ;
+    fbo:coachedBy fbr:Marco_Silva ;
     fbo:participatesIn fbr:Premier_League  ;
     fbo:hasHomeField fbr:Craven_Cottage .
-    
+
 fbr:Crystal_Palace a fbo:FootballTeam ;
     fbo:name "Crystal Palace" ;
     fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/Crystal_Palace_FC_logo_%282022%29.svg/175px-Crystal_Palace_FC_logo_%282022%29.svg.png" ;
@@ -157,9 +168,10 @@ fbr:Crystal_Palace a fbo:FootballTeam ;
     fbo:description "Crystal Palace Football Club, commonly referred to as Palace, is a professional football club based in Selhurst in the Borough of Croydon, South London, England, which competes in the Premier League, the highest level of English football. Although formally created as a professional outfit in 1905 at the Crystal Palace Exhibition building, the club claim their foundation date to be as far back as 1861,[1] after a disputed lineage was found to an amateur Crystal Palace football team who first played on a cricket pitch inside the Palace grounds.[3][4] The club used the FA Cup final stadium situated inside the grounds of the Palace for their home games between 1905 and 1915, when they were forced to leave due to the outbreak of the First World War. In 1924, they moved to their current home at Selhurst Park." ;
     fbo:numTitles 9 ;
     fbo:foundedYear 1905 ;
+    fbo:coachedBy fbr:Roy_Hodgson ;
     fbo:participatesIn fbr:Premier_League  ;
     fbo:hasHomeField fbr:Selhurst_Park .
-    
+
 fbr:Nottingham_Forest a fbo:FootballTeam ;
     fbo:name "Nottingham Forest" ;
     fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Nottingham_Forest_F.C._logo.svg/110px-Nottingham_Forest_F.C._logo.svg.png" ;
@@ -167,9 +179,10 @@ fbr:Nottingham_Forest a fbo:FootballTeam ;
     fbo:description "Nottingham Forest Football Club is a professional association football based in West Bridgford, Nottingham, England. The team competes in the Premier League, the first level of the English football league system. Founded in 1865, Forest have played their home games at the City Ground since 1898. Nottingham Forest have won two European Cups (now the UEFA Champions League), being one of six English clubs to have won the European Cup. They have also won one UEFA Super Cup, one League title, two FA Cups, four League Cups, and one FA Charity Shield. The club has competed in the top two tiers of English football since its admission to the Football League, with the exception of five seasons in the third tier. Its most successful period was under the management of Brian Clough and Peter Taylor in the late 1970s and early 1980s, which included back-to-back wins in the then European Cup in 1979 and 1980. " ;
     fbo:numTitles 30 ;
     fbo:foundedYear 1865 ;
+    fbo:coachedBy fbr:Steve_Cooper ;
     fbo:participatesIn fbr:Premier_League  ;
     fbo:hasHomeField fbr:City_Ground .
-    
+
 fbr:Brentford a fbo:FootballTeam ;
     fbo:name "Brentford" ;
     fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Brentford_FC_crest.svg/180px-Brentford_FC_crest.svg.png" ;
@@ -177,9 +190,10 @@ fbr:Brentford a fbo:FootballTeam ;
     fbo:description "Brentford Football Club is a professional association football club in Brentford, West London, England. The team compete in the Premier League, the first level of the English football league system. Nicknamed The Bees, the club was founded in 1889 and played home matches at Griffin Park from 1904 before moving to the Gtech Community Stadium in 2020. Brentford initially played amateur football before they entered the London League in 1896 and finished as runners-up of the Second Division and then the First Division to win election into the Southern League in 1898. They won the Southern League Second Division in 1900–01 and were elected into the Football League in 1920. Brentford won the Third Division South title in 1932–33 and the Second Division title in 1934–35. The club enjoyed a successful spell in the top flight of English football, reaching a peak of fifth in the First Division, in 1935–36, their highest ever league finish, before three relegations left them in the Fourth Division by 1962. They were crowned Fourth Division champions in 1962–63, but were relegated in 1966 and again in 1973 after gaining promotion in 1971–72. Brentford spent 14 seasons in the Third Division after gaining promotion in 1977–78 and went on to win the Third Division title in 1991–92, though were relegated again in 1993. " ;
     fbo:numTitles 5 ;
     fbo:foundedYear 1889 ;
+    fbo:coachedBy fbr:Thomas_Frank ;
     fbo:participatesIn fbr:Premier_League  ;
     fbo:hasHomeField fbr:Brentford_Community_Stadium .
-    
+
 fbr:Everton a fbo:FootballTeam ;
     fbo:name "Everton" ;
     fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/200px-Everton_FC_logo.svg.png" ;
@@ -187,9 +201,10 @@ fbr:Everton a fbo:FootballTeam ;
     fbo:description "Everton Football Club (/ˈɛvərtən/) is an English professional association football club based in Liverpool that competes in the Premier League, the top tier of English football. The club was a founder member of the Football League in 1888, and has, as of August 2023, competed in the top division for a record 121 seasons, having missed only four top-flight seasons (1930–31, 1951–52, 1952–53, and 1953–54). Everton is the club with the second-longest continuous presence in English top-flight football,[2] and ranks third in the all-time points rankings.[3] The club has won nine league titles, five FA Cups, one European Cup Winners Cup and nine Charity Shields. " ;
     fbo:numTitles 34 ;
     fbo:foundedYear 1878 ;
+    fbo:coachedBy fbr:Sean_Dyche ;
     fbo:participatesIn fbr:Premier_League ;
     fbo:hasHomeField fbr:Goodison_Park .
-    
+
 fbr:Luton_Town a fbo:FootballTeam ;
     fbo:name "Luton Town" ;
     fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Luton_Town_logo.svg/180px-Luton_Town_logo.svg.png" ;
@@ -197,9 +212,10 @@ fbr:Luton_Town a fbo:FootballTeam ;
     fbo:description "Luton Town Football Club (/ˈluːtən/) is a professional football club based in Luton, Bedfordshire, England, that competes in the Premier League, the top tier of English football. Founded in 1885, they are nicknamed the Hatters, due to the historical association of the town with the hat making trade, and have played home matches at Kenilworth Road since 1905. The clubs history includes one major trophy win, several financial crises, as well as numerous promotions and relegations. Between 1982 and 1992, they were a member of the First Division they won their first major honour, the Football League Cup, in 1988. Luton Town have a long-standing rivalry with nearby club Watford. " ;
     fbo:numTitles 10 ;
     fbo:foundedYear 1885 ;
+    fbo:coachedBy fbr:Rob_Edwards ;
     fbo:participatesIn fbr:Premier_League  ;
     fbo:hasHomeField fbr:Kenilworth_Road .
-    
+
 fbr:Burnley a fbo:FootballTeam ;
     fbo:name "Burnley" ;
     fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Burnley_FC_Logo.svg/180px-Burnley_FC_Logo.svg.png" ;
@@ -207,9 +223,10 @@ fbr:Burnley a fbo:FootballTeam ;
     fbo:description "Burnley Football Club (/ˈbɜːrnli/) is an English association football club based in Burnley, Lancashire, that competes in the Premier League, the first tier of English football. Founded on 18 May 1882, the club was one of the first to become professional (in 1883) and subsequently put pressure on the Football Association to permit payments to players. The club entered the FA Cup for the first time in 1885–86 and was one of the 12 founder members of the Football League in 1888–89. From the 1950s until the 1970s, under chairman Bob Lord, the club became renowned for its youth policy and scouting system, and was one of the first to set up a purpose-built training ground. " ;
     fbo:numTitles 12 ;
     fbo:foundedYear 1882 ;
+    fbo:coachedBy fbr:Vincent_Kompany ;
     fbo:participatesIn fbr:Premier_League  ;
     fbo:hasHomeField fbr:Turf_Moor .
-    
+
 fbr:Sheffield_United a fbo:FootballTeam ;
     fbo:name "Sheffield United" ;
     fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Sheffield_United_FC_logo.svg/190px-Sheffield_United_FC_logo.svg.png" ;
@@ -217,5 +234,6 @@ fbr:Sheffield_United a fbo:FootballTeam ;
     fbo:description "Sheffield United Football Club is a professional football club in Sheffield, South Yorkshire, England, that competes in the Premier League, following their promotion from the 2022–23 EFL Championship. They are nicknamed the Blades due to Sheffield history of cutlery production.[3] The team have played home games at Bramall Lane since their formation. For most of the clubs history, United have played in red and white striped shirts with black shorts. Their main rivals are Sheffield Wednesday, with whom they contest the Steel City derby. " ;
     fbo:numTitles 12 ;
     fbo:foundedYear 1889 ;
+    fbo:coachedBy fbr:Chris_Wilder ;
     fbo:participatesIn fbr:Premier_League  ;
     fbo:hasHomeField fbr:Bramall_Lane .

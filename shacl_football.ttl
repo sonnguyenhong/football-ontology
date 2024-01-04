@@ -115,7 +115,6 @@ fbo:FootballLeagueShape
     sh:message "Số lượng đội tham gia phải là một số nguyên không âm." ;
   ] .
 
-# Định nghĩa ràng buộc cho các mối quan hệ giữa các tài nguyên.
 fbo:PlayerShape
   sh:property [
     sh:path fbo:playsFor ;

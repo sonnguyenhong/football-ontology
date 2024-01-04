@@ -5,7 +5,7 @@
 @prefix fbr: <http://localhost:3000/resource/> .
 
 fbr:Erik_ten_Hag a fbo:Coach ;
-    fbo:name "Erik_ten_Hag" ;
+    fbo:name "Erik ten Hag" ;
     fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Erik_ten_Hag_2017.jpg/220px-Erik_ten_Hag_2017.jpg" ;
     fbo:description "Erik ten Hag (born 2 February 1970) is a Dutch professional football manager and former player who is the manager of Premier League club Manchester United. Ten Hag played as a centre back and began his career with Eredivisie club Twente. He joined De Graafschap in 1990, and won the Eerste Divisie in his first season. He rejoined Twente in 1992 and transferred to RKC Waalwijk two years later, where he remained for one season before signing with Utrecht in 1995. Ten Hag returned to Twente for a third time in 1996, where he won KNVB Cup in 2001. He retired in 2002, at age 32. Ten Hag began his managerial career in 2012, when he was appointed by Go Ahead Eagles, where he led the club to promotion to the Eredivisie in his debut season. He then joined Bayern Munich II in 2013, winning promotion to the Regionalliga Bayern in 2014. He returned to the Netherlands in 2015 as sporting director and head coach at Utrecht. He joined Ajax in 2017, where he won three Eredivisie titles, two KNVB Cups, and led the team to the semi-finals of the 2018–19 UEFA Champions League. In 2022, he was appointed at Manchester United. " ;
     fbo:coachNationality "Netherlands" ;
@@ -120,6 +120,26 @@ fbr:Andoni_Iraola a fbo:Coach ;
     fbo:description "is a Spanish professional football manager and former player who is the current manager of Premier League club AFC Bournemouth. " ;
     fbo:coachNationality "Spain" ;
     fbo:coachAge 41 ;
+    fbo:coachAchieves fbr:Premier_League_MOTM ;
+    fbo:coachHeight 181 ;
+    fbo:coachWeight 85 .
+
+fbr:Marco_Silva a fbo:Coach ;
+    fbo:name "Marco Alexandre Saraiva da Silva" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/8/8c/Andoni_Iraola_2023.jpg" ;
+    fbo:description "is a Portuguese football manager and former player who played as a right-back. He is the head coach of Premier League club Fulham. " ;
+    fbo:coachNationality "Portugal" ;
+    fbo:coachAge 46 ;
+    fbo:coachAchieves fbr:Premier_League_MOTM ;
+    fbo:coachHeight 181 ;
+    fbo:coachWeight 85 .
+
+fbr:Roy_Hodgson a fbo:Coach ;
+    fbo:name "Roy Hodgson" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/8/8c/Andoni_Iraola_2023.jpg" ;
+    fbo:description "là một cựu cầu thủ bóng đá người Anh, huấn luyện viên người Anh và từng là huấn luyện viên trưởng đội tuyển bóng đá quốc gia Anh. Ông hiện tại là huấn luyện viên trưởng của câu lạc bộ Crystal Palace tại Premier League. " ;
+    fbo:coachNationality "England" ;
+    fbo:coachAge 76 ;
     fbo:coachAchieves fbr:Premier_League_MOTM ;
     fbo:coachHeight 181 ;
     fbo:coachWeight 85 .
