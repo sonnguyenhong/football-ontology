@@ -18,3 +18,129 @@ fbr:Anfield a fbo:Stadium ;
     fbo:stadiumCapacity 61276 ;
     fbo:stadiumAge 139 .
 
+fbr:Arsenal_Stadium a fbo:Stadium ;
+    fbo:name "Arsenal Stadium" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Arsenal_Stadium_interior_North_Bank.jpg/290px-Arsenal_Stadium_interior_North_Bank.jpg" ;
+    fbo:description "Arsenal Stadium was a football stadium in Highbury, London, which was the home of Arsenal Football Club between 6 September 1913 and 7 May 2006. It was popularly known as Highbury due to its location and was given the affectionate nickname of the Home of Football.[1] " ;
+    fbo:stadiumCapacity 38419 ;
+    fbo:stadiumAge 139 .
+
+fbr:Villa_Park a fbo:Stadium ;
+    fbo:name "Villa Park" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Birmingham_aston_villa_park_stadium.jpg/300px-Birmingham_aston_villa_park_stadium.jpg" ;
+    fbo:description "Villa Park is a football stadium in Aston, Birmingham, with a seating capacity of 42,657.[4] It has been the home of Premier League club Aston Villa since 1897. The ground is less than a mile from both Witton and Aston railway stations and has hosted sixteen England internationals at senior level, the first in 1899 and the most recent in 2005. Villa Park has hosted 55 FA Cup semi-finals, more than any other stadium, and it is the 10th largest in England. " ;
+    fbo:stadiumCapacity 42657 ;
+    fbo:stadiumAge 139 .
+
+fbr:Etihad a fbo:Stadium ;
+    fbo:name "Etihad" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Manchester_city_etihad_stadium_%28cropped%29.jpg/300px-Manchester_city_etihad_stadium_%28cropped%29.jpg" ;
+    fbo:description "The City of Manchester Stadium (known as the Etihad Stadium for sponsorship reasons)[2] is the home of Premier League club Manchester City, with a domestic football capacity of 53,400,[1] making it the 6th-largest football stadium in England and ninth-largest in the United Kingdom.[3]" ;
+    fbo:stadiumCapacity 53400 ;
+    fbo:stadiumAge 30 .
+
+fbr:Tottenham_Hotspur_Stadium a fbo:Stadium ;
+    fbo:name "Tottenham Hotspur Stadium" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/London_Tottenham_Hotspur_Stadium.jpg/240px-London_Tottenham_Hotspur_Stadium.jpg" ;
+    fbo:description "Tottenham Hotspur Stadium is the home of Premier League club Tottenham Hotspur in north London, replacing the club previous ground, White Hart Lane. With a seating capacity of 62,850,[1] it is the 3rd largest football stadium in England and the largest club ground in London.[9] It is designed to be a multi-purpose stadium and is the home of the NFL in the UK. It features the worlds first dividing, retractable football pitch, which reveals a synthetic turf field underneath for NFL London Games, concerts and other events." ;
+    fbo:stadiumCapacity 62850 ;
+    fbo:stadiumAge 139 .
+
+fbr:London_Stadium a fbo:Stadium ;
+    fbo:name "London Stadium" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/London_Olympic_Stadium_West_Ham.jpg/250px-London_Olympic_Stadium_West_Ham.jpg" ;
+    fbo:description "The London Stadium (formerly and also known as the Olympic Stadium and the Stadium at Queen Elizabeth Olympic Park) is a multi-purpose outdoor stadium at Queen Elizabeth Olympic Park in the Stratford district of London. It is located in the Lower Lea Valley, 6 miles (10 km) east of central London. The stadium was constructed specifically for the 2012 Summer Olympics and 2012 Summer Paralympics, serving as the Athletics venue and as the site of their opening and closing ceremonies. Following the Games, it was renovated for multi-purpose use, and it now serves primarily as the home of Premier League club West Ham United. " ;
+    fbo:stadiumCapacity 62500 ;
+    fbo:stadiumAge 139 .
+
+fbr:Falmer_Stadium a fbo:Stadium ;
+    fbo:name "Falmer Stadium" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Falmer_Stadium_-_night.jpg/250px-Falmer_Stadium_-_night.jpg" ;
+    fbo:description "Falmer Stadium, known for sponsorship purposes as the American Express Stadium[4] and more commonly referred to as the Amex, is a football stadium in Falmer, Brighton and Hove, East Sussex. With a capacity of 31,876,[5] it is the second largest stadium in all of South East England, and the 31st largest stadium in the United Kingdom. " ;
+    fbo:stadiumCapacity 31876 ;
+    fbo:stadiumAge 139 .
+
+fbr:St_James_Park a fbo:Stadium ;
+    fbo:name "St James Park" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Newcastle_st-james-park_stadium.jpg/250px-Newcastle_st-james-park_stadium.jpg" ;
+    fbo:description "St James Park is a football stadium in Newcastle upon Tyne, England. It is the home of Newcastle United. With a seating capacity of 52,305 seats, it is the 8th largest football stadium in England. " ;
+    fbo:stadiumCapacity 52305 ;
+    fbo:stadiumAge 139 .
+
+fbr:Stamford_Bridge a fbo:Stadium ;
+    fbo:name "Stamford Bridge" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/London_stanford_bridge.JPG/300px-London_stanford_bridge.JPG" ;
+    fbo:description "Stamford Bridge (/ˈstæmfərd/) is a football stadium in Fulham, adjacent to the borough of Chelsea in West London. It is the home of Premier League club Chelsea. With a capacity of 40,343, it is the ninth largest venue of the 2023–24 Premier League season and the eleventh largest football stadium in England. " ;
+    fbo:stadiumCapacity 40343 ;
+    fbo:stadiumAge 139 .
+
+fbr:Molineux_Stadium a fbo:Stadium ;
+    fbo:name "Molineux Stadium" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/MolineuxStadium2022.jpg/250px-MolineuxStadium2022.jpg" ;
+    fbo:description "Molineux Stadium (/ˈmɒlɪnjuː/ MOL-i-new) is a football stadium situated in Wolverhampton, West Midlands, England, has been the home ground of Premier League club Wolverhampton Wanderers since 1889. The first stadium built for use by a Football League club,[3] it was one of the first British grounds to have floodlights installed and hosted some of the earliest European club games in the 1950s. " ;
+    fbo:stadiumCapacity 31750 ;
+    fbo:stadiumAge 139 .
+
+fbr:Dean_Court a fbo:Stadium ;
+    fbo:name "Dean Court" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Deancourt_14092013_vblackpool.jpg/300px-Deancourt_14092013_vblackpool.jpg" ;
+    fbo:description "Dean Court, currently known as the Vitality Stadium for sponsorship purposes,[2] is a football stadium in Kings Park, Boscombe, a suburb of Bournemouth, Dorset, England, and the home ground of AFC Bournemouth. " ;
+    fbo:stadiumCapacity 28799 ;
+    fbo:stadiumAge 139 .
+
+fbr:Craven_Cottage a fbo:Stadium ;
+    fbo:name "Craven Cottage" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Craven_Cottage_Football_Ground_-_geograph.org.uk_-_778731.jpg/270px-Craven_Cottage_Football_Ground_-_geograph.org.uk_-_778731.jpg" ;
+    fbo:description "Craven Cottage is a football stadium in Fulham, West London, England, which has been the home of Fulham since 1896.[3] The grounds capacity is 22,384 [1] the record attendance is 49,335, for a game against Millwall in 1938.[4] Next to Bishops Park on the banks of the River Thames,[5] it was originally a royal hunting lodge and has a history dating back over 300 years.[6] " ;
+    fbo:stadiumCapacity 49335 ;
+    fbo:stadiumAge 139 .
+
+fbr:Selhurst_Park a fbo:Stadium ;
+    fbo:name "Selhurst Park" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/London_Selhurst_Park_crystal_palace_stadium_aerialview.JPG/250px-London_Selhurst_Park_crystal_palace_stadium_aerialview.JPG" ;
+    fbo:description "Selhurst Park is a football stadium in Selhurst, in the London Borough of Croydon, England, which is the home ground of Premier League side Crystal Palace. The stadium was designed by Archibald Leitch and opened in 1924. It has hosted international football, as well as games for the 1948 Summer Olympics; it was shared by Charlton Athletic from 1985 to 1991 and Wimbledon from 1991 to 2003. " ;
+    fbo:stadiumCapacity 25486 ;
+    fbo:stadiumAge 139 .
+
+fbr:City_Ground a fbo:Stadium ;
+    fbo:name "City Ground" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Nottingham_the_city_ground_stadium_forest.jpg/300px-Nottingham_the_city_ground_stadium_forest.jpg" ;
+    fbo:description "The City Ground is a football stadium in West Bridgford, Nottinghamshire, England, on the banks of the River Trent. It has been home to Nottingham Forest since 1898 and has a capacity of 30,455. " ;
+    fbo:stadiumCapacity 30455 ;
+    fbo:stadiumAge 139 .
+
+fbr:Brentford_Community_Stadium a fbo:Stadium ;
+    fbo:name "Brentford Community Stadium" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Brentford_Community_Stadium_2020.jpg/250px-Brentford_Community_Stadium_2020.jpg" ;
+    fbo:description "The Brentford Community Stadium, currently known for sponsorship reasons as the Gtech Community Stadium,[5] is a football stadium in Brentford, West London that is the home of Premier League football club Brentford. The stadium has a capacity of 17,250 and is suitable for use for both association football and rugby union matches. Opened in 2020, the stadium is at the heart of plans to regenerate the surrounding area, including new homes and commercial opportunities. It was used during the UEFA Women Euro 2022 (Euros), which was held in England. " ;
+    fbo:stadiumCapacity 17250 ;
+    fbo:stadiumAge 139 .
+
+fbr:Goodison_Park a fbo:Stadium ;
+    fbo:name "Goodison Park" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Everton%E2%80%99s_new_ground_rises_up.jpg/250px-Everton%E2%80%99s_new_ground_rises_up.jpg" ;
+    fbo:description "Everton Stadium[2] is a football stadium under construction on Bramley-Moore Dock in Vauxhall, Liverpool, England, that will become the home ground for Everton F.C. ahead of the 2025–26 season,[3] replacing Goodison Park. " ;
+    fbo:stadiumCapacity 38419 ;
+    fbo:stadiumAge 139 .
+
+fbr:Kenilworth_Road a fbo:Stadium ;
+    fbo:name "Kenilworth Road" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Kenilworth_Road.jpg/270px-Kenilworth_Road.jpg" ;
+    fbo:description "Kenilworth Road, known affectionately as The Kenny,[2] and The Old Girl,[3] is an association football stadium in Bury Park, Luton, Bedfordshire, England. It has been the home ground of Luton Town Football Club since 1905. The stadium has also hosted women and youth international matches, including the second leg of the 1984 European Competition for Women Football final. " ;
+    fbo:stadiumCapacity 11500 ;
+    fbo:stadiumAge 139 .
+
+fbr:Turf_Moor a fbo:Stadium ;
+    fbo:name "Turf Moor" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Turf_Moor_-_Harry_Potts_Way_%28east%29.jpg/260px-Turf_Moor_-_Harry_Potts_Way_%28east%29.jpg" ;
+    fbo:description "Turf Moor is an association football stadium in Burnley, Lancashire, England, which has been the home of Burnley Football Club since 1883. This unbroken service makes Turf Moor the second-longest continuously used ground in English professional football. The stadium is situated on Harry Potts Way, named after the manager who won the 1959–60 First Division with the club, and has a capacity of 21,944." ;
+    fbo:stadiumCapacity 21944 ;
+    fbo:stadiumAge 139 .
+
+fbr:Bramall_Lane a fbo:Stadium ;
+    fbo:name "Bramall Lane" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Sheffield_united_bramall_lane_stadium.jpg/290px-Sheffield_united_bramall_lane_stadium.jpg" ;
+    fbo:description "The stadium was originally a cricket ground, built on a road named after the Bramall family of file and graver manufacturers. The Bramalls owned The Old White House, on the corner of Bramall Lane and Cherry Street, and the Sheaf House, now a pub, that still stands at the top of Bramall Lane. " ;
+    fbo:stadiumCapacity 32000 ;
+    fbo:stadiumAge 139 .
+
