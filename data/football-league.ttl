@@ -11,7 +11,6 @@ fbr:Bangkok_Century_Cup_2022 a fbo:FootballLeague ;
     fbo:numTeams 2 ;
     fbo:includes fbr:MU_LIV_12072022 .
 
-
 fbr:Premier_League a fbo:FootballLeague ;
     fbo:name "Premier League" ;
     fbo:image "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Premier_League_Logo.svg/280px-Premier_League_Logo.svg.png" ;
