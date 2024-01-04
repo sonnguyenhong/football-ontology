@@ -1,8 +1,10 @@
 import { querier } from "@/actions/querier";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import "@/style/app.css";
 import { Metadata } from "next";
 import { Props } from "@/actions/data-types";
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	const data = await querier.award(decodeURIComponent(params.id));
 	return {

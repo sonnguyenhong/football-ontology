@@ -3,7 +3,7 @@ import { querier } from "@/actions/querier";
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-
+import "@/style/app.css";
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	const data = await querier.stadium(decodeURIComponent(params.id));
 	return {

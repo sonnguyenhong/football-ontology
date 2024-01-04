@@ -4,13 +4,17 @@
 @prefix fbo: <http://localhost:3000/ontology#> .
 @prefix fbr: <http://localhost:3000/resource/> .
 
-fbr:André_Onana a fbo:Player ;
-    fbo:name "André Onana" ;
+fbr:Andre_Onana a fbo:Player ;
+    fbo:name "Andre Onana" ;
     fbo:goals 0 ;
     fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Andr%C3%A9_Onana.jpg/220px-Andr%C3%A9_Onana.jpg" ;
     fbo:description "André Onana Onana (French pronunciation: [ɑ̃dʁe ɔnana];[4] born 2 April 1996) is a Cameroonian professional footballer who plays as a goalkeeper for Premier League club Manchester United and the Cameroon national team.Onana joined Barcelona youth system in 2010. He signed for Ajax in 2015, where he made 214 appearances and won three Eredivisie titles. Onana joined Inter Milan on a free transfer in July 2022, where he won a Coppa Italia and Supercoppa Italiana title in his sole season at the club, also reaching the Champions League final. Manchester United then signed Onana for an initial £43.8 million in 2023. At international level, Onana has made more than 30 appearances for the Cameroon national team since making his debut in September 2016. " ;
     fbo:hasPosition fbo:Goalkeeper ;
-    fbo:playsFor fbr:Manchester_United .
+    fbo:playsFor fbr:Manchester_United ;
+    fbo:playerAssists 4 ;
+    fbo:playerHeight 190;
+    fbo:playerWeight 80;
+    fbo:playerTransactionFee 25000000 .
 
 fbr:Harry_Maguire a fbo:Player ;
     fbo:name "Harry Maguire" ;
@@ -18,23 +22,35 @@ fbr:Harry_Maguire a fbo:Player ;
     fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Harry_Maguire_2018-07-11_1.jpg/220px-Harry_Maguire_2018-07-11_1.jpg" ;
     fbo:description "Jacob Harry Maguire (born 5 March 1993) is an English professional footballer who plays as a centre back for Premier League club Manchester United and the England national team. Maguire came through the youth system at Sheffield United before graduating to the first team in 2011. He made 166 appearances for United and was the club Player of the Year three seasons in succession, also featuring in the PFA Team of the Year for League One as many times. In 2014, he transferred to Hull City for £2.5 million, before being loaned to Wigan Athletic in 2015. He joined Leicester City in 2017 for an initial fee of £12 million and in the 2017–18 season he played in every minute and was named Player of the season. Maguire moved to Manchester United in 2019 for a fee believed to be £80 million, a world-record amount for a defender, and within six months was appointed club captain, a role he held until 2023. Maguire played one match for the England national under-21 team in 2012. He made his senior debut in 2017, and was chosen for the England squads for the 2018 and 2022 FIFA World Cups, and for UEFA Euro 2020. He earned a place in the Team of the Tournament in the latter. " ;
     fbo:hasPosition fbo:Defender ;
-    fbo:playsFor fbr:Manchester_United .
+    fbo:playsFor fbr:Manchester_United ;
+    fbo:playerAssists 20 ;
+    fbo:playerHeight 195;
+    fbo:playerWeight 95;
+    fbo:playerTransactionFee 80000000 .
 
-fbr:Lisandro_Martínez a fbo:Player ;
-    fbo:name "Lisandro Martínez" ;
+fbr:Lisandro_Martinez a fbo:Player ;
+    fbo:name "Lisandro Martinez" ;
     fbo:goals 10 ;
     fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Lisandro_Martinez_2022.jpg/220px-Lisandro_Martinez_2022.jpg" ;
     fbo:description "Lisandro Martínez (born 18 January 1998) is an Argentine professional footballer who plays primarily as a centre-back for Premier League club Manchester United and the Argentina national team. He is known for his movement with the ball, strength, and aggressive tackling. Martínez began his career at Newell Old Boys before joining Defensa y Justicia in 2017, initially on loan. He signed for Ajax in 2019, where he made 120 appearances over three seasons and won two Eredivisie titles and one KNVB Cup. He won the Ajax Player of the Year award in the 2021–22 season. Martínez represented Argentina at under-20 and under-23 levels, before making his senior international debut in March 2019. He was a member of the Argentina squads that won the 2021 Copa América, the 2022 Finalissima, and the 2022 FIFA World Cup. " ;
     fbo:hasPosition fbo:Defender ;
-    fbo:playsFor fbr:Manchester_United .
+    fbo:playsFor fbr:Manchester_United  ;
+    fbo:playerAssists 10 ;
+    fbo:playerHeight 175;
+    fbo:playerWeight 75;
+    fbo:playerTransactionFee 75000000 .
 
-fbr:Raphaël_Varane a fbo:Player ;
-    fbo:name "Raphaël Varane" ;
+fbr:Raphael_Varane a fbo:Player ;
+    fbo:name "Raphael Varane" ;
     fbo:goals 20 ;
     fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Rapha%C3%ABl_Varane_2018_%28cropped%29.jpg/220px-Rapha%C3%ABl_Varane_2018_%28cropped%29.jpg" ;
     fbo:description "Raphaël Xavier Varane (French: [ʁafaɛl vaʁan]; born 25 April 1993) is a French professional footballer who plays as a centre-back for Premier League club Manchester United. Regarded as one of the best defenders in the world as well as one of the best of his generation, Varane is known for his defensive prowess, leadership, aerial ability and speed. Varane previously played for French club Lens and, ahead of the 2010–11 season, began training with the senior team and appeared on the bench in several league matches. Varane made his professional debut in 2010 aged 17,[6] and after one season as a professional footballer, he joined Real Madrid. There, over the course of 10 seasons from 2011 to 2021, he won 18 trophies, including three La Liga titles, one Copa del Rey, four UEFA Champions League titles and four FIFA Club World Cups.[7] In 2021, he left Real Madrid to sign with Manchester United. Varane represented France at under-18, under-20 and under-21 level before making his full international debut in March 2013. He was part of France FIFA World Cup squad in 2014, when he was nominated for the Best Young Player award,[8] in 2018, when he played every minute of every game as France went on to win the competition, and in 2022, when France finished as runners-up. He additionally appeared at UEFA Euro 2020. He announced his retirement from international football in 2023, having earned 93 caps and scored five goals. " ; 
     fbo:hasPosition fbo:Defender ;
-    fbo:playsFor fbr:Manchester_United .
+    fbo:playsFor fbr:Manchester_United ;
+    fbo:playerAssists 14 ;
+    fbo:playerHeight 192;
+    fbo:playerWeight 80;
+    fbo:playerTransactionFee 40000000 .
 
 fbr:Bruno_Fernandes a fbo:Player ;
     fbo:name "Bruno Fernandes" ;
@@ -43,15 +59,23 @@ fbr:Bruno_Fernandes a fbo:Player ;
     fbo:description "Bruno Miguel Borges Fernandes (European Portuguese: [ˈbɾunu fɨɾˈnɐ̃dɨʃ];[3] born 8 September 1994) is a Portuguese professional footballer who plays as an attacking midfielder and captains for Premier League club Manchester United and the Portugal national team. Fernandes is known for his passing ability, vision, creativity, and penalty technique. Born in Maia, Porto, Fernandes started his career at Italian Serie B side Novara but soon made a move to Serie A side Udinese in 2013, followed by Sampdoria three years later. After five years in Italy, he signed with Sporting CP in 2017, where he was named club captain. He won back-to-back Taças da Liga in 2018 and 2019, as well as the Taça de Portugal, leading to him being named in the Primeira Liga Team of the Year and Primeira Liga Player of the Year in both seasons. In 2018–19, he scored a record of 33 goals in all competitions, making him the highest-scoring Portuguese midfielder and the highest-scoring midfielder in Europe in a single season. In January 2020, Fernandes signed with Manchester United for an initial €55 million (£47 million), becoming at the time, the second-highest fee for a Portuguese player leaving the domestic league. Fernandes is a former Portugal youth international, representing his country at under-19, under-20, under-21 and under-23 levels. He represented Portugal at the 2016 Summer Olympics. He made his senior international debut in 2017, being chosen in Portugal squads for the 2018 FIFA World Cup, 2019 UEFA Nations League Finals, UEFA Euro 2020 and 2022 FIFA World Cup, winning the 2019 competition on home soil, while being named in the Team of the Tournament. " ; 
     fbo:hasPosition fbo:MiddleField ;
     fbo:playsFor fbr:Manchester_United ;
-    fbo:playerAchieves fbr:Premier_League_POTM .
+    fbo:playerAchieves fbr:Premier_League_POTM ;
+    fbo:playerAssists 80 ;
+    fbo:playerHeight 180;
+    fbo:playerWeight 75;
+    fbo:playerTransactionFee 75000000 .
 
-fbr:Rasmus_Højlund a fbo:Player ;
-    fbo:name "Rasmus Højlund" ;
+fbr:Rasmus_Hojlund a fbo:Player ;
+    fbo:name "Rasmus Hojlund" ;
     fbo:goals 50 ;
     fbo:image "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcShohSynqH1LAXt5jfO-vSYj-vc5qgNdUdJp6syd2YFo9Lwq1YC6cduFcM-4DLw_8yKNl-USCCCRS53-TY" ;
     fbo:description "Rasmus Winther Højlund (Danish pronunciation: [ˈʁɑsmus ˈhʌjˌlɔnˀ];[4] born 4 February 2003) is a Danish professional footballer who plays as a forward for Premier League club Manchester United and the Denmark national team. Højlund graduated from Copenhagen youth academy, making his first-team debut for the club aged 17 in October 2020. After scoring five goals in 32 appearances for Copenhagen, he joined Austrian club Sturm Graz in January 2022. Later that year, he was signed by Atalanta for €17 million. Højlund played youth international football for Denmark from under-16 to under-21 level. He made his senior international debut in September 2022. " ;
     fbo:hasPosition fbo:Forward ;
-    fbo:playsFor fbr:Manchester_United .
+    fbo:playsFor fbr:Manchester_United ;
+    fbo:playerAssists 4 ;
+    fbo:playerHeight 193;
+    fbo:playerWeight 85;
+    fbo:playerTransactionFee 45000000 .
 
 fbr:Alisson_Becker a fbo:Player ;
     fbo:name "Alisson Becker" ;
@@ -59,7 +83,11 @@ fbr:Alisson_Becker a fbo:Player ;
     fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/20180610_FIFA_Friendly_Match_Austria_vs._Brazil_850_1625.jpg/220px-20180610_FIFA_Friendly_Match_Austria_vs._Brazil_850_1625.jpg" ;
     fbo:description "Álisson Ramsés Becker (born 2 October 1992), known as Alisson Becker or simply Alisson, is a Brazilian professional footballer who plays as a goalkeeper for Premier League club Liverpool and the Brazil national team. Regarded as one of the best goalkeepers of his generation,[4] he is renowned for his immense shot stopping, distribution and ability in one-on-one situations.[5][6][7][8][9][10][better source needed] Alisson joined Internacionals academy in 2002, progressing through the youth set up before making his senior debut in 2013. During his four years with Internacional senior side, Alisson won the Campeonato Gaúcho title in each season.[11] He signed for Roma in July 2016 and was awarded Serie A Goalkeeper of the Year in 2017–18.[12] In July 2018, Liverpool signed Alisson for a fee of £66.8 million (€72.5 million), making him the most expensive goalkeeper of all time. At Liverpool, Alisson has won the Premier League, FA Cup, EFL Cup, UEFA Champions League and FIFA Club World Cup. In 2019, he was named The Best FIFA Goalkeeper and was also the recipient of the inaugural Yashin Trophy.[13] Alisson has twice been selected in the FIFA FIFPRO Men World 11. Alisson represented Brazil at various youth levels before making his senior international debut in 2015. He represented the nation at the FIFA World Cup in 2018 and 2022, and the Copa América in 2016, 2019 and 2021, winning the 2019 tournament while also being named its best goalkeeper.[14] " ;
     fbo:hasPosition fbo:Goalkeeper ;
-    fbo:playsFor fbr:Liverpool .
+    fbo:playsFor fbr:Liverpool ;
+    fbo:playerAssists 2 ;
+    fbo:playerHeight 190;
+    fbo:playerWeight 80;
+    fbo:playerTransactionFee 25000000 .
 
 fbr:Virgil_van_Dijk a fbo:Player ;
     fbo:name "Virgil van Dijk" ;
@@ -67,15 +95,23 @@ fbr:Virgil_van_Dijk a fbo:Player ;
     fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/20160604_AUT_NED_8876_%28cropped%29.jpg/220px-20160604_AUT_NED_8876_%28cropped%29.jpg" ;    
     fbo:description "Virgil van Dijk (Dutch pronunciation: [ˈvɪr.d͡ʒɪl vɑn.ˈdɛik];[2] born 8 July 1991) is a Dutch professional footballer who plays as a centre back for Premier League club Liverpool and the Netherlands national team. Widely regarded as one of the best defenders of his generation, he is known for his strength, leadership, speed and aerial ability.[3][4][5][6][7] After beginning his professional career with Groningen, Van Dijk moved to Celtic in 2013. With Celtic he won the Scottish Premiership and was named in the PFA Scotland Team of the Year in both of his seasons with the club, and won the Scottish League Cup in the second. In 2015, he joined Southampton before signing for Liverpool in January 2018 for £75 million, a then-world-record transfer fee for a defender.[8] With Liverpool, Van Dijk reached back-to-back UEFA Champions League finals in 2018 and 2019, winning the latter. He was also named PFA Players Player of the Year and the Premier League Player of the Season in his first full season. Van Dijk later won the FIFA Club World Cup and UEFA Super Cup, and helped end the club 30-year league title drought by winning the 2019–20 Premier League. He is the only defender to win the UEFA Mens Player of the Year Award, and has finished runner-up for both the Ballon dOr and Best FIFA Mens Player, all in 2019.[9][10] Van Dijk has also been selected in the FIFPRO Men World 11 in three different years. Van Dijk represented the Netherlands at under-19 and under-21 levels. He made his senior international debut for the Netherlands in 2015 and assumed full captaincy of the national team in March 2018. The following year, Van Dijk captained the Netherlands to the final of the inaugural UEFA Nations League, where they finished runners-up. He also represented the side at the 2022 FIFA World Cup. " ;
     fbo:hasPosition fbo:Defender  ;
-    fbo:playsFor fbr:Liverpool .
+    fbo:playsFor fbr:Liverpool ;
+    fbo:playerAssists 20 ;
+    fbo:playerHeight 195;
+    fbo:playerWeight 86;
+    fbo:playerTransactionFee 45000000 .
 
-fbr:Thiago_Alcântara a fbo:Player ;
-    fbo:name "Thiago Alcântara" ;
+fbr:Thiago_Alcantara a fbo:Player ;
+    fbo:name "Thiago Alcantara" ;
     fbo:goals 50 ;
     fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/UEFA_EURO_qualifiers_Sweden_vs_Spain_20191015_Thiago_Alcantara_13_%28cropped%29.jpg/220px-UEFA_EURO_qualifiers_Sweden_vs_Spain_20191015_Thiago_Alcantara_13_%28cropped%29.jpg" ;
     fbo:description "Thiago Alcântara do Nascimento (Spanish: Alcántara; born 11 April 1991),[4] known as Thiago Alcântara or simply Thiago (Spanish: [ˈtjaɣo]; Brazilian Portuguese: [tʃiˈaɡu]),[5][6] is a professional footballer who plays as a central midfielder for Premier League club Liverpool. Born in Italy to Brazilian parents, he is the eldest child of former player Mazinho. Thiago joined Barcelona aged 14, and made his first team debut in 2009. After winning honours including four La Liga titles, the UEFA Champions League and the FIFA Club World Cup for Barcelona, he was signed by Bayern Munich for €25 million in 2013. In Germany, Thiago won 16 trophies, including the Bundesliga seven times in a row, and the UEFA Champions League as part of a continental treble in his final year at the club. In 2020, he signed for Liverpool in a transfer worth an initial £20 million. With Liverpool, he won the FA Cup in 2022. Thiago has twice been selected in the FIFA FIFPRO Men World 11, once for Bayern Munich and once for Liverpool. After helping Spain to European Championships at under-19 and under-21 levels, he made his full international debut in 2011. Thiago was part of the provisional squad for Spain in the 2014 World Cup but withdrew due to a knee injury. He was selected for UEFA Euro 2016, the 2018 FIFA World Cup, and UEFA Euro 2020. " ;
     fbo:hasPosition fbo:MiddleField ;
-    fbo:playsFor fbr:Liverpool  .
+    fbo:playsFor fbr:Liverpool ;
+    fbo:playerAssists 40 ;
+    fbo:playerHeight 175;
+    fbo:playerWeight 67;
+    fbo:playerTransactionFee 35000000 .
 
 fbr:Mohamed_Salah a fbo:Player ;
     fbo:name "Mohamed Salah" ;
@@ -84,4 +120,8 @@ fbr:Mohamed_Salah a fbo:Player ;
     fbo:description "Mohamed Salah Hamed Mahrous Ghaly (Arabic: محمد صلاح حامد محروس غالي, Egyptian Arabic pronunciation: [mæˈħam.mæd sˤɑˈlɑːħ ˈɣæːli];[7] born 15 June 1992), known as Mohamed Salah or Mo Salah, is an Egyptian professional footballer who plays as a right winger or forward for Premier League club Liverpool and captains the Egypt national team. Regarded as one of the best players of his generation and amongst the greatest African players of all-time, he is known for his clinical finishing, dribbling and speed. Salah started his senior career in 2010 playing for Al Mokawloon, departing in 2012 to join Basel, where he won two Swiss Super League titles. In 2014, Salah joined Chelsea for a reported fee of £11 million, but limited gametime led to successive loans to Fiorentina and Roma, who later signed him permanently for €15 million. In the 2016–17 season, Salah was a key figure in Roma unsuccessful title bid, reaching double figures in both goals and assists.[19] In 2017, Salah signed for Liverpool for a then-club record transfer of £36.9 million. In his first season, he set the record for most Premier League goals scored (32) in a 38-game season and helped Liverpool to the 2018 UEFA Champions League Final. Having formed a formidable attacking trio with Roberto Firmino and Sadio Mané after the departure of Philippe Coutinho, Salah went on to be an integral player in the club Champions League and Premier League title successes in the following two seasons, and has since also won the FA Cup, League Cup and FA Community Shield. Salah has achieved numerous individual accolades, including two PFA Players Player of the Year awards, three Premier League Golden Boots, the Premier League Player of the Season, the Premier League Playmaker of the Season, finished third for the Best FIFA Men Player in 2018 and 2021, and finished fifth in the 2019 and 2022 FIFA Ballon dOr. He received the 2018 FIFA Puskás Award for his winning strike in the first Merseyside derby of the 2017–18 season. In 2023, Salah became Liverpool top Premier League goalscorer, surpassing Robbie Fowler, and became the fifth player to score 200 goals for the club.[20][21] At international level, Salah represented Egypt at youth level before making his senior debut in 2011. Following his performances at the 2012 Summer Olympics, he was named CAF Most Promising African Talent of the Year. Since then, he finished as runner-up in the 2017 and 2021 Africa Cup of Nations and was top scorer during CAF qualification as Egypt qualified for the 2018 FIFA World Cup. Salah was named CAF African Footballer of the Year (2017 and 2018), BBC African Footballer of the Year (2017 and 2018), and was selected in the 2017 Africa Cup of Nations Team of the Tournament, 2021 Africa Cup of Nations Team of the Tournament and the CAF Team of the Year on several occasions. Salah is regarded as a symbol of national pride in Egypt for his achievements[22][23] and was named in Time magazine’s list of the 100 most influential people in 2019.[24] Salah has also been credited for raising the profile of Liverpool among Egyptians.[25][26] To Egyptians, Salah is known as the Fourth Pyramid. Favoured across the Arab world, Salah is often known as the Pride of the Arabs." ;
     fbo:hasPosition fbo:Forward ;
     fbo:playsFor fbr:Liverpool ;
-    fbo:playerAchieves fbr:Premier_League_POTM .
+    fbo:playerAchieves fbr:Premier_League_POTM ;
+    fbo:playerAssists 58 ;
+    fbo:playerHeight 172;
+    fbo:playerWeight 70;
+    fbo:playerTransactionFee 75000000 .
