@@ -6,6 +6,10 @@ export type SearchResultItem = {
   hl: string;
 };
 
+
+export type Props = {
+	params: { id: string };
+};
 export type Player = {
   id: string;
   name: string;
