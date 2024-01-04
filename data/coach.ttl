@@ -26,7 +26,7 @@ fbr:Jurgen_Klopp a fbo:Coach ;
 
 fbr:Mikel_Arteta_Amatriain a fbo:Coach ;
     fbo:name "Mikel Arteta Amatriain" ;
-    fbo:image "https://vi.wikipedia.org/wiki/Mikel_Arteta#/media/T%E1%BA%ADp_tin:Mikel_Arteta_2021.png" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/2/27/Mikel_Arteta_2021.png" ;
     fbo:description "(sinh ngày 26 tháng 3 năm 1982) là một cựu cầu thủ và hiện là huấn luyện viên bóng đá chuyên nghiệp người Tây Ban Nha. Anh là huấn luyện viên đương nhiệm của câu lạc bộ Arsenal tại Premier League. " ;
     fbo:coachNationality "Spain" ;
     fbo:coachAge 41 ;
@@ -34,12 +34,152 @@ fbr:Mikel_Arteta_Amatriain a fbo:Coach ;
     fbo:coachHeight 175 ;
     fbo:coachWeight 80 .
 
-fbr:Mikel_Arteta_Amatriain a fbo:Coach ;
-    fbo:name "Mikel Arteta Amatriain" ;
-    fbo:image "https://vi.wikipedia.org/wiki/Mikel_Arteta#/media/T%E1%BA%ADp_tin:Mikel_Arteta_2021.png" ;
-    fbo:description "(sinh ngày 26 tháng 3 năm 1982) là một cựu cầu thủ và hiện là huấn luyện viên bóng đá chuyên nghiệp người Tây Ban Nha. Anh là huấn luyện viên đương nhiệm của câu lạc bộ Arsenal tại Premier League. " ;
+fbr:Unai_Emery_Etxegoien a fbo:Coach ;
+    fbo:name "Unai Emery Etxegoien" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/1/17/Sev_tren_2016_%283%29.jpg" ;
+    fbo:description "sinh ngày 3 tháng 11 năm 1971) là một cựu cầu thủ và huấn luyện viên người Tây Ban Nha. Hiện tại ông đang dẫn dắt cho Aston Villa tại Premier League. " ;
     fbo:coachNationality "Spain" ;
-    fbo:coachAge 41 ;
+    fbo:coachAge 52 ;
+    fbo:coachAchieves fbr:Premier_League_MOTM ;
+    fbo:coachHeight 181 ;
+    fbo:coachWeight 85 .
+
+fbr:Pep_Guardiola a fbo:Coach ;
+    fbo:name "Josep Pep Guardiola Sala" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/b/be/Pep_2017_%28cropped%29.jpg" ;
+    fbo:description "thường được gọi đơn giản là Pep Guardiola hay Pep, là một huấn luyện viên và cựu cầu thủ bóng đá chuyên nghiệp người Tây Ban Nha hiện đang dẫn dắt câu lạc bộ Premier League Manchester City. Guardiola là huấn luyện viên duy nhất giành được cú ăn ba lục địa hai lần, huấn luyện viên trẻ nhất vô địch UEFA Champions League, và ông cũng giữ kỷ lục về số trận thắng liên tiếp nhiều nhất ở La Liga, Bundesliga và Premier League.[note 1] Ông được coi là một trong những huấn luyện viên vĩ đại nhất mọi thời đại. " ;
+    fbo:coachNationality "Spain" ;
+    fbo:coachAge 52 ;
+    fbo:coachAchieves fbr:Premier_League_MOTM ;
+    fbo:coachHeight 180 ;
+    fbo:coachWeight 82 .
+
+fbr:Ange_Postecoglou a fbo:Coach ;
+    fbo:name "Ange Postecoglou" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/d/da/Ange_Postecoglou_%28cropped%29.jpg" ;
+    fbo:description "là một huấn luyện viên và cựu cầu thủ bóng đá người Úc gốc Hy Lạp hiện là huấn luyện viên trưởng của câu lạc bộ Premier League Tottenham Hotspur. " ;
+    fbo:coachNationality "Greek" ;
+    fbo:coachAge 58 ;
+    fbo:coachAchieves fbr:Premier_League_MOTM ;
+    fbo:coachHeight 177 ;
+    fbo:coachWeight 80 .
+
+fbr:David_Moyes a fbo:Coach ;
+    fbo:name "David William Moyes" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/b/ba/Moyes_London_Stadium.jpeg" ;
+    fbo:description "là huấn luyện viên bóng đá của câu lạc bộ West Ham United, cũng là một cựu cầu thủ. Ông là Huấn luyện viên xuất sắc nhất năm 2003, 2005 và 2009 của LMA (Hiệp hội Huấn luyện viên của Giải). Ông cũng nằm trong Ban quản lý năng lực thi hành của LMA. " ;
+    fbo:coachNationality "Scotland" ;
+    fbo:coachAge 60 ;
+    fbo:coachAchieves fbr:Premier_League_MOTM ;
+    fbo:coachHeight 178 ;
+    fbo:coachWeight 80 .
+
+fbr:Roberto_De_Zerbi a fbo:Coach ;
+    fbo:name "Roberto De Zerbi" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/0/0d/Roberto_De_Zerbi%2C_2019_%28cropped%29.png" ;
+    fbo:description "là một huấn luyện viên bóng đá chuyên nghiệp người Ý và cựu cầu thủ, huấn luyện viên trưởng của câu lạc bộ Premier League Brighton & Hove Albion. " ;
+    fbo:coachNationality "Italy" ;
+    fbo:coachAge 44 ;
     fbo:coachAchieves fbr:Premier_League_MOTM ;
     fbo:coachHeight 175 ;
     fbo:coachWeight 80 .
+
+fbr:Eddie_Howe a fbo:Coach ;
+    fbo:name "Edward John Frank Howe" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/6/6f/Eddie_Howe_2015.jpg" ;
+    fbo:description "là một huấn luyện viên và cựu cầu thủ bóng đá chuyên nghiệp người Anh. Ông là huấn luyện viên của câu lạc bộ Premier League Newcastle United. " ;
+    fbo:coachNationality "England" ;
+    fbo:coachAge 46 ;
+    fbo:coachAchieves fbr:Premier_League_MOTM ;
+    fbo:coachHeight 178 ;
+    fbo:coachWeight 82 .
+
+fbr:Mauricio_Pochettino a fbo:Coach ;
+    fbo:name "Mauricio Roberto Pochettino Trossero" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/8/8a/Mauricio_Pochettino_2016_%28cropped%29.jpg" ;
+    fbo:description "sinh ngày 2 tháng 3 năm 1972 là một cựu cầu thủ và huấn luyện viên bóng đá chuyên nghiệp người Argentina. " ;
+    fbo:coachNationality "Argentina" ;
+    fbo:coachAge 51 ;
+    fbo:coachAchieves fbr:Premier_League_MOTM ;
+    fbo:coachHeight 182 ;
+    fbo:coachWeight 86 .
+
+fbr:Gary_O_Neil a fbo:Coach ;
+    fbo:name "Gary O Neil" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/6/68/GaryO%27NeilWHU.jpg" ;
+    fbo:description "là một cựu cầu thủ bóng đá người Anh hiện đang làm việc ở câu lạc bộ Wolverhampton Wanderers với vai trò huấn luyện viên. " ;
+    fbo:coachNationality "England" ;
+    fbo:coachAge 40 ;
+    fbo:coachAchieves fbr:Premier_League_MOTM ;
+    fbo:coachHeight 173 ;
+    fbo:coachWeight 65 .
+
+fbr:Andoni_Iraola a fbo:Coach ;
+    fbo:name "Andoni Iraola Sagarna" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/8/8c/Andoni_Iraola_2023.jpg" ;
+    fbo:description "is a Spanish professional football manager and former player who is the current manager of Premier League club AFC Bournemouth. " ;
+    fbo:coachNationality "Spain" ;
+    fbo:coachAge 41 ;
+    fbo:coachAchieves fbr:Premier_League_MOTM ;
+    fbo:coachHeight 181 ;
+    fbo:coachWeight 85 .
+
+fbr:Steve_Cooper a fbo:Coach ;
+    fbo:name "Steve Cooper" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/e/e7/Steve_Cooper.jpg" ;
+    fbo:description "is a Welsh professional football manager and former player. " ;
+    fbo:coachNationality "Wales" ;
+    fbo:coachAge 44 ;
+    fbo:coachAchieves fbr:Premier_League_MOTM ;
+    fbo:coachHeight 175 ;
+    fbo:coachWeight 80 .
+
+fbr:Thomas_Frank a fbo:Coach ;
+    fbo:name "Thomas Frank" ;
+    fbo:image "https://e0.365dm.com/21/01/768x432/skysports-thomas-frank-brentfor_5237297.jpg?20210114133435" ;
+    fbo:description "is a Danish professional football coach and former amateur player, who is head coach of Premier League club Brentford. " ;
+    fbo:coachNationality "Denmark" ;
+    fbo:coachAge 50 ;
+    fbo:coachAchieves fbr:Premier_League_MOTM ;
+    fbo:coachHeight 175 ;
+    fbo:coachWeight 80 .
+
+fbr:Sean_Dyche a fbo:Coach ;
+    fbo:name "Sean Dyche" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/6/6b/Sean_Dyche.jpg" ;
+    fbo:description "is an English professional football manager and former player who is the manager of Premier League club Everton. " ;
+    fbo:coachNationality "England" ;
+    fbo:coachAge 42 ;
+    fbo:coachAchieves fbr:Premier_League_MOTM ;
+    fbo:coachHeight 183 ;
+    fbo:coachWeight 90 .
+
+fbr:Rob_Edwards a fbo:Coach ;
+    fbo:name "Robert Owen Edwards" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/0/02/RobEdwards.png" ;
+    fbo:description "is a professional football manager and former player who played as a centre-back and is currently the manager of Premier League club Luton Town. Born in England to Welsh parents, he represented Wales internationally. " ;
+    fbo:coachNationality "England" ;
+    fbo:coachAge 41 ;
+    fbo:coachAchieves fbr:Premier_League_MOTM ;
+    fbo:coachHeight 185 ;
+    fbo:coachWeight 90 .
+
+fbr:Vincent_Kompany a fbo:Coach ;
+    fbo:name "Vincent Jean Mpoy Kompany" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/0/02/RobEdwards.png" ;
+    fbo:description "is a Belgian professional football manager and former player who played as a centre back and is the current manager of Premier League club Burnley. He most notably played for Manchester City for eleven seasons, where he was captain for eight of them and became widely regarded as one of the league s greatest centre backs. He also represented the Belgium national team for 15 years, seven as captain. " ;
+    fbo:coachNationality "Belgium" ;
+    fbo:coachAge 37 ;
+    fbo:coachAchieves fbr:Premier_League_MOTM ;
+    fbo:coachHeight 193 ;
+    fbo:coachWeight 90 .
+
+fbr:Chris_Wilder a fbo:Coach ;
+    fbo:name "Christopher John Wilder" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/c/c6/Chris_Wilder.png" ;
+    fbo:description "is an English professional football manager who formerly played as a right back. He is the manager of Premier League club Sheffield United. " ;
+    fbo:coachNationality "England" ;
+    fbo:coachAge 56 ;
+    fbo:coachAchieves fbr:Premier_League_MOTM ;
+    fbo:coachHeight 180 ;
+    fbo:coachWeight 85 .
