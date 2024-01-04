@@ -1,0 +1,150 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fbo: <http://localhost:3000/ontology#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+fbo:PlayerShape
+  a sh:NodeShape ;
+  sh:targetClass fbo:Player ;
+  sh:property [
+    sh:path fbo:name ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "Tên cầu thủ là bắt buộc." ;
+  ] ;
+  sh:property [
+    sh:path fbo:playerAge ;
+    sh:datatype xsd:integer ;
+    sh:minCount 1 ;
+    sh:message "Tuổi cầu thủ là bắt buộc và phải là một số nguyên." ;
+  ] ;
+  sh:property [
+    sh:path fbo:playerNationality ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "Quốc tịch cầu thủ là bắt buộc." ;
+  ] ;
+  sh:property [
+    sh:path fbo:hasPosition ;
+    sh:node fbo:PlayerPositionShape ;
+    sh:message "Cầu thủ phải có ít nhất một vị trí." ;
+  ] .
+
+fbo:FootballTeamShape
+  a sh:NodeShape ;
+  sh:targetClass fbo:FootballTeam ;
+  sh:property [
+    sh:path fbo:name ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "Tên đội bóng là bắt buộc." ;
+  ] ;
+  sh:property [
+    sh:path fbo:foundedYear ;
+    sh:datatype xsd:integer ;
+    sh:minCount 1 ;
+    sh:message "Năm thành lập đội bóng là bắt buộc và phải là một số nguyên." ;
+  ] ;
+  sh:property [
+    sh:path fbo:numTitles ;
+    sh:datatype xsd:nonNegativeInteger ;
+    sh:message "Số lượng danh hiệu phải là một số nguyên không âm." ;
+  ] .
+
+fbo:CoachShape
+  a sh:NodeShape ;
+  sh:targetClass fbo:Coach ;
+  sh:property [
+    sh:path fbo:name ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "Tên huấn luyện viên là bắt buộc." ;
+  ] ;
+  sh:property [
+    sh:path fbo:coachAge ;
+    sh:datatype xsd:integer ;
+    sh:minCount 1 ;
+    sh:message "Tuổi huấn luyện viên là bắt buộc và phải là một số nguyên." ;
+  ] ;
+  sh:property [
+    sh:path fbo:coachNationality ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "Quốc tịch huấn luyện viên là bắt buộc." ;
+  ] .
+
+fbo:StadiumShape
+  a sh:NodeShape ;
+  sh:targetClass fbo:Stadium ;
+  sh:property [
+    sh:path fbo:name ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "Tên sân vận động là bắt buộc." ;
+  ] .
+
+fbo:FootballMatchShape
+  a sh:NodeShape ;
+  sh:targetClass fbo:FootballMatch ;
+  sh:property [
+    sh:path fbo:matchDay ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "Ngày thi đấu là bắt buộc." ;
+  ] ;
+  sh:property [
+    sh:path fbo:homeTeam ;
+    sh:node fbo:FootballTeamShape ;
+    sh:message "Trận đấu phải có một đội chủ nhà." ;
+  ] ;
+  sh:property [
+    sh:path fbo:awayTeam ;
+    sh:node fbo:FootballTeamShape ;
+    sh:message "Trận đấu phải có một đội khách." ;
+  ] ;
+  sh:property [
+    sh:path fbo:result ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "Kết quả trận đấu là bắt buộc." ;
+  ] .
+
+fbo:FootballLeagueShape
+  a sh:NodeShape ;
+  sh:targetClass fbo:FootballLeague ;
+  sh:property [
+    sh:path fbo:name ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "Tên giải đấu là bắt buộc." ;
+  ] ;
+  sh:property [
+    sh:path fbo:numTeams ;
+    sh:datatype xsd:nonNegativeInteger ;
+    sh:message "Số lượng đội tham gia phải là một số nguyên không âm." ;
+  ] .
+
+# Định nghĩa ràng buộc cho các mối quan hệ giữa các tài nguyên.
+fbo:PlayerShape
+  sh:property [
+    sh:path fbo:playsFor ;
+    sh:node fbo:FootballTeamShape ;
+    sh:message "Cầu thủ phải chơi cho ít nhất một đội bóng." ;
+  ] .
+
+fbo:CoachShape
+  sh:property [
+    sh:path fbo:coachedBy ;
+    sh:node fbo:FootballTeamShape ;
+    sh:message "Huấn luyện viên phải huấn luyện ít nhất một đội bóng." ;
+  ] .
+
+fbo:FootballTeamShape
+  sh:property [
+    sh:path fbo:hasHomeField ;
+    sh:node fbo:StadiumShape ;
+    sh:message "Đội bóng phải có ít nhất một sân vận động làm sân nhà." ;
+  ] .
+
