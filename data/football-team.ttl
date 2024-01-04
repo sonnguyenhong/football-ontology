@@ -27,10 +27,177 @@ fbr:Liverpool a fbo:FootballTeam ;
     fbo:description "Liverpool Football Club is a professional football club based in Liverpool, England. The club competes in the Premier League, the top tier of English football. Founded in 1892, the club joined the Football League the following year and has played its home games at Anfield since its formation. Domestically, the club has won 19 league titles, eight FA Cups, a record nine League Cups and 16 FA Community Shields. In international competitions, the club has won six European Cups, three UEFA Cups, four UEFA Super Cups—all English records—and one FIFA Club World Cup. The club established itself as a major force in domestic and European football in the 1970s and 1980s, when Bill Shankly, Bob Paisley, Joe Fagan and Kenny Dalglish, led the club to a combined 11 League titles and four European Cups. Liverpool won two further European Cups in 2005 and 2019 under the management of Rafael Benítez and Jürgen Klopp, respectively; the latter led Liverpool to a 19th league title in 2020, the club first during the Premier League era. Liverpool is one of the most valuable and widely supported clubs in the world. The club has long-standing rivalries with Manchester United and Everton. Under management by Shankly, in 1964 the team changed from red shirts and white shorts to an all-red home strip which has been used ever since. The club anthem is You will Never Walk Again. The club supporters have been involved in two major tragedies. The Heysel Stadium disaster, where escaping fans were pressed against a collapsing wall at the 1985 European Cup Final in Brussels, resulted in 39 deaths. Most of these were Italians and Juventus fans. Liverpool were given a six-year ban from European competition, and all other English clubs received a five-year ban. The Hillsborough disaster in 1989, where 97 Liverpool supporters died in a crush against perimeter fencing, led to the elimination of fenced standing terraces in favour of all-seater stadiums in the top two tiers of English football. Prolonged campaigning for justice saw further coroners inquests, commissions and independent panels that ultimately exonerated the fans. " ;
     fbo:numTitles 50 ;
     fbo:foundedYear 1892 ;
-    fbo:coachedBy fbr:Jürgen_Klopp ;
+    fbo:coachedBy fbr:Jurgen_Klopp ;
     fbo:hasHomeField fbr:Anfield ;
     fbo:participatesIn fbr:Bangkok_Century_Cup_2022 ;
     fbo:participatesIn fbr:Premier_League ;
     fbo:participatesIn fbr:UEFA_Champions_League ;
     fbo:joins fbr:MU_LIV_12072022 ;
     fbo:joins fbr:MU_LIV_17122023 .
+
+fbr:Aston_Villa a fbo:FootballTeam ;
+    fbo:name "Aston Villa" ;
+    fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Aston_Villa_logo.svg/800px-Aston_Villa_logo.svg.png" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Aston_villa_1895_team.jpg/220px-Aston_villa_1895_team.jpg";
+    fbo:description "Aston Villa Football Club, commonly referred to as Villa, is a professional football club based in Aston, Birmingham, England. The club, founded in 1874, competes in the Premier League, the top tier of the English football league system. The team have played at their home ground Villa Park since 1897. Aston Villa is one of the oldest and most successful clubs in England, having won the Football League First Division seven times, the FA Cup seven times, the League Cup five times, and the European Cup and European Super Cup once." ;
+    fbo:numTitles 5 ;
+    fbo:participatesIn fbr:Premier_League ;
+    fbo:foundedYear 1874 .
+
+
+fbr:Manchester_City a fbo:FootballTeam ;
+    fbo:name "Manchester City" ;
+    fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/190px-Manchester_City_FC_badge.svg.png" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/St_Marks_1884.jpg/270px-St_Marks_1884.jpg";
+    fbo:description "Manchester City Football Club is a professional football club based in Manchester, England, that competes in the Premier League, the top flight of English football. Founded in 1880 as St. Mark's (West Gorton), they became Ardwick Association Football Club in 1887 and Manchester City in 1894. The club's home ground is the City of Manchester Stadium in east Manchester, to which they moved in 2003, having played at Maine Road since 1923. Manchester City adopted their sky blue home shirts in 1894, the first season with the current name.[4] The club has won nine league titles, seven FA Cups, eight League Cups, six FA Community Shields, one UEFA Champions League, one European Cup Winners Cup, one UEFA Super Cup and one FIFA Club World Cup. " ;
+    fbo:numTitles 10 ;
+    fbo:participatesIn fbr:Premier_League ;
+    fbo:foundedYear 1880 .
+
+
+fbr:Arsenal a fbo:FootballTeam ;
+    fbo:name "Arsenal" ;
+    fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/180px-Arsenal_FC.svg.png" ;
+    fbo:image "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxZEgQoieKYwLNGsmAoNIgjhHvCMTnLrpnj20ujHEMUAihMPIo14BnSZul-J6fXjVAhUc&usqp=CAU";
+    fbo:description "The Arsenal Football Club, commonly known as Arsenal, is an English professional football club based in Holloway, North London. Arsenal compete in the Premier League, the top flight of English football. In domestic football, Arsenal have won 13 league titles (including one unbeaten title), a record 14 FA Cups, two League Cups, 17 FA Community Shields and a Football League Centenary Trophy. In European football, they have one European Cup Winners Cup and one Inter-Cities Fairs Cup. Arsenal were also runners-up in the 2005–06 UEFA Champions League. In terms of trophies won, it is the third-most successful club in English football." ;
+    fbo:numTitles 25 ;
+    fbo:participatesIn fbr:Premier_League ;
+    fbo:foundedYear 1886 .
+
+
+fbr:Tottenham a fbo:FootballTeam ;
+    fbo:name "Tottenham" ;
+    fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Tottenham_Hotspur.svg/120px-Tottenham_Hotspur.svg.png" ;
+    fbo:image "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR7HZKqfYh1jE2MIz2kW4rEBwLfEHIYgKJl65hnIjrQ5Q9lJHGjy9x43OXZATzwD5hXFY&usqp=CAU";
+    fbo:description "Tottenham Hotspur Football Club, commonly referred to as simply Tottenham (/ˈtɒtənəm/)[2][3] or Spurs, is a professional football club based in Tottenham, London, England. It competes in the Premier League, the top flight of English football. The team has played its home matches in the 62,850-capacity Tottenham Hotspur Stadium since April 2019, replacing their former home of White Hart Lane, which had been demolished to make way for the new stadium on the same site. " ;
+    fbo:numTitles 0 ;
+    fbo:foundedYear 1882 ;
+    fbo:participatesIn fbr:Premier_League .
+
+
+fbr:West_Ham a fbo:FootballTeam ;
+    fbo:name "West Ham" ;
+    fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/West_Ham_United_FC_logo.svg/175px-West_Ham_United_FC_logo.svg.png" ;
+    fbo:image "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5lo1zIMW_SZ7JsSaLwqU0Tn7HiBY3OHq_JacPWS1jYL_RUYQyA3JIEur1nWjdh70ygiQ&usqp=CAU";
+    fbo:description "West Ham United Football Club is an English professional football club that plays its home matches in Stratford, East London. The club competes in the Premier League, the top tier of English football. The club plays at the London Stadium, having moved from their former home, the Boleyn Ground, in 2016. " ;
+    fbo:numTitles 15 ;
+    fbo:foundedYear 1895 ;
+    fbo:participatesIn fbr:Premier_League .
+
+
+fbr:Brighton a fbo:FootballTeam ;
+    fbo:name "Brighton & Hove Albion F.C" ;
+    fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Brighton_%26_Hove_Albion_logo.svg/200px-Brighton_%26_Hove_Albion_logo.svg.png" ;
+    fbo:image "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMSCr6COqLjZmsRhTv9zHRi3Fywc5fn6hZwDKzg_DdidhmDiBedw3P5eqQ4xWjThGFv2k&usqp=CAU";
+    fbo:description "Brighton & Hove Albion Football Club (/ˈbraɪtən ... ˈhoʊv/ BRY-tən … HOHV), commonly referred to simply as Brighton, is an English professional football club based in the city of Brighton and Hove. They compete in the Premier League, the top tier of the English football league system. The clubs home ground is the 31,876-capacity Falmer Stadium in Falmer, in the north east of Brighton. " ;
+    fbo:numTitles 10 ;
+    fbo:foundedYear 1901 ;
+    fbo:participatesIn fbr:Premier_League .
+    
+fbr:Newcastle a fbo:FootballTeam ;
+    fbo:name "Newcastle" ;
+    fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Newcastle_United_Logo.svg/200px-Newcastle_United_Logo.svg.png" ;
+    fbo:image "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBX2aKBSzoM-bXJs-UwvxpWKvFdq1Hi2vISdic0QtkvVnzCImt07L_oCtSntdGiKKvdd0&usqp=CAU";
+    fbo:description "Newcastle United Football Club is a professional association football club based in Newcastle upon Tyne, Tyne and Wear, England. The team compete in the Premier League, the first level of the English football league system, as of the 2023–24 season. Since the formation of the club in 1892, when Newcastle East End absorbed the assets of Newcastle West End to become Newcastle United, the club has played its home matches at St James Park. Located in the centre of Newcastle, it currently has a capacity of 52,305. " ;
+    fbo:numTitles 25 ;
+    fbo:foundedYear 1892 ;
+    fbo:participatesIn fbr:Premier_League .
+    
+fbr:Chelsea a fbo:FootballTeam ;
+    fbo:name "Chelsea" ;
+    fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/190px-Chelsea_FC.svg.png" ;
+    fbo:image "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbCnRIGGBLVkAlrU-KU52vme3iQo3HNqE38sD0vd50mUI8AAoGaWkU73SuEC8DjduRTc0&usqp=CAU";
+    fbo:description "Chelsea Football Club is an English professional football club based in Fulham, West London. Founded in 1905, the team play their home games at Stamford Bridge.[5] The club competes in the Premier League, the top division of English football. It won its first major honour, the League championship, in 1955. The club won the FA Cup for the first time in 1970, their first European honour, the Cup Winners Cup, in 1971, and became the third English club to win the Club World Cup in 2022. " ;
+    fbo:numTitles 35 ;
+    fbo:foundedYear 1905 ;
+    fbo:participatesIn fbr:Premier_League .
+    
+fbr:Wolverhampton a fbo:FootballTeam ;
+    fbo:name "Wolverhampton" ;
+    fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Wolverhampton_Wanderers.svg/200px-Wolverhampton_Wanderers.svg.png" ;
+    fbo:image "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtcnOPlvo_bnGePD6zzsMpvc8_XArtJEUaKR5dmWRKqms8UzwUuALaVAba-Y0XrR4lI5I&usqp=CAU";
+    fbo:description "Wolverhampton Wanderers Football Club (/ˌwʊlvərˈhæmptən/ ⓘ), commonly referred to as Wolves,[1] is a professional football club based in Wolverhampton, England, which competes in the Premier League. The club has played at Molineux Stadium since moving from Dudley Road in 1889. The clubs traditional kit consists of old gold shirts and socks with black shorts. Since 1979, the kit has also featured the clubs wolfs head logo. Long-standing rivalries exist with other clubs from the West Midlands, including Aston Villa F.C. but the main one being the Black Country derby contested with West Bromwich Albion. Since 2016, the club has been owned by the Chinese conglomerate Fosun International. " ;
+    fbo:numTitles 11 ;
+    fbo:foundedYear 1877 ;
+    fbo:participatesIn fbr:Premier_League .
+    
+fbr:Bournemouth a fbo:FootballTeam ;
+    fbo:name "Bournemouth" ;
+    fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/Bournemouth_FC_logo.png/250px-Bournemouth_FC_logo.png" ;
+    fbo:image "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ8nyjzHy4kbK04dryTcnQzF3urjM4afqTFNW0rCYEOS_rS4oTgKZWUo-uJnQyEXfjBZs&usqp=CAU";
+    fbo:description "Bournemouth Football Club (/ˈbɔːrnməθ/ ⓘ BORN-məth) is an English football team currently playing in the Wessex League Premier Division, in the ninth tier of the English football league system. Their nickname is The Poppies, and they are often known as Bournemouth Poppies to avoid confusion with the Premier League club AFC Bournemouth. The club plays at Victoria Park, Namu Road, in Bournemouth and are founding members of the Hampshire FA and Bournemouth FA.[1] " ;
+    fbo:numTitles 5 ;
+    fbo:foundedYear 1875 ;
+    fbo:participatesIn fbr:Premier_League .
+    
+fbr:Fulham a fbo:FootballTeam ;
+    fbo:name "Fulham" ;
+    fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Fulham_FC_%28shield%29.svg/150px-Fulham_FC_%28shield%29.svg.png" ;
+    fbo:image "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCbaDtX6f_u0AbYemX75_G57ddJ-Ic4Vmhx6VAzpASjryaiNVOoW8ym_eKqSUrsKrKzEM&usqp=CAU";
+    fbo:description "Fulham Football Club is a professional football club based in Fulham, Greater London, England. The team competes in the Premier League, the top level of the English football league system. They have played home games at Craven Cottage since 1896, other than a two-year period spent at Loftus Road whilst Craven Cottage underwent redevelopments that were completed in 2004. They contest West London derby rivalries with Chelsea, Queens Park Rangers and Brentford. The club adopted a white shirt and black shorts as its kit in 1903, which has been used ever since.[4] " ;
+    fbo:numTitles 6 ;
+    fbo:foundedYear 1879 ;
+    fbo:participatesIn fbr:Premier_League .
+    
+fbr:Crystal_Palace a fbo:FootballTeam ;
+    fbo:name "Crystal Palace" ;
+    fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/Crystal_Palace_FC_logo_%282022%29.svg/175px-Crystal_Palace_FC_logo_%282022%29.svg.png" ;
+    fbo:image "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh_7ENY_6lb4Czy8OXy-HMt5-DKGWr9zmaW7DaJdlOd4qGy0gjwWp4ZKsidC8949qepAQ&usqp=CAU";
+    fbo:description "Crystal Palace Football Club, commonly referred to as Palace, is a professional football club based in Selhurst in the Borough of Croydon, South London, England, which competes in the Premier League, the highest level of English football. Although formally created as a professional outfit in 1905 at the Crystal Palace Exhibition building, the club claim their foundation date to be as far back as 1861,[1] after a disputed lineage was found to an amateur Crystal Palace football team who first played on a cricket pitch inside the Palace grounds.[3][4] The club used the FA Cup final stadium situated inside the grounds of the Palace for their home games between 1905 and 1915, when they were forced to leave due to the outbreak of the First World War. In 1924, they moved to their current home at Selhurst Park." ;
+    fbo:numTitles 9 ;
+    fbo:foundedYear 1905 ;
+    fbo:participatesIn fbr:Premier_League .
+    
+fbr:Nottingham_Forest a fbo:FootballTeam ;
+    fbo:name "Nottingham Forest" ;
+    fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Nottingham_Forest_F.C._logo.svg/110px-Nottingham_Forest_F.C._logo.svg.png" ;
+    fbo:image "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAXLipJ51hGSvOmR0TaN48tJiWEKJ5GR4avJtUy2mexGfCSPOTywAwrwEmGPqJTua-Pvk&usqp=CAU";
+    fbo:description "Nottingham Forest Football Club is a professional association football based in West Bridgford, Nottingham, England. The team competes in the Premier League, the first level of the English football league system. Founded in 1865, Forest have played their home games at the City Ground since 1898. Nottingham Forest have won two European Cups (now the UEFA Champions League), being one of six English clubs to have won the European Cup. They have also won one UEFA Super Cup, one League title, two FA Cups, four League Cups, and one FA Charity Shield. The club has competed in the top two tiers of English football since its admission to the Football League, with the exception of five seasons in the third tier. Its most successful period was under the management of Brian Clough and Peter Taylor in the late 1970s and early 1980s, which included back-to-back wins in the then European Cup in 1979 and 1980. " ;
+    fbo:numTitles 30 ;
+    fbo:foundedYear 1865 ;
+    fbo:participatesIn fbr:Premier_League .
+    
+fbr:Brentford a fbo:FootballTeam ;
+    fbo:name "Brentford" ;
+    fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Brentford_FC_crest.svg/180px-Brentford_FC_crest.svg.png" ;
+    fbo:image "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvDF6Zc32ABiSYIlfpsXbqH3TDSmiWHz-axnSr-m3I9jGQ_6giQMAFLWt-d-2urRucGNE&usqp=CAU";
+    fbo:description "Brentford Football Club is a professional association football club in Brentford, West London, England. The team compete in the Premier League, the first level of the English football league system. Nicknamed The Bees, the club was founded in 1889 and played home matches at Griffin Park from 1904 before moving to the Gtech Community Stadium in 2020. Brentford initially played amateur football before they entered the London League in 1896 and finished as runners-up of the Second Division and then the First Division to win election into the Southern League in 1898. They won the Southern League Second Division in 1900–01 and were elected into the Football League in 1920. Brentford won the Third Division South title in 1932–33 and the Second Division title in 1934–35. The club enjoyed a successful spell in the top flight of English football, reaching a peak of fifth in the First Division, in 1935–36, their highest ever league finish, before three relegations left them in the Fourth Division by 1962. They were crowned Fourth Division champions in 1962–63, but were relegated in 1966 and again in 1973 after gaining promotion in 1971–72. Brentford spent 14 seasons in the Third Division after gaining promotion in 1977–78 and went on to win the Third Division title in 1991–92, though were relegated again in 1993. " ;
+    fbo:numTitles 5 ;
+    fbo:foundedYear 1889 ;
+    fbo:participatesIn fbr:Premier_League .
+    
+fbr:Everton a fbo:FootballTeam ;
+    fbo:name "Everton" ;
+    fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/200px-Everton_FC_logo.svg.png" ;
+    fbo:image "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTLjwL3uwRT27iHwHeVWr3CJzKuefi1NNGscrNUsEKHOnmQMfuRpbX1Nffkk5ttbb2yME&usqp=CAU";
+    fbo:description "Everton Football Club (/ˈɛvərtən/) is an English professional association football club based in Liverpool that competes in the Premier League, the top tier of English football. The club was a founder member of the Football League in 1888, and has, as of August 2023, competed in the top division for a record 121 seasons, having missed only four top-flight seasons (1930–31, 1951–52, 1952–53, and 1953–54). Everton is the club with the second-longest continuous presence in English top-flight football,[2] and ranks third in the all-time points rankings.[3] The club has won nine league titles, five FA Cups, one European Cup Winners Cup and nine Charity Shields. " ;
+    fbo:numTitles 34 ;
+    fbo:foundedYear 1878 ;
+    fbo:participatesIn fbr:Premier_League .
+    
+fbr:Luton_Town a fbo:FootballTeam ;
+    fbo:name "Luton Town" ;
+    fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Luton_Town_logo.svg/180px-Luton_Town_logo.svg.png" ;
+    fbo:image "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKhXvytU99PCr69BneDLOV2TWLpou4YCgz_X7IfWF1b11RJsl-JcPKjecZQJ-LUyzZHJI&usqp=CAU";
+    fbo:description "Luton Town Football Club (/ˈluːtən/) is a professional football club based in Luton, Bedfordshire, England, that competes in the Premier League, the top tier of English football. Founded in 1885, they are nicknamed the Hatters, due to the historical association of the town with the hat making trade, and have played home matches at Kenilworth Road since 1905. The clubs history includes one major trophy win, several financial crises, as well as numerous promotions and relegations. Between 1982 and 1992, they were a member of the First Division they won their first major honour, the Football League Cup, in 1988. Luton Town have a long-standing rivalry with nearby club Watford. " ;
+    fbo:numTitles 10 ;
+    fbo:foundedYear 1885 ;
+    fbo:participatesIn fbr:Premier_League .
+    
+fbr:Burnley a fbo:FootballTeam ;
+    fbo:name "Burnley" ;
+    fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Burnley_FC_Logo.svg/180px-Burnley_FC_Logo.svg.png" ;
+    fbo:image "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFOA_O6W44vdaI45bjjMtR7Fa6yKOfiSXE0onul826j0b59YRJ23RUUbxThVyn37SyZ74&usqp=CAU";
+    fbo:description "Burnley Football Club (/ˈbɜːrnli/) is an English association football club based in Burnley, Lancashire, that competes in the Premier League, the first tier of English football. Founded on 18 May 1882, the club was one of the first to become professional (in 1883) and subsequently put pressure on the Football Association to permit payments to players. The club entered the FA Cup for the first time in 1885–86 and was one of the 12 founder members of the Football League in 1888–89. From the 1950s until the 1970s, under chairman Bob Lord, the club became renowned for its youth policy and scouting system, and was one of the first to set up a purpose-built training ground. " ;
+    fbo:numTitles 12 ;
+    fbo:foundedYear 1882 ;
+    fbo:participatesIn fbr:Premier_League .
+    
+fbr:Sheffield_United a fbo:FootballTeam ;
+    fbo:name "Sheffield United" ;
+    fbo:teamLogo "https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Sheffield_United_FC_logo.svg/190px-Sheffield_United_FC_logo.svg.png" ;
+    fbo:image "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmLj_0EOoM_Mltrqb2jp0C9yY6EnGBN1cxFzoMvtxj4J12CvCTg8fa76k2zONGc_1OJAw&usqp=CAU";
+    fbo:description "Sheffield United Football Club is a professional football club in Sheffield, South Yorkshire, England, that competes in the Premier League, following their promotion from the 2022–23 EFL Championship. They are nicknamed the Blades due to Sheffield history of cutlery production.[3] The team have played home games at Bramall Lane since their formation. For most of the clubs history, United have played in red and white striped shirts with black shorts. Their main rivals are Sheffield Wednesday, with whom they contest the Steel City derby. " ;
+    fbo:numTitles 12 ;
+    fbo:foundedYear 1889 ;
+    fbo:participatesIn fbr:Premier_League .
