@@ -169,6 +169,8 @@ export class Querier {
       homeTeamName: info.homeTeamName.value,
       awayTeam: info.awayTeam.value,
       awayTeamName: info.awayTeamName.value,
+      stadium: info.stadium.value,
+      stadiumName: info.stadiumName.value,
       result: info.result.value,
     };
   }
