@@ -16,7 +16,7 @@ fbr:Erik_ten_Hag a fbo:Coach ;
 
 fbr:Jurgen_Klopp a fbo:Coach ;
     fbo:name "Jurgen Klopp" ;
-    fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Erik_ten_Hag_2017.jpg/220px-Erik_ten_Hag_2017.jpg" ;
+    fbo:image "https://upload.wikimedia.org/wikipedia/commons/8/81/J%C3%BCrgen_Klopp%2C_Liverpool_vs._Chelsea%2C_UEFA_Super_Cup_2019-08-14_04.jpg" ;
     fbo:description "Jürgen Norbert Klopp (German pronunciation: [ˈjʏʁɡn̩ ˈklɔp] ⓘ; born 16 June 1967) is a German professional football manager and former player who is the manager of Premier League club Liverpool. He is widely regarded as one of the best football managers in the world. Klopp spent most of his playing career at Mainz 05. He was initially deployed as a striker, but was later moved to defence. Upon retiring in 2001, Klopp became the club manager, and secured Bundesliga promotion in 2004. After suffering relegation in the 2006–07 season and unable to achieve promotion, Klopp resigned in 2008 as the club longest-serving manager. He then became manager of Borussia Dortmund, guiding them to the Bundesliga title in 2010–11, before winning Dortmund first-ever domestic double during a record-breaking season.[note 1] Klopp also guided Dortmund to a runner-up finish in the 2012–13 UEFA Champions League before leaving in 2015 as their longest-serving manager. " ;
     fbo:coachNationality "Germany" ;
     fbo:coachAge 56 ;
