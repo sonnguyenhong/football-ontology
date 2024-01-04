@@ -21,3 +21,92 @@ fbr:MU_LIV_17122023 a fbo:FootballMatch ;
     fbo:homeTeam fbr:Liverpool ;
     fbo:awayTeam fbr:Manchester_United ;
     fbo:result "0-0" .
+
+fbr:LIV_NEW_17122024 a fbo:FootballMatch ;
+    fbo:name "Liverpool vs Newcastle Matchweek 20 Premier League" ;
+    fbo:image "https://resources.premierleague.com/photos/premierleague/photo/2024/01/01/57ed33e2-c4a4-4d67-bec3-5623c3b2134e/1900482258.jpg?width=1200&height=" ;
+    fbo:description "Liverpool moved three points clear at the top of the Premier League with a thrilling 4-2 win over Newcastle United. All six goals at Anfield came in a breathless second half. Mohamed Salah made amends for a missed penalty with his 150th Liverpool Premier League goal, before Alexander Isak equalised against the run of play with Newcastle’s first shot on target. Liverpool scored twice in quick succession to make it 3-1, and although Sven Botman’s header set up a nervy finish, Salah converted a second spot-kick of the match to go joint-top of the Premier League scoring charts this season. Newcastle's Martin Dubravka was in incredible form, ending the match with 10 saves, the joint-most by any goalkeeper in a fixture this season, as Liverpool racked up 7.27 Expected Goals, the highest total on record by a team in a single Premier League match." ;
+    fbo:matchDay "01/01/2024" ;
+    fbo:homeTeam fbr:Liverpool ;
+    fbo:awayTeam fbr:Newcastle ;
+    fbo:result "4-2" ;
+    fbo:heldsIn  fbr:Anfield .
+
+fbr:LUT_CHE_17122025 a fbo:FootballMatch ;
+    fbo:name "Luton vs Chelsea Matchweek 20 Premier League" ;
+    fbo:image "https://resources.premierleague.com/photos/premierleague/photo/2023/12/30/ef32bee9-b0dc-480f-afdd-ce6a4911674d/1894751375.jpg?width=1200&height=" ;
+    fbo:description "Cole Palmer was the star of the show as Chelsea survived a late fightback from Luton Town to edge to a 3-2 victory at Kenilworth Road. The midfielder scored twice while also supplying the assist for Noni Madueke’s second goal in as many games as Chelsea ended a four-match losing streak away from home. But it was a close-run thing as Luton fought back with two goals in the final 10 minutes through Ross Barkley and Elijah Adebayo and almost snatched an equaliser." ;
+    fbo:matchDay "30/12/2023" ;
+    fbo:homeTeam fbr:Luton_Town ;
+    fbo:awayTeam fbr:Chelsea ;
+    fbo:result "2-3" ;
+    fbo:heldsIn  fbr:Kenilworth_Road .
+
+fbr:MCI_SHU_17122026 a fbo:FootballMatch ;
+    fbo:name "Manchester City vs Sheffield United Matchweek 20 Premier League" ;
+    fbo:image "https://resources.premierleague.com/photos/premierleague/photo/2023/12/30/7032a0a8-14e5-4ecd-8ca9-e04a3930dddb/1894794510.jpg?width=1200&height=" ;
+    fbo:description "Cole Palmer was the star of the show as Chelsea survived a late fightback from Luton Town to edge to a 3-2 victory at Kenilworth Road. The midfielder scored twice while also supplying the assist for Noni Madueke’s second goal in as many games as Chelsea ended a four-match losing streak away from home. But it was a close-run thing as Luton fought back with two goals in the final 10 minutes through Ross Barkley and Elijah Adebayo and almost snatched an equaliser." ;
+    fbo:matchDay "30/12/2023" ;
+    fbo:homeTeam fbr:Manchester_City ;
+    fbo:awayTeam fbr:Sheffield_United ;
+    fbo:result "2-0" ;
+    fbo:heldsIn  fbr:Etihad .
+
+fbr:BUR_LIV_17122027 a fbo:FootballMatch ;
+    fbo:name "Burnley vs Liverpool Matchweek 19 Premier League" ;
+    fbo:image "https://resources.premierleague.com/photos/premierleague/photo/2023/12/26/9d15f944-6f56-4c2e-bb69-eeac917e524a/1885207819.jpg?width=1200&height=" ;
+    fbo:matchDay "26/12/2023" ;
+    fbo:homeTeam fbr:Burnley ;
+    fbo:awayTeam fbr:Liverpool ;
+    fbo:result "0-2" ;
+    fbo:heldsIn  fbr:Turf_Moor .
+
+fbr:TOT_EVE_17122028 a fbo:FootballMatch ;
+    fbo:name "Spurs vs Everton Matchweek 18 Premier League" ;
+    fbo:image "https://resources.premierleague.com/photos/premierleague/photo/2023/12/23/ce4c3162-d241-49bd-bb2d-dd6f83ca9926/1877286558.jpg?width=1200&height=" ;
+    fbo:description "Tottenham Hotspur beat Everton 2-1 to move into fourth place, knocking Manchester City down to fifth and ending Everton's four-match winning Premier League run. Richarlison and Son Heung-min scored the goals before Andre Gomes set up a nervy finish at Tottenham Hotspur Stadium with his first Premier League goal since February 2019. The hosts were indebted to goalkeeper Guglielmo Vicario, who made seven saves and somehow kept out Arnaut Danjuma's effort in the last minute of stoppage time on the goalline. " ;
+    fbo:matchDay "23/12/2023" ;
+    fbo:homeTeam fbr:Tottenham ;
+    fbo:awayTeam fbr:Everton ;
+    fbo:result "2-1" ;
+    fbo:heldsIn  fbr:Tottenham_Hotspur_Stadium .
+
+fbr:WHU_MUN_17122029 a fbo:FootballMatch ;
+    fbo:name "West Ham vs Man Utd Matchweek 18 Premier League" ;
+    fbo:image "https://resources.premierleague.com/photos/premierleague/photo/2023/12/23/417b339f-da6d-40da-9934-c1f637ded519/2023-12-23T134913Z_230399078_UP1EJCN12DZ4C_RTRMADP_3_SOCCER-ENGLAND-WHU-MUN-REPORT.JPG?width=1200&height=" ;
+    fbo:description "Tottenham Hotspur beat Everton 2-1 to move into fourth place, knocking Manchester City down to fifth and ending Everton's four-match winning Premier League run. Richarlison and Son Heung-min scored the goals before Andre Gomes set up a nervy finish at Tottenham Hotspur Stadium with his first Premier League goal since February 2019. The hosts were indebted to goalkeeper Guglielmo Vicario, who made seven saves and somehow kept out Arnaut Danjuma's effort in the last minute of stoppage time on the goalline. " ;
+    fbo:matchDay "23/12/2023" ;
+    fbo:homeTeam fbr:West_Ham  ;
+    fbo:awayTeam fbr:Manchester_United ;
+    fbo:result "2-0" ;
+    fbo:heldsIn  fbr:London_Stadium .
+
+fbr:ARS_BHA_17122030 a fbo:FootballMatch ;
+    fbo:name "Arsenal vs Brighton Matchweek 17 Premier League" ;
+    fbo:image "https://resources.premierleague.com/photos/premierleague/photo/2023/12/17/29484d05-4759-4dc6-abee-80a48eb7cf33/1862545509.jpg?width=1200&height=" ;
+    fbo:description "An impressive Arsenal moved top of the Premier League thanks to second-half goals from Gabriel Jesus and Kai Havertz as they became the first team since February to stop Brighton & Hove Albion scoring in a 2-0 victory. ";
+    fbo:matchDay "23/12/2023" ;
+    fbo:homeTeam fbr:Arsenal  ;
+    fbo:awayTeam fbr:Brighton ;
+    fbo:result "2-0" ;
+    fbo:heldsIn  fbr:Arsenal_Stadium .
+
+fbr:MUN_BOU_17122031 a fbo:FootballMatch ;
+    fbo:name "Man Utd vs Bournemouth Matchweek 16 Premier League" ;
+    fbo:image "https://resources.premierleague.com/photos/premierleague/photo/2023/12/09/bb236fc1-eff6-4a3c-ba19-e1f0a44e767c/1842759427.jpg?width=1200&height=" ;
+    fbo:description "Manchester United’s rollercoaster season continued as they followed their encouraging midweek win over Chelsea with a 3-0 home defeat to in-form AFC Bournemouth, increasing the pressure on manager Erik ten Hag. The Red Devils had the chance to move level with Manchester City with a win, but instead they suffered a damaging loss, which could have been even worse given Bournemouth had two further goals ruled out in their first win at Old Trafford. And to compound Man Utd's woes, this was the first time they lost by at least three goals at home to a team who started the match in the bottom half at table.";
+    fbo:matchDay "09/12/2023" ;
+    fbo:homeTeam fbr:Manchester_United ;
+    fbo:awayTeam fbr:Bournemouth;
+    fbo:result "0-3" ;
+    fbo:heldsIn  fbr:Old_Trafford .
+
+fbr:FUL_WHU_17122032 a fbo:FootballMatch ;
+    fbo:name "Fulham vs West Ham Matchweek 16 Premier League" ;
+    fbo:image "https://resources.premierleague.com/photos/premierleague/photo/2023/12/10/6f7b52b6-464e-41f3-bb24-50d16001472c/2023-12-10T141120Z_1352045815_UP1EJCA13EU4E_RTRMADP_3_SOCCER-ENGLAND-FUL-WHU-REPORT.JPG?width=1200&height=" ;
+    fbo:description "Fulham continued their rich vein of goalscoring form after they scored five goals for the second time this week as they comfortably dispatched West Ham United 5-0. Goals from Raul Jimenez, Willian, Tosin Adarabioyo, Harry Wilson and Carlos Vinicius gave the hosts an impressive victory as they move into the top half of the Premier League table.";
+    fbo:matchDay "10/12/2023" ;
+    fbo:homeTeam fbr:West_Ham  ;
+    fbo:awayTeam fbr:Fulham;
+    fbo:result "5-0" ;
+    fbo:heldsIn  fbr:Craven_Cottage .
