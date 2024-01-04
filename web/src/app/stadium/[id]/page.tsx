@@ -1,6 +1,7 @@
 import { querier } from "@/actions/querier";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import '@/style/app.css';
 
 export default async function Page({ params }: { params: { id: string } }) {
   const data = await querier.stadium(params.id);
@@ -55,7 +56,7 @@ export default async function Page({ params }: { params: { id: string } }) {
                   <td>{data.stadiumCapacity}</td>
                 </tr>
               )}
-              {data.age&& (
+              {data.age && (
                 <tr>
                   <td>
                     <b>Age</b>
@@ -63,7 +64,7 @@ export default async function Page({ params }: { params: { id: string } }) {
                   <td>{data.age}</td>
                 </tr>
               )}
-             
+
             </tbody>
           </table>
         </div>

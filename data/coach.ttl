@@ -10,12 +10,16 @@ fbr:Erik_ten_Hag a fbo:Coach ;
     fbo:description "Erik ten Hag (born 2 February 1970) is a Dutch professional football manager and former player who is the manager of Premier League club Manchester United. Ten Hag played as a centre back and began his career with Eredivisie club Twente. He joined De Graafschap in 1990, and won the Eerste Divisie in his first season. He rejoined Twente in 1992 and transferred to RKC Waalwijk two years later, where he remained for one season before signing with Utrecht in 1995. Ten Hag returned to Twente for a third time in 1996, where he won KNVB Cup in 2001. He retired in 2002, at age 32. Ten Hag began his managerial career in 2012, when he was appointed by Go Ahead Eagles, where he led the club to promotion to the Eredivisie in his debut season. He then joined Bayern Munich II in 2013, winning promotion to the Regionalliga Bayern in 2014. He returned to the Netherlands in 2015 as sporting director and head coach at Utrecht. He joined Ajax in 2017, where he won three Eredivisie titles, two KNVB Cups, and led the team to the semi-finals of the 2018–19 UEFA Champions League. In 2022, he was appointed at Manchester United. " ;
     fbo:coachNationality "Netherlands" ;
     fbo:coachAge 53 ; 
-    fbo:coachAchieves fbr:Premier_League_MOTM .
+    fbo:coachAchieves fbr:Premier_League_MOTM ;
+    fbo:coachHeight 180 ;
+    fbo:coachWeight 75 .
 
-fbr:Jürgen_Klopp a fbo:Coach ;
-    fbo:name "Jürgen Klopp" ;
+fbr:Jurgen_Klopp a fbo:Coach ;
+    fbo:name "Jurgen Klopp" ;
     fbo:image "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Erik_ten_Hag_2017.jpg/220px-Erik_ten_Hag_2017.jpg" ;
     fbo:description "Jürgen Norbert Klopp (German pronunciation: [ˈjʏʁɡn̩ ˈklɔp] ⓘ; born 16 June 1967) is a German professional football manager and former player who is the manager of Premier League club Liverpool. He is widely regarded as one of the best football managers in the world. Klopp spent most of his playing career at Mainz 05. He was initially deployed as a striker, but was later moved to defence. Upon retiring in 2001, Klopp became the club manager, and secured Bundesliga promotion in 2004. After suffering relegation in the 2006–07 season and unable to achieve promotion, Klopp resigned in 2008 as the club longest-serving manager. He then became manager of Borussia Dortmund, guiding them to the Bundesliga title in 2010–11, before winning Dortmund first-ever domestic double during a record-breaking season.[note 1] Klopp also guided Dortmund to a runner-up finish in the 2012–13 UEFA Champions League before leaving in 2015 as their longest-serving manager. " ;
     fbo:coachNationality "Germany" ;
     fbo:coachAge 56 ; 
-    fbo:coachAchieves fbr:Premier_League_MOTM .
+    fbo:coachAchieves fbr:Premier_League_MOTM ;
+    fbo:coachHeight 178 ;
+    fbo:coachWeight 80 .

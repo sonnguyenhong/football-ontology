@@ -123,6 +123,22 @@ fbo:playerGoals rdf:type owl:DatatypeProperty ;
   rdfs:domain fbo:Player ;
   rdfs:range xsd:nonNegativeInteger .
 
+fbo:playerAssists rdf:type owl:DatatypeProperty ;
+  rdfs:domain fbo:Player ;
+  rdfs:range xsd:nonNegativeInteger .
+
+fbo:playerHeight rdf:type owl:DatatypeProperty ;
+  rdfs:domain fbo:Player ;
+  rdfs:range xsd:nonNegativeInteger .
+
+fbo:playerWeight rdf:type owl:DatatypeProperty ;
+  rdfs:domain fbo:Player ;
+  rdfs:range xsd:nonNegativeInteger .
+
+fbo:playerTransactionFee rdf:type owl:DatatypeProperty ;
+  rdfs:domain fbo:Player ;
+  rdfs:range xsd:nonNegativeInteger .
+
 fbo:teamLogo rdf:type owl:DatatypeProperty ;
   rdfs:domain fbo:FootballTeam ;
   rdfs:range xsd:string .
@@ -134,7 +150,6 @@ fbo:foundedYear rdf:type owl:DatatypeProperty ;
 fbo:numTitles rdf:type owl:DatatypeProperty ;
   rdfs:domain fbo:FootballTeam ;
   rdfs:range xsd:nonNegativeInteger .
-
 
 fbo:numTeams rdf:type owl:DatatypeProperty ;
   rdfs:domain fbo:FootballTeam ;
@@ -164,6 +179,14 @@ fbo:coachAge rdf:type owl:DatatypeProperty ;
   rdfs:domain fbo:Coach ;
   rdfs:range xsd:integer .
 
+fbo:coachHeight rdf:type owl:DatatypeProperty ;
+  rdfs:domain fbo:Coach ;
+  rdfs:range xsd:nonNegativeInteger .
+
+fbo:coachWeight rdf:type owl:DatatypeProperty ;
+  rdfs:domain fbo:Coach ;
+  rdfs:range xsd:nonNegativeInteger .
+
 fbo:stadiumCapacity rdf:type owl:DatatypeProperty ;
   rdfs:domain fbo:Stadium ;
   rdfs:range xsd:integer .
@@ -171,8 +194,6 @@ fbo:stadiumCapacity rdf:type owl:DatatypeProperty ;
 fbo:stadiumAge rdf:type owl:DatatypeProperty ;
   rdfs:domain fbo:Stadium ;
   rdfs:range xsd:integer .
-
-
 
 fbo:belongsToLeague rdf:type owl:ObjectProperty ;
     rdfs:domain owl:Thing ;

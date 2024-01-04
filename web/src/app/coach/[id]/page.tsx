@@ -1,6 +1,7 @@
 import { querier } from "@/actions/querier";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import '@/style/app.css';
 
 export default async function Page({ params }: { params: { id: string } }) {
   const data = await querier.coach(decodeURIComponent(params.id))
@@ -55,14 +56,14 @@ export default async function Page({ params }: { params: { id: string } }) {
                   <td>{data.coachNationality}</td>
                 </tr>
               )}
-              {data.coachAchievesName && data.coachAchieves &&  (
+              {data.coachAchievesName && data.coachAchieves && (
                 <tr>
                   <td>
                     <b>Achieves</b>
                   </td>
                   <td>
                     <Link href={data.coachAchieves} className="text-sky-500 hover:underline">
-                    {data.coachAchievesName}
+                      {data.coachAchievesName}
                     </Link>
                   </td>
                 </tr>
