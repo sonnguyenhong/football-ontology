@@ -38,6 +38,11 @@ export default async function Page({ params }: Readonly<Props>) {
 			<div className="flex flex-col md:flex-row gap-10">
 				<div className="max-w-[200px] min-w-[200px]">
 					<img
+						className="w-full mb-6"
+						src={data.teamLogo ?? "/images/unknown_country.png"}
+						alt="image"
+					/>
+					<img
 						className="w-full"
 						src={data.image ?? "/images/unknown_country.png"}
 						alt="image"

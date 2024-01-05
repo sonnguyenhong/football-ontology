@@ -37,7 +37,7 @@ export default function Home() {
               setSearch(ev.target.value);
             }}
             className="px-4 border border-solid border-indigo-500	py-2 rounded w-full"
-            placeholder="Enter player's name, league, country, continent..."
+            placeholder="Enter player's name, league, football team..."
           />
           <div className="text-center mt-4">
             <button

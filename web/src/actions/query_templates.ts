@@ -2,8 +2,8 @@ export const searchQuery = `
 PREFIX text: <http://jena.apache.org/text#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX fbo: <http://localhost:3000/ontology#> 
-PREFIX fbr: <http://localhost:3000/resource/> 
+PREFIX fbo: <http://localhost:3000/ontology#>
+PREFIX fbr: <http://localhost:3000/resource/>
 
 SELECT ?resource ?name ?image ?description ?hl
 WHERE {
@@ -19,8 +19,8 @@ LIMIT 10
 export const resourceTypeQuery = `
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX fbo: <http://localhost:3000/ontology#> 
-PREFIX fbr: <http://localhost:3000/resource/> 
+PREFIX fbo: <http://localhost:3000/ontology#>
+PREFIX fbr: <http://localhost:3000/resource/>
 
 SELECT ?type
 WHERE {
@@ -31,10 +31,10 @@ WHERE {
 export const playerInfoQuery = `
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX fbo: <http://localhost:3000/ontology#> 
-PREFIX fbr: <http://localhost:3000/resource/> 
+PREFIX fbo: <http://localhost:3000/ontology#>
+PREFIX fbr: <http://localhost:3000/resource/>
 
-SELECT ?name ?image ?des ?position ?goals ?nationality ?assists ?height ?weight ?transactionFee ?age ?footballTeam ?footballTeamName 
+SELECT ?name ?image ?des ?position ?goals ?nationality ?assists ?height ?weight ?transactionFee ?age ?footballTeam ?footballTeamName
 WHERE {
   fbr:{player} a fbo:Player .
 	fbr:{player} fbo:name ?name .
@@ -56,10 +56,10 @@ LIMIT 1
 export const playerTitleQuery = `
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX fbo: <http://localhost:3000/ontology#> 
-PREFIX fbr: <http://localhost:3000/resource/> 
+PREFIX fbo: <http://localhost:3000/ontology#>
+PREFIX fbr: <http://localhost:3000/resource/>
 
-SELECT ?title ?titleName 
+SELECT ?title ?titleName
 WHERE {
 	fbr:{player} a fbo:Player .
 	fbr:{player} fbo:hasTitle ?title .
@@ -70,8 +70,8 @@ WHERE {
 export const playerLeagueSeasonQuery = `
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX fbo: <http://localhost:3000/ontology#> 
-PREFIX fbr: <http://localhost:3000/resource/> 
+PREFIX fbo: <http://localhost:3000/ontology#>
+PREFIX fbr: <http://localhost:3000/resource/>
 
 SELECT ?ls ?lsName ?year
 WHERE {
@@ -89,9 +89,10 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX fbo: <http://localhost:3000/ontology#>
 PREFIX fbr: <http://localhost:3000/resource/>
 
-SELECT ?name ?image ?des ?foundedYear ?coach ?coachName ?homeField ?homeFieldName{
+SELECT ?name ?teamLogo ?image ?des ?foundedYear ?coach ?coachName ?homeField ?homeFieldName{
   fbr:{footballTeam} a fbo:FootballTeam ;
     fbo:name ?name .
+  OPTIONAL { fbr:{footballTeam} fbo:teamLogo ?teamLogo } .
   OPTIONAL { fbr:{footballTeam} fbo:image ?image } .
   OPTIONAL { fbr:{footballTeam} fbo:description ?des } .
   OPTIONAL { fbr:{footballTeam} fbo:foundedYear ?foundedYear } .
@@ -103,10 +104,10 @@ SELECT ?name ?image ?des ?foundedYear ?coach ?coachName ?homeField ?homeFieldNam
 export const footballTeamLeagueSeasonQuery = `
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX fbo: <http://localhost:3000/ontology#> 
-PREFIX fbr: <http://localhost:3000/resource/> 
+PREFIX fbo: <http://localhost:3000/ontology#>
+PREFIX fbr: <http://localhost:3000/resource/>
 
-SELECT ?ls ?lsName 
+SELECT ?ls ?lsName
 WHERE {
 	fbr:{footballTeam} a fbo:FootballTeam .
 	fbr:{footballTeam} fbo:participatesIn ?ls .
@@ -117,8 +118,8 @@ WHERE {
 export const footballTeamMatchSeasonQuery = `
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX fbo: <http://localhost:3000/ontology#> 
-PREFIX fbr: <http://localhost:3000/resource/> 
+PREFIX fbo: <http://localhost:3000/ontology#>
+PREFIX fbr: <http://localhost:3000/resource/>
 
 SELECT ?ms ?msName
 WHERE {
@@ -131,8 +132,8 @@ WHERE {
 export const leagueInfoQuery = `
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX fbo: <http://localhost:3000/ontology#> 
-PREFIX fbr: <http://localhost:3000/resource/> 
+PREFIX fbo: <http://localhost:3000/ontology#>
+PREFIX fbr: <http://localhost:3000/resource/>
 
 SELECT ?name ?image ?des ?numTeams {
 	fbr:{league} rdf:type fbo:FootballLeague .
@@ -147,8 +148,8 @@ LIMIT 1
 export const leagueMatchInfoQuery = `
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX fbo: <http://localhost:3000/ontology#> 
-PREFIX fbr: <http://localhost:3000/resource/> 
+PREFIX fbo: <http://localhost:3000/ontology#>
+PREFIX fbr: <http://localhost:3000/resource/>
 
 SELECT ?match ?matchName {
 	fbr:{league} fbo:includes ?match .
@@ -192,12 +193,12 @@ LIMIT 1
 export const coachInfoQuery = `
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX fbo: <http://localhost:3000/ontology#> 
-PREFIX fbr: <http://localhost:3000/resource/> 
+PREFIX fbo: <http://localhost:3000/ontology#>
+PREFIX fbr: <http://localhost:3000/resource/>
 
 SELECT ?name ?image ?des ?coachNationality ?age ?coachAchieves ?coachAchievesName
 WHERE {
-  fbr:{coach} a fbo:Coach . 
+  fbr:{coach} a fbo:Coach .
   fbr:{coach} fbo:name ?name .
   OPTIONAL {fbr:{coach} fbo:image ?image} .
   OPTIONAL {fbr:{coach} fbo:description ?des} .
@@ -211,18 +212,18 @@ LIMIT 1
 export const stadiumQuery = `
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX fbo: <http://localhost:3000/ontology#> 
-PREFIX fbr: <http://localhost:3000/resource/> 
+PREFIX fbo: <http://localhost:3000/ontology#>
+PREFIX fbr: <http://localhost:3000/resource/>
 
-SELECT ?name ?image ?des ?stadiumCapacity ?stadiumAge 
+SELECT ?name ?image ?des ?stadiumCapacity ?stadiumAge
 WHERE {
-  fbr:{stadium} a fbo:Stadium . 
+  fbr:{stadium} a fbo:Stadium .
   fbr:{stadium} fbo:name ?name .
   OPTIONAL {fbr:{stadium} fbo:image ?image} .
   OPTIONAL {fbr:{stadium} fbo:description ?des} .
   OPTIONAL {fbr:{stadium} fbo:stadiumCapacity ?stadiumCapacity} .
   OPTIONAL {fbr:{stadium} fbo:stadiumAge ?stadiumAge} .
-  
+
 }
 LIMIT 1
 `;
@@ -230,12 +231,12 @@ LIMIT 1
 export const awardQuery = `
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX fbo: <http://localhost:3000/ontology#> 
-PREFIX fbr: <http://localhost:3000/resource/> 
+PREFIX fbo: <http://localhost:3000/ontology#>
+PREFIX fbr: <http://localhost:3000/resource/>
 
 SELECT ?name ?image ?des ?coachNationality ?age ?awardOfLeague ?awardOfLeagueName
 WHERE {
-  fbr:{award} a fbo:Award . 
+  fbr:{award} a fbo:Award .
   fbr:{award} fbo:name ?name .
   OPTIONAL {fbr:{award} fbo:image ?image} .
   OPTIONAL {fbr:{award} fbo:description ?des} .
