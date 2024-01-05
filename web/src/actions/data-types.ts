@@ -53,6 +53,7 @@ export type Continent = {
 export type Team = {
 	id: string;
 	name: string;
+	teamLogo: string | null;
 	image: string | null;
 	des: string | null;
 	foundedYear: string | null;

@@ -65,7 +65,7 @@ export default async function Page({ params }: Readonly<Props>) {
 									<td>
 										<b>Position</b>
 									</td>
-									<td>{data.positionName}</td>
+									<td>{data.positionName.substring(31)}</td>
 								</tr>
 							)}
 							{data.nationality && (
@@ -89,7 +89,7 @@ export default async function Page({ params }: Readonly<Props>) {
 									<td>
 										<b>Height</b>
 									</td>
-									<td>{data.height}</td>
+									<td>{data.height} cm</td>
 								</tr>
 							)}
 							{data.weight && (
@@ -97,7 +97,7 @@ export default async function Page({ params }: Readonly<Props>) {
 									<td>
 										<b>Weight</b>
 									</td>
-									<td>{data.weight}</td>
+									<td>{data.weight} kg</td>
 								</tr>
 							)}
 							{data.transactionFee && (
